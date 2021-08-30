@@ -1,0 +1,217 @@
+* Biblioteca de portas logicas FinFET
+
+*-------------------------------------------------------------
+* Inversor
+*-------------------------------------------------------------
+.subckt inversor in inv vdd gnd
+
+*Declarando o circuito
+Mp1 vdd in inv vdd PMOS w=64n l=16n
+Mn1 inv in gnd gnd NMOS w=32n l=16n
+
+.ends
+
+*-------------------------------------------------------------
+* Inversor (Fout4)
+*-------------------------------------------------------------
+.subckt inversor4 in inv vdd gnd
+
+*Declarando o circuito
+Mp1 vdd in inv vdd PMOS w=256n l=16n
+Mn1 inv in gnd gnd NMOS w=128n l=16n
+
+.ends
+
+*------------------------------------------------------
+* buffer
+*------------------------------------------------------
+
+.subckt buffer in out vdd gnd
+
+Xinv_1 in invert vdd gnd inversor
+Xinv_2 invert out vdd gnd inversor
+
+.ends
+
+*-----------------------------------------------------
+* Circuito XOR_V1
+*-----------------------------------------------------
+
+.subckt xor_v1 in_a in_not_a in_b in_not_b xor vdd gnd
+
+Mn1 xor in_not_b n1_n2 gnd NMOS w=32n l=16n
+Mn2 n1_n2 in_not_a gnd gnd NMOS w=32n l=16n
+Mn3 xor in_b n3_n4 gnd NMOS w=32n l=16n
+Mn4 n3_n4 in_a gnd gnd NMOS w=32n l=16n
+
+Mp1 vdd in_not_a p1_p2 vdd PMOS w=64n l=16n
+Mp2 p1_p2 in_b xor vdd PMOS w=64n l=16n
+Mp3 vdd in_a p3_p4 vdd PMOS w=64n l=16n
+Mp4 p3_p4 in_not_b xor vdd PMOS w=64n l=16n
+
+.ends
+
+*-----------------------------------------------------
+* Circuito XOR_V2
+*-----------------------------------------------------
+
+.subckt xor_v2 in_a in_b xor vdd gnd
+
+*----pull-down----
+Mn1 p1_n1 in_b n1_n2 gnd NMOS w=32n l=16n
+Mn2 n1_n2 in_a gnd gnd NMOS w=32n l=16n
+Mn3 p3_n3 p1_n1 n3_n4 gnd NMOS w=32n l=16n
+Mn4 n3_n4 in_a gnd gnd NMOS w=32n l=16n
+Mn5 n3_n4 in_b gnd gnd NMOS w=32n l=16n
+Mn6 xor p3_n3 gnd gnd NMOS w=32n l=16n
+
+*-----pull-up-----
+Mp1 vdd in_b p1_n1 vdd PMOS w=64n l=16n
+Mp2 vdd in_a p1_n1 vdd PMOS w=64n l=16n
+Mp3 vdd p1_n1 p3_n3 vdd PMOS w=64n l=16n
+Mp4 vdd in_a p4_p5 vdd PMOS w=64n l=16n
+Mp5 p4_p5 in_b p3_n3 vdd PMOS w=64n l=16n
+Mp6 vdd p3_n3 xor vdd PMOS w=64n l=16n
+
+.ends
+
+
+*-------------------------------------------------
+* Circuito XOR_V3
+*-------------------------------------------------
+
+.subckt xor_v3 in_a in_b xor vdd gnd
+*----pull-down----
+
+Mn1 xor in_b p1_p2 gnd NMOS w=32n l=16n
+Mn2 p1_p2 in_a gnd gnd NMOS w=32n l=16n
+Mn3 xor in_a p3_p4 gnd NMOS w=32n l=16n
+Mn4 p3_p4 in_b gnd gnd NMOS w=32n l=16n
+Mn5 xor p3_p4 n5_n6 gnd NMOS w=32n l=16n
+Mn6 n5_n6 p1_p2 gnd gnd NMOS w=32n l=16n
+
+*-----pull-up-----
+
+Mp1 vdd in_a p1_p2 vdd PMOS w=64n l=16n
+Mp2 p1_p2 p3_p4 xor vdd PMOS w=64n l=16n
+Mp3 vdd in_b p3_p4 vdd PMOS w=64n l=16n
+Mp4 p3_p4 p1_p2 xor vdd PMOS w=64n l=16n
+
+.ends
+
+*-------------------------------------------------
+* Circuito XOR_V4
+*-------------------------------------------------
+.subckt xor_v4 in_a in_b xor vdd gnd
+*------pull-up-----
+Mn1 xor in_b p1_p2 gnd NMOS w=32n l=16n
+Mn2 p1_p2 in_a gnd gnd NMOS w=32n l=16n
+Mn3 xor p4_n5 n3_n4 gnd NMOS w=32n l=16n
+Mn4 n3_n4 p1_p2 gnd gnd NMOS w=32n l=16n
+Mn5 p4_n5 in_b gnd gnd NMOS w=32n l=16n
+
+*------pull-down-----
+Mp1 vdd in_a p1_p2 vdd PMOS w=64n l=16n
+Mp2 p1_p2 p4_n5 xor vdd PMOS w=64n l=16n
+Mp3 p4_n5 p1_p2 xor vdd PMOS w=64n l=16n
+Mp4 vdd in_b p4_n5 vdd PMOS w=64n l=16n
+
+.ends
+
+
+*-------------------------------------------------
+* Circuito XOR_V5
+*-------------------------------------------------
+.subckt xor_v5 in_a in_not_a in_b in_not_b xor vdd gnd
+Mn1 in_a in_not_b xor gnd NMOS w=32n l=16n
+Mn2 in_not_a in_b xor gnd NMOS w=32n l=16n
+
+Mp1 in_a in_b xor vdd PMOS w=64n l=16n
+Mp2 in_not_a in_not_b xor vdd PMOS w=64n l=16n
+.ends
+
+
+*-------------------------------------------------
+* Circuito XOR_V6
+*-------------------------------------------------
+.subckt xor_v6 in_a in_not_a in_b in_not_b xor vdd gnd
+
+Mn1 in_a in_b p1_n1 gnd NMOS w=32n l=16n
+Mn2 in_not_a in_not_b p1_n1 gnd NMOS w=32n l=16n
+
+Xinv p1_n1 xor vdd gnd inversor
+
+Mp1 in_a in_not_b p1_n1 vdd PMOS w=64n l=16n
+Mp2 in_not_a in_b p1_n1 vdd PMOS w=64n l=16n
+
+
+.ends
+
+
+*-------------------------------------------------
+* Circuito XOR_V7
+*-------------------------------------------------
+
+.subckt xor_v7 in_a in_not_a in_b in_not_b xor vdd gnd
+*-----pull-down----
+
+Mn1 in_a in_b p1_n2 gnd NMOS w=32n l=16n
+Mn2 in_not_a in_not_b p1_n2 gnd NMOS w=32n l=16n
+
+Xinv p1_n2 xor vdd gnd inversor
+
+*-----pull-up----
+Mp1 in_b in_not_a p1_n2 vdd PMOS w=64n l=16n
+Mp2 in_not_b in_a p1_n2 vdd PMOS w=64n l=16n
+
+.ends
+
+*-------------------------------------------------
+* Circuito XOR_V8
+*-------------------------------------------------
+
+.subckt xor_v8 in_a in_b xor vdd gnd
+
+Mn1 p1_n1 in_b gnd gnd NMOS w=32n l=16n
+Mn2 in_a p1_n1 xor gnd NMOS w=32n l=16n
+Mn3 p1_n1 in_a xor gnd NMOS w=32n l=16n
+
+Mp1 vdd in_b p1_n1 vdd PMOS w=64n l=16n
+Mp2 in_a in_b xor vdd PMOS w=64n l=16n
+Mp3 in_b in_a xor vdd PMOS w=64n l=16n
+
+.ends
+
+*-------------------------------------------------
+* Circuito XOR_V9
+*-------------------------------------------------
+
+.subckt xor_v9 in_a in_b in_not_b xor vdd gnd
+Mn1 in_a in_b p1_n2 gnd NMOS w=32n l=16n
+Mn2 in_b in_a p1_n2 gnd NMOS w=32n l=16n
+
+Xinv p1_n2 xor vdd gnd inversor
+
+Mp1 in_a in_not_b p1_n2 vdd PMOS w=64n l=16n
+Mp2 in_not_b in_a p1_n2 vdd PMOS w=64n l=16n
+
+.ends
+
+
+*-------------------------------------------------
+* Circuito XOR_TEST (comparar com V5)
+*-------------------------------------------------
+
+.subckt xor_vtest in_a in_not_a in_b in_not_b xor vdd gnd
+*-----pull-down----
+
+Mn1 in_a in_b xor gnd NMOS w=32n l=16n
+Mn2 in_not_a in_not_b xor gnd NMOS w=32n l=16n
+
+*Xinv_1 p1_n2 xor vdd gnd inversor
+
+*-----pull-up----
+Mp1 in_b in_not_a xor vdd PMOS w=64n l=16n
+Mp2 in_not_b in_a xor vdd PMOS w=64n l=16n
+
+.ends
