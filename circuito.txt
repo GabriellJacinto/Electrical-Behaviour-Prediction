@@ -1,0 +1,135 @@
+*INVERSOR
+
+.include 32nm_HPvar.pm.txt
+
+************************.param tensao= X
+.param wnmos = 70n
+.param wpmos = 140n
+*************************.param len = X
+
+*.define gauss(nom, rvar, sig) (nom + (nom*rvar)/sig * sgauss(0))
+.param var = gauss(0.5088, 0.1, 3)
+.param varp = gauss(-0.450, 0.1, 3)
+*.param var = 0.5088
+*.param varp = -0.450
+
+.option post = 2
+.option measform = 3
+
+* Declarando Fontes de tensão
+Vvdd vdd gnd tensao
+
+* Declaração das fontes
+Va a gnd PWL (0n 0 10n 0 10.01n tensao 20n tensao 20.01n 0)
+
+*-------------------------------------------------------------
+* Inversor
+*-------------------------------------------------------------
+.subckt inversor in inv vdd gnd
+
+*Declarando o circuito
+Mp1 vdd in inv vdd PMOS w=64n l=16n
+Mn1 inv in gnd gnd NMOS w=32n l=16n
+
+.ends
+
+*-------------------------------------------------------------
+* Inversor (Fout4)
+*-------------------------------------------------------------
+.subckt inversor4 in inv vdd gnd
+
+*Declarando o circuito
+Mp1 vdd in inv vdd PMOS w=256n l=16n
+Mn1 inv in gnd gnd NMOS w=128n l=16n
+
+.ends
+
+*------------------------------------------------------
+* buffer
+*------------------------------------------------------
+
+.subckt buffer in out vdd gnd
+
+Xinv_1 in invert vdd gnd inversor
+Xinv_2 invert out vdd gnd inversor
+
+.ends
+
+*-----------------------------------------------------
+* Circuito XOR_V1
+*-----------------------------------------------------
+
+.subckt xor_v1 in_a in_not_a in_b in_not_b xor vdd gnd
+
+Mn1 xor in_not_b n1_n2 gnd NMOS w=32n l=16n
+Mn2 n1_n2 in_not_a gnd gnd NMOS w=32n l=16n
+Mn3 xor in_b n3_n4 gnd NMOS w=32n l=16n
+Mn4 n3_n4 in_a gnd gnd NMOS w=32n l=16n
+
+Mp1 vdd in_not_a p1_p2 vdd PMOS w=64n l=16n
+Mp2 p1_p2 in_b xor vdd PMOS w=64n l=16n
+Mp3 vdd in_a p3_p4 vdd PMOS w=64n l=16n
+Mp4 p3_p4 in_not_b xor vdd PMOS w=64n l=16n
+
+.ends
+
+
+*Capacitância da saída
+Cload inv gnd 1f
+
+* Simulação Transiente de 20ns com passo de 0.1ns
+.tran 0.01n 40n sweep Monte=1000
+*DATA = TAB_1
+*.DATA TAB_1 temp tensao len wnmos wpmos
+
+*T de propagação
+.measure tran tphl trig v(a) val='0.5*tensao' rise=1 targ v(inv) val='0.5*tensao' fall=1
+.measure tran tplh trig v(a) val='0.5*tensao' fall=1 targ v(inv) val='0.5*tensao' rise=1
+
+*Corrente
+.measure tran Iint INTEG i(vvdd) from=0n to=40n
+
+*Temperatura
+.temp -25 0 25 50 75 100
+
+.alter
+.param wpmos = 70n
+
+.alter
+.param wnmos = 140n
+
+.alter
+.param wpmos = 210n
+
+.alter
+.param wpmos = 210n
+.param wnmos = 140n
+
+.alter
+.param wpmos = 280n
+
+.alter
+.param wpmos = 280n
+.param wnmos = 140n
+
+.alter
+.param wpmos = 340n
+
+.alter
+.param wpmos = 340n
+.param wnmos = 140n
+
+.alter
+.param wpmos = 340n
+.param wnmos = 210n
+
+.alter
+.param wpmos = 420n
+.param wnmos = 140n
+
+.alter
+.param wpmos = 420n
+.param wnmos = 210n
+
+* Fim do Arquivo SPICE
+.end

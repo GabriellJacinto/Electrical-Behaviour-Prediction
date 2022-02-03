@@ -1,0 +1,22 @@
+*Biblioteca 16nm CMOS             (Clayton Farias E.C)
+
+.subckt inv in out_inv vdd ground 
+
+ Mp7 vdd in out_inv vdd PMOS w=wp l=16n
+                                      
+ Mn7 out_inv in ground ground NMOS w=wn l=16n
+
+.ends inv
+
+
+.subckt inversor_st in out_intermediario out_st vdd ground 
+
+ Mp1 vdd in out_intermediario out_st PMOS w=wp l=16n
+                                      
+ Mn1 out_intermediario in ground out_st NMOS w=wn l=16n
+ 
+ Mp2 vdd out_intermediario out_st out_intermediario PMOS w=wp l=16n
+                                      
+ Mn2 out_st out_intermediario ground out_intermediario NMOS w=wn l=16n
+
+.ends inversor_st
