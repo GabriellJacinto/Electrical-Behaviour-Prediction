@@ -1,0 +1,36 @@
+*INVERSOR
+.include 32nm_HP.pm.txt
+.param tensao=0.9
+
+* Declarando Fontes de tensão
+Vvdd vdd gnd tensao
+
+* Declaração das fontes
+Va a gnd PWL (0n 0 10n 0 10.01n tensao 20n tensao 20.01n 0)
+
+* Declarando o circuito
+Mp1 vdd a inv vdd PMOS w=140n l=32n
+
+Mn1 inv a gnd gnd NMOS w=70n l=32n
+
+*Capacitância da saída
+Cload inv gnd 1f
+
+
+* Simulação Transiente de 20ns com passo de 0.1ns
+.tran 0.01ns 40ns
+
+*T de propagação
+.measure tran tphl trig v(a) val='0.5*tensao' rise=1 targ v(inv) val='0.5*tensao' fall=1
+.measure tran tplh trig v(a) val='0.5*tensao' fall=1 targ v(inv) val='0.5*tensao' rise=1
+
+*T transicao
+
+
+*Corrente
+.measure tran Iint INTEG i(vvdd) from=0n to=40n
+
+*plot v(a) v(inv)
+
+* Fim do Arquivo SPICE
+.end

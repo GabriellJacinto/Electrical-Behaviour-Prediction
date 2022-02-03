@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "H-2013.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "15:29:05 06/14/2021 "
+* "netlist" "Inversorvar.txt "
+* "runtitle" "*inversor"
+* time =    0.            
+* temperature =  -25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ inv = 799.9612m       
++ vdd = 800.0000m       
+***   END: Saved Operating Point ***                     
