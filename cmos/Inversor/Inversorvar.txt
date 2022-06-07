@@ -2,10 +2,10 @@
 
 .include 32nm_HPvar.pm.txt
 
-************************.param tensao= X
+.param tensao= 9
 .param wnmos = 70n
 .param wpmos = 140n
-*************************.param len = X
+.param len = 32nm
 
 *.define gauss(nom, rvar, sig) (nom + (nom*rvar)/sig * sgauss(0))
 .param var = gauss(0.5088, 0.1, 3)

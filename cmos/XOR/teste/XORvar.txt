@@ -1,26 +1,15 @@
 *XOR v1
 
-.include 32nm_HPvar.pm.txt
-
-.param tensao= 0.6
-.param wnmos = 70n
-.param wpmos = 140n
-.param len = 32n
+.include 16nm_HP.pm.txt
 
 *.define gauss(nom, rvar, sig) (nom + (nom*rvar)/sig * sgauss(0))
-.param var = gauss(0.5088, 0.1, 3)
-.param varp = gauss(-0.450, 0.1, 3)
+.param var = gauss(0.47965, 0.1, 3)
+.param varp = gauss(-0.43121, 0.1, 3)
 *.param var = 0.5088
 *.param varp = -0.450
 
 .option post = 2
 .option measform = 3
-
-* Declarando Fontes de tensão
-Vvdd vdd gnd tensao
-
-* Declaração das fontes
-Va a gnd PWL (0n 0 10n 0 10.01n tensao 20n tensao 20.01n 0)
 
 *-----------------------------------------------------
 * Circuito XOR_V1
@@ -38,25 +27,35 @@ Mp2 p1_p2 in_b xor vdd PMOS w=64n l=16n
 Mp3 vdd in_a p3_p4 vdd PMOS w=64n l=16n
 Mp4 p3_p4 in_not_b xor vdd PMOS w=64n l=16n
 
-.ends
+.ends xor_v1
+
+* Declarando Fontes de tensão
+Vvdd vdd gnd 0.6
+
+* Declaração das fontes
+Va a gnd PWL (0n 0 10n 0 10.01n 0.6 20n 0.6 20.01n 0)
+Vb b gnd PWL (0n 0 10n 0.6 10.01n 0.6 20n 0 20.01n 0)
+Vc na gnd PWL (0n 0.6 10n 0 10.01n 0 20n 0.6 20.01n 0.6)
+Vd nb gnd PWL (0n 0.6 10n 0 10.01n 0 20n 0.6 20.01n 0.6)
+
+*Instanciacao
+X1 a na b nb vdd gnd res xor_v1
 
 *Capacitância da saída
-Cload inv gnd 1f
+*Cload res gnd 1f
 
 * Simulação Transiente de 20ns com passo de 0.1ns
 .tran 0.01n 40n sweep Monte=100
-*DATA = TAB_1
-*.DATA TAB_1 temp tensao len wnmos wpmos
 
 *T de propagação
-.measure tran tphl trig v(a) val='0.5*tensao' rise=1 targ v(inv) val='0.5*tensao' fall=1
-.measure tran tplh trig v(a) val='0.5*tensao' fall=1 targ v(inv) val='0.5*tensao' rise=1
+*.measure tran tphl trig v(a) val='0.5*0.6' rise=1 targ v(inv) val='0.5*0.6' fall=1
+*.measure tran tplh trig v(a) val='0.5*0.6' fall=1 targ v(inv) val='0.5*0.6' rise=1
 
 *Corrente
-.measure tran Iint INTEG i(vvdd) from=0n to=40n
+*.measure tran Iint INTEG i(vvdd) from=0n to=40n
 
 *Temperatura
-.temp -25 0 25 50 75 100
+*.temp  0 50 100
 
 * Fim do Arquivo SPICE
 .end
