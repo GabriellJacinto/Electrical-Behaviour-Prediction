@@ -1,4 +1,2 @@
-# Scientific Initiation Project (PIC) - Eletrical Behaviour Prediction
-Some data from my undergrad research assistant position, you can also find some jupyter notebooks here.
-
-O jupyter notebook com código mais recente pode ser encontrado na pasta: Inversor/Cmos Data/simu1/Advanced_Algorithms.ipynb
+# Exploratory Data Analysis
+This folder contains extra analysis that assure the reliability of the hspice simulations before we can feed them to the Machine Learning algorithms.
