@@ -1,0 +1,10 @@
+***SIM sem alter, apenas temp
+real    0m28.575s
+user    0m27.775s
+sys     0m1.416s
+
+***SIM com alter
+real    16m58.787s
+user    16m34.840s
+sys     0m23.468s
+

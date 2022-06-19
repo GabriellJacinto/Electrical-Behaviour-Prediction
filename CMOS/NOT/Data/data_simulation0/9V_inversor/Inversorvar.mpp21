@@ -1,0 +1,190 @@
+
+
+##================================================================
+
+Alter : 3  Alter Name: *inversor 
+
+ ****** PrimeSim HSPICE -- S-2021.09-2 linux64 (Oct 28 2021 7326465) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+##================================================================
+*** This file format is subject to change **
+
+Measure File: Inversorvar.mt21.csv
+
+##Variation_Options
+#------------------
+option ignore_global_variation = no
+option ignore_local_variation = no
+option ignore_aging_variation = yes
+option ignore_interconnect_variation = no
+option ignore_spatial_variation = no
+option ignore_variation = no
+option normal_limit     = 20
+option replicates       = 1
+option seed             = 1
+option stream           = 1
+option sensitivity_analysis  = yes
+option output_sigma_value = 1
+option use_agauss_format = yes
+option screening_method = pearson
+option set_missing_value = yes
+option large_scale_mc = no
+option qqnorm_file = yes
+option histogram_file = yes
+option sampling_method = SRS 
+option random_generator =  MCG
+##end_of_Variation_Options
+
+##Summary_Statistics
+#-------------------
+Total number of independent random variables = 2
+Number of independent global random variables = 2
+Number of independent local random variables = 0
+Number of independent aging random variables = 0
+Number of Samples:  1000
+Number of Meas Failure: 0
+Number of Job Abortion: 0
+##sampling_method = SRS|LHS, the first MC sample is nominal value and is excluded in Monte Carlo data mining.
+##end_of_Sumary_Statistics
+
+##Sample_Moments
+#---------------
+#CI: 95% Bootstrap confidence intervals based on 500 re-samples
+                 CI          mean       median     stdDev     mad        skewness   kurtosis   
+                2.5%       -2.838e-15 -2.784e-15  3.408e-16  3.012e-16 -8.467e-01   3.180e+00
+iint                       -2.816e-15 -2.762e-15  3.606e-16  3.272e-16 -6.642e-01   3.792e+00
+                97.5%      -2.794e-15 -2.746e-15  3.811e-16  3.528e-16 -4.407e-01   4.374e+00
+
+                2.5%        1.341e-11  1.337e-11  4.852e-13  4.697e-13 -2.834e-02   2.822e+00
+tphl                        1.344e-11  1.341e-11  5.082e-13  5.064e-13  1.235e-01   3.127e+00
+                97.5%       1.347e-11  1.347e-11  5.316e-13  5.409e-13  2.876e-01   3.394e+00
+
+                2.5%        7.444e-12  7.455e-12  3.549e-13  3.537e-13 -2.038e-01   2.507e+00
+tplh                        7.467e-12  7.489e-12  3.703e-13  3.845e-13 -8.772e-02   2.732e+00
+                97.5%       7.490e-12  7.520e-12  3.856e-13  4.160e-13  4.179e-02   2.949e+00
+
+##end_of_Sample_Moments
+
+##Quantiles
+#----------
+#(Percentile table adds appropriate percentile points as the number of samples increases.)
+#Percentile_Value                                 Equivalent_Sigma_Value 
+#(Q15.86552539,    Q84.134473607)                 (-1, 1)
+#(Q2.275013195,    Q97.724986805)                 (-2, 2)
+#(Q0.134989803,    Q99.865010197)                 (-3, 3)
+#(Q3.167124183e-3, Q99.996832876)                 (-4, 4)
+#(Q2.866515719e-5, Q99.999971335)                 (-5, 5)
+#(Q9.865876450e-8, Q99.999999901)                 (-6, 6)
+                CI              Q1.000000e-02   Q1.000000e-01   Q1.349898e-01   Q1              Q2.275013195    Q5              
+                2.5%            -4.336459e-15   -4.328248e-15   -4.325056e-15   -4.092996e-15   -3.781365e-15   -3.514968e-15   
+iint                            -4.293192e-15   -4.278952e-15   -4.243906e-15   -3.855124e-15   -3.640559e-15   -3.461950e-15   
+                97.5%           -4.280103e-15   -4.096659e-15   -4.044693e-15   -3.733596e-15   -3.538288e-15   -3.402110e-15   
+
+                2.5%            1.110072e-11    1.121937e-11    1.126550e-11    1.204241e-11    1.231191e-11    1.256652e-11    
+tphl                            1.172593e-11    1.193170e-11    1.196063e-11    1.229193e-11    1.246713e-11    1.265030e-11    
+                97.5%           1.191506e-11    1.204164e-11    1.205257e-11    1.234999e-11    1.254115e-11    1.269369e-11    
+
+                2.5%            6.353659e-12    6.363861e-12    6.367828e-12    6.503073e-12    6.633482e-12    6.819820e-12    
+tplh                            6.407422e-12    6.425117e-12    6.440592e-12    6.604328e-12    6.723044e-12    6.859310e-12    
+                97.5%           6.423686e-12    6.502998e-12    6.504072e-12    6.682048e-12    6.809645e-12    6.890527e-12    
+
+                                Q1.586553e+01   Q25             Q75             Q84.134473607   Q95             Q97.724986805   
+                2.5%            -3.206435e-15   -3.071327e-15   -2.586246e-15   -2.501801e-15   -2.349208e-15   -2.248413e-15   
+iint                            -3.179149e-15   -3.026256e-15   -2.569081e-15   -2.477791e-15   -2.323841e-15   -2.207961e-15   
+                97.5%           -3.153499e-15   -2.990242e-15   -2.549187e-15   -2.450163e-15   -2.277906e-15   -2.126630e-15   
+
+                2.5%            1.291151e-11    1.304934e-11    1.373356e-11    1.388281e-11    1.423259e-11    1.443498e-11    
+tphl                            1.295287e-11    1.308796e-11    1.377287e-11    1.393147e-11    1.430140e-11    1.453526e-11    
+                97.5%           1.299477e-11    1.313566e-11    1.380494e-11    1.398050e-11    1.440670e-11    1.465916e-11    
+
+                2.5%            7.045577e-12    7.164044e-12    7.694391e-12    7.819057e-12    8.007107e-12    8.128173e-12    
+tplh                            7.077605e-12    7.191371e-12    7.727342e-12    7.846893e-12    8.054588e-12    8.160928e-12    
+                97.5%           7.112409e-12    7.240967e-12    7.754569e-12    7.878309e-12    8.115621e-12    8.198327e-12    
+
+                                Q99             Q99.865010197   Q99.9           Q99.99          
+                2.5%            -2.149045e-15   -2.013994e-15   -2.009642e-15   -1.976974e-15   
+iint                            -2.077633e-15   -1.986014e-15   -1.977406e-15   -1.972063e-15   
+                97.5%           -2.009949e-15   -1.960106e-15   -1.958908e-15   -1.955827e-15   
+
+                2.5%            1.459916e-11    1.492261e-11    1.492568e-11    1.495794e-11    
+tphl                            1.466959e-11    1.495357e-11    1.495751e-11    1.496278e-11    
+                97.5%           1.492546e-11    1.497455e-11    1.497573e-11    1.497877e-11    
+
+                2.5%            8.182747e-12    8.358520e-12    8.399290e-12    8.613319e-12    
+tplh                            8.288302e-12    8.547469e-12    8.610849e-12    8.641391e-12    
+                97.5%           8.396416e-12    8.709734e-12    8.716581e-12    8.734192e-12    
+
+##end_of_Quantiles
+
+##Extremes_and_Corners
+#---------------------
+                 min             max             minIndex          maxIndex        
+iint            -4.295e-15 -1.971e-15     127            187
+tphl             1.170e-11  1.496e-11     806            128
+tplh             6.405e-12  8.645e-12     512            706
+##end_of_Extremes_and_Corners
+
+##Response_Correlation_Matrix (%)
+#--------------------------------
+                iint   tphl   tplh   
+iint             100.0   62.1   54.3 
+tphl              62.1  100.0  -23.8 
+tplh              54.3  -23.8  100.0 
+##end_of_Response_Correlation_Matrix
+
+##Selective_Simulation:
+#----------------------
+#To simulate corners only:
+Use: ... Monte = list(127, 128, 187, 512, 706, 806)
+##end_of_Selective_Simulation
+
+##Variables_Screened_by_Importance
+#---------------------------------
+Method: Pearson Correlation
+#Print threshold: 95%
+#(elements with EquivVar smaller than 0.05% will not be printed.) 
+#(parameters with ParVar smaller than 0.01% will not be printed.) 
+
+Response: iint
+Global Variation = 3.606e-16,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               pmos            58.2%    58.2%    .          
+.               .               .          .          .     varp     IGNC  0.74 58.2%
+.               nmos            41.8%    100.0%    .          
+.               .               .          .          .     var      IGNC  0.63 41.8%
+
+Response: tphl
+Global Variation = 5.082e-13,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               nmos            100.0%    100.0%    .          
+.               .               .          .          .     var      IGNC  1.00 100.0%
+
+Response: tplh
+Global Variation = 3.703e-13,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               pmos            94.2%    94.2%    .          
+.               .               .          .          .     varp     IGNC  0.92 94.2%
+.               nmos             5.8%    100.0%    .          
+.               .               .          .          .     var      IGNC -0.23  5.8%
+##end_of_Variables_Screened_by_Importance
+
+##Important_Elements_or_Models
+#------------------------------
+nmos, pmos
+##end_of_Important_Elements_or_Models
+##end_of_Instance_Parameters
+
+##Subcircuit_Encoding
+#--------------------
+Key Subckt
+
+##end_of_Subcircuit_Encoding

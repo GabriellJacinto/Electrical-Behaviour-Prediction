@@ -1,0 +1,34 @@
+ ****** PrimeSim HSPICE -- S-2021.09-2 linux64 (Oct 28 2021 7326465) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Histogram plots from data
+#Number of histogram bins
+16
+#Number of Measures
+3
+#Column names, bin centers and bin counts
+iint,iint_count,tphl,tphl_count,tplh,tplh_count
+-2.928373e-15,3,1.053417e-11,2,4.61474e-12,1
+-2.840178e-15,1,1.072944e-11,8,4.736527e-12,1
+-2.751982e-15,1,1.092471e-11,4,4.858315e-12,4
+-2.663786e-15,9,1.111998e-11,5,4.980102e-12,19
+-2.575591e-15,10,1.131524e-11,25,5.10189e-12,36
+-2.487395e-15,15,1.151051e-11,57,5.223678e-12,58
+-2.399199e-15,44,1.170578e-11,101,5.345465e-12,104
+-2.311004e-15,73,1.190105e-11,150,5.467253e-12,153
+-2.222808e-15,92,1.209631e-11,165,5.58904e-12,146
+-2.134613e-15,112,1.229158e-11,141,5.710828e-12,147
+-2.046417e-15,155,1.248685e-11,149,5.832615e-12,153
+-1.958221e-15,186,1.268212e-11,85,5.954403e-12,97
+-1.870026e-15,152,1.287738e-11,56,6.076191e-12,47
+-1.78183e-15,104,1.307265e-11,27,6.197978e-12,20
+-1.693634e-15,35,1.326792e-11,19,6.319766e-12,11
+-1.605439e-15,8,1.346319e-11,6,6.441553e-12,3
+

@@ -1,0 +1,57 @@
+ ****** PrimeSim HSPICE -- S-2021.09-2 linux64 (Oct 28 2021 7326465) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Tail samples and indices
+#Number of Measures
+3
+#Number of samples in each tail
+9
+#Measure names
+iint,tphl,tplh
+#Measure values in left tail
+-4.1076500e-15,6.0716630e-12,4.3770610e-12
+-3.7699930e-15,6.1608320e-12,4.5831740e-12
+-3.7113500e-15,6.1952120e-12,4.6581460e-12
+-3.6984870e-15,6.2025140e-12,4.6829100e-12
+-3.6760230e-15,6.2099730e-12,4.6911860e-12
+-3.6492050e-15,6.2153000e-12,4.7050480e-12
+-3.6439720e-15,6.2716240e-12,4.7540350e-12
+-3.6056470e-15,6.2759400e-12,4.7543550e-12
+-3.5994190e-15,6.2945840e-12,4.7747990e-12
+#Measure values in right tail
+-2.0179690e-15,7.5173240e-12,5.9191980e-12
+-2.0152040e-15,7.5275960e-12,5.9276560e-12
+-2.0102520e-15,7.5346280e-12,5.9348090e-12
+-1.9942290e-15,7.5920870e-12,5.9678770e-12
+-1.9917140e-15,7.6335720e-12,5.9705710e-12
+-1.9877060e-15,7.6336750e-12,5.9982520e-12
+-1.9839740e-15,7.6455820e-12,6.0010530e-12
+-1.9466660e-15,7.6551030e-12,6.0907380e-12
+-1.8247220e-15,7.6583170e-12,6.1097420e-12
+#Index values in left tail
+806,806,127
+782,837,238
+20,782,777
+543,118,788
+440,314,183
+226,232,52
+127,20,979
+314,136,658
+837,485,532
+#Index values in right tail
+959,977,937
+839,630,747
+892,810,630
+800,887,420
+484,703,959
+187,439,187
+524,800,6
+630,715,675
+439,128,706
