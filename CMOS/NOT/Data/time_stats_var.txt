@@ -8,3 +8,8 @@ real    16m58.787s
 user    16m34.840s
 sys     0m23.468s
 
+***SIM para 1 MC sem alter, sem temp
+real    0m0.088s
+user    0m0.069s
+sys     0m0.022s
+
