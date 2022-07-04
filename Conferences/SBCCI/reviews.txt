@@ -1,0 +1,145 @@
+
+```
+============================================================================
+SBCCI 2022 Reviews for Submission #115
+============================================================================
+
+Title: Exploring Machine Learning Algorithms for Electrical Behavior Prediction: The CMOS Inverter Case Study
+Authors: Gabriel L. Jacinto, Lucas Yuki Imamura, Mateus Grellert and Cristina Meinhardt
+
+============================================================================
+                            REVIEWER #1
+============================================================================
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                      Relevance to SBCCI: Yes
+            Technical Contribution (1-6): 4
+                       Readability (1-6): 5
+Methods, Algorithms and Proofs Clearly Described (1-6): 4
+               Novelty of Solution (1-6): 4
+           Experiments and Results (1-6): 3
+                           Overall (1-6): 4
+               Confidence of the Referee: Average
+
+Detailed Comments
+---------------------------------------------------------------------------
+The main objective of the work is to evaluate the machine learning regression algorithm as an alternative to exhaustive electrical simulations in the cell characterization project. The work explored four regression-based methods such Multiple Linear Regression (MLR), Support Vector Regression (SVR), Decision Tree (DT), and Random Forest (RF). The work proposes a workflow for characterizing an Inverter cell as a first case study developing a fast predict characterization tool based on machine learning techniques. The paper is well written, and it describes well the main ideas. The results demonstrate that Decision Tree and Random Forest are the best algorithms for delay and energy prediction. The results are promising for other more complex circuit experiments. The authors could add a Table with the time computation of the different stages of the algorithms and compare them with traditional techniques to demonstrate the efficiency of using ML still more.
+---------------------------------------------------------------------------
+
+============================================================================
+                            REVIEWER #2
+============================================================================
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                      Relevance to SBCCI: Yes
+            Technical Contribution (1-6): 4
+                       Readability (1-6): 5
+Methods, Algorithms and Proofs Clearly Described (1-6): 5
+               Novelty of Solution (1-6): 2
+           Experiments and Results (1-6): 3
+                           Overall (1-6): 4
+               Confidence of the Referee: High
+
+Detailed Comments
+---------------------------------------------------------------------------
+The paper is interesting and suitable for SBCCI.
+
+There are other key works in literature that use machine learning in variability domain, and also several related papers (to be checked/cited) in security domain in which power side-channel analysis and hardware Trojan attacks are deeply explored via machine learning.
+
+Which would the hypotheses be if employing the same methods in a set of inverters or other gates?
+
+A subsection synthesizing and comparing the different results and list possible hypotheses for one to be better than other algorithm would be useful. The introduction and conclusion could be optimized to fit it.
+
+Different ambitions are declared in introduction, for example related to failure/variability. The suggestion is to focus on one, optimizing and improving the end of the introduction for the specific contributions of this paper: evaluation of different models in case-study gate for predicting energy and propagation time variations.
+---------------------------------------------------------------------------
+
+============================================================================
+                            REVIEWER #3
+============================================================================
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                      Relevance to SBCCI: Yes
+            Technical Contribution (1-6): 3
+                       Readability (1-6): 5
+Methods, Algorithms and Proofs Clearly Described (1-6): 3
+               Novelty of Solution (1-6): 3
+           Experiments and Results (1-6): 3
+                           Overall (1-6): 3
+               Confidence of the Referee: High
+
+Detailed Comments
+---------------------------------------------------------------------------
+This paper proposes a machine learning based method for evaluating the electrical behavior prediction of a bulk CMOS inverter. The background of the machine learning technique adopted as well as the evaluation metric is presented in Section II. The proposed workflow is described in Section IIIm together with the training process. Other logic gates and circuits are not treated. It is not clear how expensive is to provide similar training and modeling of other circuits with more than one input. How the proposed method scaled to bigger circuits. Is the obtained results useful for standard cell libraries? In which task of design flow such a kind of information is used? Such an information should be quite useful for readers.
+---------------------------------------------------------------------------
+
+============================================================================
+                            REVIEWER #4
+============================================================================
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                      Relevance to SBCCI: Yes
+            Technical Contribution (1-6): 4
+                       Readability (1-6): 5
+Methods, Algorithms and Proofs Clearly Described (1-6): 5
+               Novelty of Solution (1-6): 5
+           Experiments and Results (1-6): 6
+                           Overall (1-6): 5
+               Confidence of the Referee: Average
+
+Detailed Comments
+---------------------------------------------------------------------------
+The paper proposes to explore four machine learning regression algorithms as alternatives to predict the electrical behavior of logic cells. The paper is interesting, well written, and presents a sufficient explanation of the algorithms and methodology applied, as well as consistent results. There are some typos in the text that should be corrected, such as the word "inversor" in the conclusions, the acronym RMSE in the Table III description and title, the point instead of a comma in the range at subsection B. Normalization. There is no value y in Eq. 2.
+At the end of the introduction, the authors say they indicate "the best and worst algorithm candidate for electrical characterization prediction of combinational cells". You should be more careful when doing this extrapolation for an entire class of circuits, full of much more complex cells, by analyzing just a simple inverter.
+---------------------------------------------------------------------------
+
+============================================================================
+                            REVIEWER #5
+============================================================================
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                      Relevance to SBCCI: Yes
+            Technical Contribution (1-6): 3
+                       Readability (1-6): 5
+Methods, Algorithms and Proofs Clearly Described (1-6): 3
+               Novelty of Solution (1-6): 4
+           Experiments and Results (1-6): 3
+                           Overall (1-6): 3
+               Confidence of the Referee: High
+
+Detailed Comments
+---------------------------------------------------------------------------
+This is an interesting piece of work going in the direction of choosing good machine learning methods in the quest to accelerate with the least compromise of accuracy in the characterization of manufacturing processes. In my view, this is a study that is still in the process of maturation, although it shows good potential. Regarding the methodology and results, it was not clear to me how the author mixed parameters of such heterogeneous technologies in the same model.
+---------------------------------------------------------------------------
+
+============================================================================
+                            REVIEWER #6
+============================================================================
+
+---------------------------------------------------------------------------
+Reviewer's Scores
+---------------------------------------------------------------------------
+                      Relevance to SBCCI: Yes
+            Technical Contribution (1-6): 3
+                       Readability (1-6): 6
+Methods, Algorithms and Proofs Clearly Described (1-6): 6
+               Novelty of Solution (1-6): 4
+           Experiments and Results (1-6): 2
+                           Overall (1-6): 3
+               Confidence of the Referee: High
+
+Detailed Comments
+---------------------------------------------------------------------------
+This paper proposes using machine learning for cell characterization using CMOS inverter case study.
+
+The paper is well written and the methods are explained well. However more extensive experimental results are needed to show the efficacy of the method. The results section is focused on comparing different ML methods which is unnecessary. The authors can focus on the performance of best method and its success in prediction of actual values achieved by electrical simulation. This comparison is only given by providing RSME of normalized metrics and density graphs. That would be better to provide some examples of actual values for metrics and the predictions by the proposed method. Also since the main goal of the work is reducing the process time, runtime information of the inference vs electrical simulation should be provided.
+```
