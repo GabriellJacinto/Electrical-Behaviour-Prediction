@@ -2,10 +2,10 @@
 Here you can find the papers, slides and other materials related to publications. Below there are video links of events that required recorded presentations.
 We also have a website where you can test our trained models: [_WIP_]
 
-##Computer On The Beach
+## Computer On The Beach
 _WIP_
 
-##SIC (2022)
+## SIC (2022)
 https://repositorio.ufsc.br/handle/123456789/239433
 
 ## SBCCI (2022)
