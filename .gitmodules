@@ -1,3 +1,6 @@
 [submodule "WebApp"]
 	path = WebApp
 	url = https://github.com/GabriellJacinto/Web-App-Electrical-Behaviour-Prediction.git
+[submodule "SimulationManager"]
+	path = SimulationManager
+	url = https://github.com/GabriellJacinto/Electrical-Simulation-Experiment-Manager.git
