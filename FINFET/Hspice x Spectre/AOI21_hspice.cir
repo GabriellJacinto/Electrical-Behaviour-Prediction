@@ -1,0 +1,62 @@
+*****************************************
+* Developed by Alexandra Zimpeck        *
+* Complex cell: AOI21                   *
+* Extracted: yes                        *
+* Number of fins: 3                     *  
+*****************************************
+
+* Importações
+.include "7nm_TT_var.pm"
+.include "PhD_AOI21_3FIN_1.pex.netlist.pex"
+
+* Configurações iniciais
+.option post=2
+
+* Declaração de variáveis
+.param vcc = 0.7
+.param num_fins = 3
+
+* Declaração das fontes
+Vvdd vdd gnd vcc
+Vgnd gnd gnd 0
+
+* Declaração das entradas
+Va a gnd pwl(0 0 1n 0 1.01n vcc 2n vcc 2.01n 0 8n 0 8.01n vcc 9n vcc 9.01n 0 10n 0 10.01n vcc 11n vcc 11.01n 0 12n 0 12.01n vcc 13n vcc 13.01n 0 14n 0)
+Vb b gnd pwl(0 0 3n 0 3.01n  vcc 4n vcc 4.01n 0 5n 0 5.01n vcc 11n vcc 11.01n 0 14n 0)
+Vc c gnd pwl(0 vcc 5n vcc 5.01n 0 6n 0 6.01n vcc 7n vcc 7.01n 0 14n 0)
+
+* Subcircuito
+.subckt PhD_AOI21_3FIN_1  GND VDD B C A OUT
+MM3 N_OUT_MM3_d N_B_MM3_g noxref_8 GND NMOS_RVT L=2e-08 W=8.1e-08 NFIN=num_fins $X=0.175 $Y=-0.351
+MM4 noxref_8    N_C_MM4_g GND      GND NMOS_RVT L=2e-08 W=8.1e-08 NFIN=num_fins $X=0.229 $Y=-0.351
+MM5 N_OUT_MM5_d N_A_MM5_g GND      GND NMOS_RVT L=2e-08 W=8.1e-08 NFIN=num_fins $X=0.283 $Y=-0.351
+MM1 noxref_6    N_B_MM1_g VDD      VDD PMOS_RVT L=2e-08 W=8.1e-08 NFIN=num_fins $X=0.175 $Y=-0.216
+MM2 noxref_6    N_C_MM2_g VDD      VDD PMOS_RVT L=2e-08 W=8.1e-08 NFIN=num_fins $X=0.229 $Y=-0.216
+MM0 N_OUT_MM0_d N_A_MM0_g noxref_6 VDD PMOS_RVT L=2e-08 W=8.1e-08 NFIN=num_fins $X=0.283 $Y=-0.216
+.include "PhD_AOI21_3FIN_1.pex.netlist.PHD_AOI21_3FIN_1.pxi"
+.ENDS
+
+* Chamada ao subcircuito
+X1  gnd vdd  b c a out PhD_AOI21_3FIN_1
+
+* Tempo de simulação
+.tran 1p 14n 
+
+* Medições de atrasos
+.MEASURE TRAN td_hl_a_b0c1 TRIG v(aaa) VAL='vcc*0.5' FALL=1 TARG v(out) VAL='vcc*0.5' RISE=1
+.MEASURE TRAN td_lh_a_b0c1 TRIG v(aaa) VAL='vcc*0.5' RISE=1 TARG v(out) VAL='vcc*0.5' FALL=1
+.MEASURE TRAN td_hl_a_b1c0 TRIG v(aaa) VAL='vcc*0.5' FALL=2 TARG v(out) VAL='vcc*0.5' RISE=4
+.MEASURE TRAN td_lh_a_b1c0 TRIG v(aaa) VAL='vcc*0.5' RISE=2 TARG v(out) VAL='vcc*0.5' FALL=4
+.MEASURE TRAN td_hl_a_b0c0 TRIG v(aaa) VAL='vcc*0.5' FALL=4 TARG v(out) VAL='vcc*0.5' RISE=6
+.MEASURE TRAN td_lh_a_b0c0 TRIG v(aaa) VAL='vcc*0.5' RISE=4 TARG v(out) VAL='vcc*0.5' FALL=6
+.MEASURE TRAN td_hl_b_a0c1 TRIG v(bbb) VAL='vcc*0.5' FALL=1 TARG v(out) VAL='vcc*0.5' RISE=2
+.MEASURE TRAN td_lh_b_a0c1 TRIG v(bbb) VAL='vcc*0.5' RISE=1 TARG v(out) VAL='vcc*0.5' FALL=2
+.MEASURE TRAN td_hl_c_a0b1 TRIG v(ccc) VAL='vcc*0.5' FALL=2 TARG v(out) VAL='vcc*0.5' RISE=3
+.MEASURE TRAN td_lh_c_a0b1 TRIG v(ccc) VAL='vcc*0.5' RISE=1 TARG v(out) VAL='vcc*0.5' FALL=3
+
+* Medição de consumo
+.measure tran potencia_media avg P(vvdd) from = 0n to=14n
+
+* Finalização de arquivo
+.end
+

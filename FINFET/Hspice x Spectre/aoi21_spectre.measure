@@ -1,0 +1,23 @@
+Exported variables from results directory:  ./decouplingcell_aoi21_close.raw/
+
+date               :  8:50:33 PM, Fri Apr 29, 2022
+design             :  *****************************************
+simulator          :  spectre
+version            :  15.1.0.679.isr14
+
+
+Measurement Name   :  transient1
+Analysis Type      :  tran
+td_hl_a_b0c0    = 2.19292e-12 
+td_hl_a_b0c1    = 2.23898e-12 
+td_hl_a_b1c0    = 2.30143e-12 
+td_hl_b_a0c1    = 4.3807e-12 
+td_hl_c_a0b1    = 4.55752e-12 
+td_lh_a_b0c0    = 3.00626e-12 
+td_lh_a_b0c1    = 3.42554e-12 
+td_lh_a_b1c0    = 5.18226e-12 
+td_lh_b_a0c1    = 4.52415e-12 
+td_lh_c_a0b1    = 5.95415e-12 
+total_power     = -5.57742e-08 
+
+
