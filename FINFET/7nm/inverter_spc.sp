@@ -50,6 +50,9 @@ VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 
 *simulation options (you can modify this. Post is needed for .tran analysis)
 .OPTION Post Brief NoMod probe measout
+.option post = 2
+.option measform = 3
+
 
 *measurement
 .measure tran t_fall_delay TRIG V(Y) VAL = 0.35 TD = 1n
