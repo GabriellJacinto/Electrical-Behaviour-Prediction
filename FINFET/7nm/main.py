@@ -15,7 +15,7 @@ config = {
     'nmosL': "4e-08",
     "temp": [-25.0, 0.0, 25.0, 50.0, 75.0, 100.0],
     "inp_file": "Scripts/inverter_spc.sp", 
-    "copy": ["Scripts/32nm_HPvar.pm"]
+    "copy": ["Scripts/holddoor.txt"]
 }
 
 ex = ExperimentManager("FET_INVERTER", var, HspiceRunner.run, config)

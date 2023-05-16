@@ -1,0 +1,9 @@
+.temp -25.0 0.0 25.0 50.0 75.0 100.0
+.param LoadCap = 1f
+.param vdd = 0.7
+.param number_fin = 3
+.param passo = 0.01n
+.param t_pulse = 10n
+.param dl = 0.1p
+.param pmosL = 4e-08
+.param nmosL = 4e-08
