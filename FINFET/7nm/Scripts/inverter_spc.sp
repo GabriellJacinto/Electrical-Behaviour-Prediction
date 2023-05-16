@@ -8,9 +8,6 @@
 *define parameters 
 .param vdd=0.7 
 .param vss=0 
-.param fin_height=18n 
-.param fin_width=7n 
-.param lg=11n 
 .param number_fin = 1
 .param p_fin = 7*number_fin
 .param n_fin = 6*number_fin
@@ -20,8 +17,8 @@ VSS Gnd 0 'vss'
 
 
 *add transistors  
-mp1 Z Y X Y pfet L=lg NFIN=p_fin
-mn1 Z Y 0 Y nfet L=lg NFIN=n_fin
+mp1 Z Y X Y pmos_rvt NFIN=number_fin
+mn1 Z Y 0 Y nmos_rvt NFIN=number_fin
 
 *add cap
 Cz Z Gnd 'LoadCap'
@@ -31,8 +28,6 @@ VX X 0 'vdd'
 
 VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 
-*define the initial condition of V(Z)
-.IC V(Z)='vdd'
 
 *do transient analysis
 	*syntax: .TRAN tiner tstop START=stval 
@@ -50,9 +45,6 @@ VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 
 *simulation options (you can modify this. Post is needed for .tran analysis)
 .OPTION Post Brief NoMod probe measout
-.option post = 2
-.option measform = 3
-
 
 *measurement
 .measure tran t_fall_delay TRIG V(Y) VAL = 0.35 TD = 1n

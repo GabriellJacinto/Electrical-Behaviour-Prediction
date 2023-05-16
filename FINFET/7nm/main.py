@@ -4,7 +4,7 @@ import HspiceRunner
 var = {
     'LoadCap': ["1f", "4f", "8f", "16f"],
     'vdd': [0.6, 0.7, 0.8, 0.9],
-    'number_fin': [2,3],
+    'number_fin': [2,3], # 3 a 5 devido ao congestionamento
 }
 
 config = {
