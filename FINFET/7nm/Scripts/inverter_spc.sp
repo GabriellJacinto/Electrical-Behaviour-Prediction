@@ -1,20 +1,18 @@
 *************************
 *  inveter
-*************************
+************************* 
 
-.include './hp7nfet.pm'
-.include './hp7pfet.pm'
+.include './FET_TT.pm'
+.include var.sp
 
 *define parameters 
-.param vdd=0.7 
-.param vss=0 
-.param number_fin = 1
-.param p_fin = 7*number_fin
-.param n_fin = 6*number_fin
-.param LoadCap = 1f
+.param nfet_phig = gauss(4.372,0.03,3)
+.param pfet_phig = gauss(4.8108,0.03,3)
+
+
+.global nfet_phig pfet_phig
 
 VSS Gnd 0 'vss'
-
 
 *add transistors  
 mp1 Z Y X Y pmos_rvt NFIN=number_fin
@@ -28,13 +26,12 @@ VX X 0 'vdd'
 
 VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 
-
 *do transient analysis
 	*syntax: .TRAN tiner tstop START=stval 
 	*tiner - time step
 	*tstop - final time
 	*stval - initial time (default 0)
-.tran 0.01n 10n 
+.tran 0.01n 10n sweep Monte=50
 
 *print the V(Z) to waveform file *.tr0
 .print V(Z)
@@ -44,7 +41,9 @@ VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 .print power(Cz)
 
 *simulation options (you can modify this. Post is needed for .tran analysis)
-.OPTION Post Brief NoMod probe measout
+*.OPTION Post Brief NoMod probe measout
+.option post = 1
+*.option measform = 3
 
 *measurement
 .measure tran t_fall_delay TRIG V(Y) VAL = 0.35 TD = 1n
