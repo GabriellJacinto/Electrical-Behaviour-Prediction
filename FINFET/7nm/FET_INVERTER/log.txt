@@ -1,0 +1,673 @@
+INFO:root:Starting experiment
+INFO:root:Running 0
+INFO:root:Running 1
+INFO:root:Running 2
+INFO:root:starting FET_INVERTER/results/0
+INFO:root:Running 3
+INFO:root:starting FET_INVERTER/results/1
+INFO:root:Running 4
+INFO:root:Running 5
+INFO:root:Running 6
+INFO:root:Running 7
+INFO:root:Running 8
+INFO:root:Running 9
+INFO:root:starting FET_INVERTER/results/2
+INFO:root:Running 10
+INFO:root:starting FET_INVERTER/results/4
+INFO:root:starting FET_INVERTER/results/3
+INFO:root:starting FET_INVERTER/results/5
+INFO:root:Running 11
+INFO:root:Running 12
+INFO:root:Running 13
+INFO:root:Running 14
+INFO:root:Running 15
+INFO:root:Running 16
+INFO:root:Running 17
+INFO:root:Running 18
+INFO:root:Running 19
+INFO:root:Running 20
+INFO:root:Running 21
+INFO:root:Running 22
+INFO:root:Running 23
+INFO:root:Running 24
+INFO:root:Running 25
+INFO:root:Running 26
+INFO:root:Running 27
+INFO:root:Running 28
+INFO:root:Running 29
+INFO:root:Running 30
+INFO:root:Running 31
+INFO:root:Running 32
+INFO:root:Running 33
+INFO:root:Running 34
+INFO:root:Running 35
+INFO:root:Running 36
+INFO:root:Running 37
+INFO:root:Running 38
+INFO:root:Running 39
+INFO:root:Running 40
+INFO:root:Running 41
+INFO:root:Running 42
+INFO:root:Running 43
+INFO:root:Running 44
+INFO:root:Running 45
+INFO:root:Running 46
+INFO:root:Running 47
+INFO:root:starting FET_INVERTER/results/6
+INFO:root:4 ended
+INFO:root:starting FET_INVERTER/results/8
+INFO:root:starting FET_INVERTER/results/7
+INFO:root:starting FET_INVERTER/results/9
+INFO:root:starting FET_INVERTER/results/10
+INFO:root:starting FET_INVERTER/results/11
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5670 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:0 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05d25e0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:5 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5df0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:3 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5a90 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:2 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e56a0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:1 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5760 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/12
+INFO:root:9 ended
+INFO:root:starting FET_INVERTER/results/13
+INFO:root:starting FET_INVERTER/results/14
+INFO:root:starting FET_INVERTER/results/15
+INFO:root:starting FET_INVERTER/results/16
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5640 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:6 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5fa0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:7 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e55e0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:8 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05701f0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:11 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5c40 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/17
+INFO:root:10 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05e5d00 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/18
+INFO:root:14 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570940 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/19
+INFO:root:16 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570be0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/20
+INFO:root:13 ended
+INFO:root:starting FET_INVERTER/results/21
+INFO:root:starting FET_INVERTER/results/22
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05707f0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:12 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570310 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:15 ended
+INFO:root:starting FET_INVERTER/results/23
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570a90 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:17 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570d30 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:18 ended
+INFO:root:starting FET_INVERTER/results/24
+INFO:root:starting FET_INVERTER/results/25
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570e80 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:22 ended
+INFO:root:starting FET_INVERTER/results/26
+INFO:root:starting FET_INVERTER/results/27
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579400 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:20 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570430 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:23 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579550 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/28
+INFO:root:19 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0570fd0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/29
+INFO:root:21 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579220 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/30
+INFO:root:26 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579940 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/31
+INFO:root:29 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579d30 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/32
+INFO:root:25 ended
+INFO:root:starting FET_INVERTER/results/33
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05797f0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:24 ended
+INFO:root:starting FET_INVERTER/results/34
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d05796a0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/35
+INFO:root:27 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579a90 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:28 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579be0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:32 ended
+INFO:root:starting FET_INVERTER/results/36
+INFO:root:starting FET_INVERTER/results/37
+INFO:root:starting FET_INVERTER/results/38
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579f10 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:33 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057f220 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:30 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579e80 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:35 ended
+INFO:root:starting FET_INVERTER/results/39
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057f550 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/40
+INFO:root:34 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057f400 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/41
+INFO:root:31 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0579fd0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/42
+INFO:root:38 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057f940 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/43
+INFO:root:41 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057fd30 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:37 ended
+INFO:root:starting FET_INVERTER/results/44
+INFO:root:starting FET_INVERTER/results/45
+INFO:root:starting FET_INVERTER/results/46
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057f7f0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:39 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057fa90 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:36 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057f6a0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:starting FET_INVERTER/results/47
+INFO:root:40 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057fbe0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:42 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057fe80 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:45 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0586220 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:43 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057ffd0 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:46 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0586400 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:44 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d057ff10 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
+INFO:root:47 ended
+ERROR:concurrent.futures:exception calling callback for <Future at 0x7f81d0586550 state=finished returned NoneType>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 328, in _invoke_callbacks
+    callback(self)
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 86, in <lambda>
+    f.add_done_callback(lambda fut, i=idx: self.__callback(fut, i))
+  File "/home/glima/Electrical-Behaviour-Prediction/FINFET/7nm/ExperimentManager.py", line 96, in __callback
+    self.__completed.append(tmp_df)
+  File "/home/glima/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'append'
