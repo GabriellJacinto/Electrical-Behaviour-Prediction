@@ -1,4 +1,0 @@
-.temp -25.0 0.0 25.0 50.0 75.0 100.0
-.param LoadCap = 4f
-.param vdd = 0.7
-.param number_fin = 3
