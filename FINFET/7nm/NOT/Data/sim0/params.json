@@ -10,7 +10,7 @@
         "number_fins": 1,	
         "temp": [-25.0, 0.0, 25.0, 50.0, 75.0, 100.0], 
         "inp_file": "inverter.sp", 
-        "copy": ["FET_TT.pm"],
+        "copy": ["../lib/FET_TT.pm"],
         "cmd": "hspice"
     }
 }
