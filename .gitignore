@@ -5,3 +5,4 @@ __pycache__/
 a.txt
 extra/
 simResults_*/
+*.raw/
