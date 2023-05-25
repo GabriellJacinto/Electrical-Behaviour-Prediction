@@ -1,6 +1,6 @@
-Exported variables from results directory:  ./teste2/inverter.raw/
+Exported variables from results directory:  ./teste_spectre/inverter.raw/
 
-date               :  3:28:12 PM, Thur May 25, 2023
+date               :  7:02:21 PM, Thur May 25, 2023
 design             :  *****************************************
 simulator          :  spectre
 version            :  19.1.0.578.isr15
@@ -315,6 +315,312 @@ iint               temp       @ 25
                    montecarlo_iteration @ 49           =  -7.41877e-16     
 iint               temp       @ 25        
                    montecarlo_iteration @ 50           =  -7.45895e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 0            =  -7.43857e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 1            =  -7.48368e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 2            =  -7.47363e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 3            =  -7.5249e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 4            =  -7.46566e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 5            =  -7.37872e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 6            =  -8.36101e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 7            =  -7.451e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 8            =  -7.4605e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 9            =  -7.44648e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 10           =  -7.53062e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 11           =  -7.53575e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 12           =  -7.73567e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 13           =  -7.38365e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 14           =  -7.69612e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 15           =  -7.43447e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 16           =  -7.42602e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 17           =  -7.99656e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 18           =  -8.5442e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 19           =  -7.62203e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 20           =  -7.49929e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 21           =  -7.37586e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 22           =  -7.48875e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 23           =  -7.41938e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 24           =  -7.39841e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 25           =  -7.36363e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 26           =  -7.39888e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 27           =  -7.45229e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 28           =  -7.52774e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 29           =  -7.46191e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 30           =  -7.43974e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 31           =  -7.40762e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 32           =  -7.4576e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 33           =  -7.43941e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 34           =  -7.4278e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 35           =  -7.44481e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 36           =  -7.43719e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 37           =  -7.63343e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 38           =  -7.41646e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 39           =  -7.41266e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 40           =  -7.4e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 41           =  -7.43407e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 42           =  -7.60707e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 43           =  -7.4323e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 44           =  -7.43529e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 45           =  -7.41979e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 46           =  -7.50998e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 47           =  -7.48241e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 48           =  -7.4514e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 49           =  -7.44058e-16     
+iint               temp       @ 50        
+                   montecarlo_iteration @ 50           =  -7.50264e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 0            =  -7.47228e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 1            =  -7.54876e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 2            =  -7.63369e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 3            =  -7.6964e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 4            =  -7.556e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 5            =  -7.44308e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 6            =  -9.50181e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 7            =  -7.46018e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 8            =  -7.60384e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 9            =  -7.47285e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 10           =  -7.65492e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 11           =  -7.64072e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 12           =  -8.21167e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 13           =  -7.39178e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 14           =  -7.90071e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 15           =  -7.47839e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 16           =  -7.55507e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 17           =  -8.7126e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 18           =  -9.83305e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 19           =  -8.00331e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 20           =  -7.60598e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 21           =  -7.38109e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 22           =  -7.50502e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 23           =  -7.52319e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 24           =  -7.51373e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 25           =  -7.42597e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 26           =  -7.47858e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 27           =  -7.48237e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 28           =  -7.72747e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 29           =  -7.62036e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 30           =  -7.4134e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 31           =  -7.47043e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 32           =  -7.5964e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 33           =  -7.41955e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 34           =  -7.45034e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 35           =  -7.48445e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 36           =  -7.46345e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 37           =  -7.92301e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 38           =  -7.5441e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 39           =  -7.54246e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 40           =  -7.50666e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 41           =  -7.43053e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 42           =  -7.90899e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 43           =  -7.46233e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 44           =  -7.51094e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 45           =  -7.47647e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 46           =  -7.66796e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 47           =  -7.62636e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 48           =  -7.48231e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 49           =  -7.44984e-16     
+iint               temp       @ 75        
+                   montecarlo_iteration @ 50           =  -7.59789e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 0            =  -7.57914e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 1            =  -7.79024e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 2            =  -7.97651e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 3            =  -8.02052e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 4            =  -7.73446e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 5            =  -7.48273e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 6            =  -1.15987e-15     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 7            =  -7.55809e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 8            =  -7.83771e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 9            =  -7.63177e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 10           =  -7.93931e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 11           =  -8.00106e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 12           =  -9.07084e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 13           =  -7.40733e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 14           =  -8.52651e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 15           =  -7.54073e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 16           =  -7.72436e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 17           =  -1.01416e-15     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 18           =  -1.22982e-15     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 19           =  -8.6102e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 20           =  -7.8549e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 21           =  -7.45097e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 22           =  -7.59176e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 23           =  -7.64653e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 24           =  -7.53199e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 25           =  -7.40529e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 26           =  -7.58804e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 27           =  -7.55395e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 28           =  -8.13567e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 29           =  -7.94743e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 30           =  -7.44809e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 31           =  -7.54732e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 32           =  -7.89323e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 33           =  -7.45489e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 34           =  -7.54285e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 35           =  -7.60685e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 36           =  -7.63739e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 37           =  -8.42782e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 38           =  -7.72472e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 39           =  -7.59804e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 40           =  -7.5325e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 41           =  -7.57802e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 42           =  -8.41132e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 43           =  -7.5597e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 44           =  -7.65877e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 45           =  -7.63498e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 46           =  -7.96577e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 47           =  -7.89605e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 48           =  -7.55149e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 49           =  -7.60266e-16     
+iint               temp       @ 100       
+                   montecarlo_iteration @ 50           =  -7.87967e-16     
 total_power        temp       @ -25       
                    montecarlo_iteration @ 0            =  -1.30624e-08     
 total_power        temp       @ -25       
@@ -621,6 +927,312 @@ total_power        temp       @ 25
                    montecarlo_iteration @ 49           =  -1.29828e-08     
 total_power        temp       @ 25        
                    montecarlo_iteration @ 50           =  -1.30532e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 0            =  -1.30175e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 1            =  -1.30964e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 2            =  -1.30788e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 3            =  -1.31686e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 4            =  -1.30649e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 5            =  -1.29128e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 6            =  -1.46318e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 7            =  -1.30392e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 8            =  -1.30559e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 9            =  -1.30313e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 10           =  -1.31786e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 11           =  -1.31876e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 12           =  -1.35374e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 13           =  -1.29214e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 14           =  -1.34682e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 15           =  -1.30103e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 16           =  -1.29955e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 17           =  -1.3994e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 18           =  -1.49523e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 19           =  -1.33385e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 20           =  -1.31238e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 21           =  -1.29078e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 22           =  -1.31053e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 23           =  -1.29839e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 24           =  -1.29472e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 25           =  -1.28864e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 26           =  -1.2948e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 27           =  -1.30415e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 28           =  -1.31735e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 29           =  -1.30583e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 30           =  -1.30195e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 31           =  -1.29633e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 32           =  -1.30508e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 33           =  -1.3019e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 34           =  -1.29987e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 35           =  -1.30284e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 36           =  -1.30151e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 37           =  -1.33585e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 38           =  -1.29788e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 39           =  -1.29722e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 40           =  -1.295e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 41           =  -1.30096e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 42           =  -1.33124e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 43           =  -1.30065e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 44           =  -1.30118e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 45           =  -1.29846e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 46           =  -1.31425e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 47           =  -1.30942e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 48           =  -1.30399e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 49           =  -1.3021e-08     
+total_power        temp       @ 50        
+                   montecarlo_iteration @ 50           =  -1.31296e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 0            =  -1.30765e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 1            =  -1.32103e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 2            =  -1.3359e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 3            =  -1.34687e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 4            =  -1.3223e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 5            =  -1.30254e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 6            =  -1.66282e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 7            =  -1.30553e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 8            =  -1.33067e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 9            =  -1.30775e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 10           =  -1.33961e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 11           =  -1.33713e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 12           =  -1.43704e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 13           =  -1.29356e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 14           =  -1.38262e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 15           =  -1.30872e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 16           =  -1.32214e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 17           =  -1.52471e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 18           =  -1.72078e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 19           =  -1.40058e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 20           =  -1.33105e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 21           =  -1.29169e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 22           =  -1.31338e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 23           =  -1.31656e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 24           =  -1.3149e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 25           =  -1.29955e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 26           =  -1.30875e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 27           =  -1.30942e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 28           =  -1.35231e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 29           =  -1.33356e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 30           =  -1.29734e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 31           =  -1.30732e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 32           =  -1.32937e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 33           =  -1.29842e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 34           =  -1.30381e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 35           =  -1.30978e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 36           =  -1.3061e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 37           =  -1.38653e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 38           =  -1.32022e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 39           =  -1.31993e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 40           =  -1.31367e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 41           =  -1.30034e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 42           =  -1.38407e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 43           =  -1.30591e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 44           =  -1.31441e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 45           =  -1.30838e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 46           =  -1.34189e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 47           =  -1.33461e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 48           =  -1.3094e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 49           =  -1.30372e-08     
+total_power        temp       @ 75        
+                   montecarlo_iteration @ 50           =  -1.32963e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 0            =  -1.32635e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 1            =  -1.36329e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 2            =  -1.39589e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 3            =  -1.40359e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 4            =  -1.35353e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 5            =  -1.30948e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 6            =  -2.02978e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 7            =  -1.32267e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 8            =  -1.3716e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 9            =  -1.33556e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 10           =  -1.38938e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 11           =  -1.40019e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 12           =  -1.5874e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 13           =  -1.29628e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 14           =  -1.49214e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 15           =  -1.31963e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 16           =  -1.35176e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 17           =  -1.77477e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 18           =  -2.15219e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 19           =  -1.50678e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 20           =  -1.37461e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 21           =  -1.30392e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 22           =  -1.32856e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 23           =  -1.33814e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 24           =  -1.3181e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 25           =  -1.29593e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 26           =  -1.32791e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 27           =  -1.32194e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 28           =  -1.42374e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 29           =  -1.3908e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 30           =  -1.30342e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 31           =  -1.32078e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 32           =  -1.38132e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 33           =  -1.30461e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 34           =  -1.32e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 35           =  -1.3312e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 36           =  -1.33654e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 37           =  -1.47487e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 38           =  -1.35183e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 39           =  -1.32966e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 40           =  -1.31819e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 41           =  -1.32615e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 42           =  -1.47198e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 43           =  -1.32295e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 44           =  -1.34029e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 45           =  -1.33612e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 46           =  -1.39401e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 47           =  -1.38181e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 48           =  -1.32151e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 49           =  -1.33046e-08     
+total_power        temp       @ 100       
+                   montecarlo_iteration @ 50           =  -1.37894e-08     
 tphl               temp       @ -25       
                    montecarlo_iteration @ 0            =  1.27381e-11     
 tphl               temp       @ -25       
@@ -927,6 +1539,312 @@ tphl               temp       @ 25
                    montecarlo_iteration @ 49           =  1.3517e-11     
 tphl               temp       @ 25        
                    montecarlo_iteration @ 50           =  1.25111e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 0            =  1.32415e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 1            =  1.31883e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 2            =  1.32221e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 3            =  1.20211e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 4            =  1.45881e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 5            =  1.37829e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 6            =  1.18999e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 7            =  1.45699e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 8            =  1.23963e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 9            =  1.89738e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 10           =  1.16462e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 11           =  1.55731e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 12           =  1.20262e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 13           =  1.52285e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 14           =  1.17285e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 15           =  1.34661e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 16           =  1.21729e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 17           =  1.40851e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 18           =  1.07463e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 19           =  1.12597e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 20           =  1.18821e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 21           =  1.47951e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 22           =  1.2867e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 23           =  1.28219e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 24           =  1.37505e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 25           =  1.96863e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 26           =  1.25964e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 27           =  1.37388e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 28           =  1.18282e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 29           =  1.38424e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 30           =  1.70672e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 31           =  1.51845e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 32           =  1.35507e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 33           =  1.62893e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 34           =  1.48316e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 35           =  1.29683e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 36           =  1.32496e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 37           =  1.11961e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 38           =  1.22165e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 39           =  1.29998e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 40           =  1.3814e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 41           =  1.42383e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 42           =  1.11317e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 43           =  1.35034e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 44           =  1.31134e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 45           =  1.41879e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 46           =  1.2153e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 47           =  1.28609e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 48           =  1.37262e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 49           =  1.36602e-11     
+tphl               temp       @ 50        
+                   montecarlo_iteration @ 50           =  1.26356e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 0            =  1.33722e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 1            =  1.32809e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 2            =  1.33137e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 3            =  1.21469e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 4            =  1.47173e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 5            =  1.39081e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 6            =  1.20307e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 7            =  1.46978e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 8            =  1.25242e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 9            =  1.90704e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 10           =  1.1766e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 11           =  1.57022e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 12           =  1.21554e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 13           =  1.5353e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 14           =  1.18543e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 15           =  1.35883e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 16           =  1.22951e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 17           =  1.4219e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 18           =  1.08676e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 19           =  1.13812e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 20           =  1.20047e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 21           =  1.492e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 22           =  1.29955e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 23           =  1.29517e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 24           =  1.38764e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 25           =  1.97675e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 26           =  1.27209e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 27           =  1.38655e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 28           =  1.19531e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 29           =  1.39721e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 30           =  1.71824e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 31           =  1.53116e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 32           =  1.36797e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 33           =  1.64098e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 34           =  1.49594e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 35           =  1.30708e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 36           =  1.33801e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 37           =  1.13158e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 38           =  1.234e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 39           =  1.30957e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 40           =  1.39401e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 41           =  1.43649e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 42           =  1.12498e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 43           =  1.36584e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 44           =  1.32092e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 45           =  1.43155e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 46           =  1.22796e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 47           =  1.29993e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 48           =  1.38526e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 49           =  1.37862e-11     
+tphl               temp       @ 75        
+                   montecarlo_iteration @ 50           =  1.2766e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 0            =  1.34496e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 1            =  1.34014e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 2            =  1.3436e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 3            =  1.22602e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 4            =  1.48305e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 5            =  1.4051e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 6            =  1.21502e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 7            =  1.48097e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 8            =  1.26392e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 9            =  1.91429e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 10           =  1.18735e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 11           =  1.58135e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 12           =  1.22724e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 13           =  1.54597e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 14           =  1.19679e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 15           =  1.36584e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 16           =  1.24045e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 17           =  1.43392e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 18           =  1.09779e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 19           =  1.14908e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 20           =  1.21152e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 21           =  1.50282e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 22           =  1.31099e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 23           =  1.30675e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 24           =  1.40197e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 25           =  1.98623e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 26           =  1.28318e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 27           =  1.40096e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 28           =  1.20657e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 29           =  1.40874e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 30           =  1.72766e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 31           =  1.54214e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 32           =  1.37717e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 33           =  1.65106e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 34           =  1.50706e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 35           =  1.31871e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 36           =  1.34572e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 37           =  1.14234e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 38           =  1.24505e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 39           =  1.32112e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 40           =  1.40847e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 41           =  1.44762e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 42           =  1.13565e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 43           =  1.3722e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 44           =  1.33272e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 45           =  1.44277e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 46           =  1.23935e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 47           =  1.3118e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 48           =  1.39964e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 49           =  1.39284e-11     
+tphl               temp       @ 100       
+                   montecarlo_iteration @ 50           =  1.28829e-11     
 tplh               temp       @ -25       
                    montecarlo_iteration @ 0            =  1.47833e-11     
 tplh               temp       @ -25       
@@ -1233,6 +2151,312 @@ tplh               temp       @ 25
                    montecarlo_iteration @ 49           =  1.577e-11     
 tplh               temp       @ 25        
                    montecarlo_iteration @ 50           =  1.39016e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 0            =  1.58924e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 1            =  1.42448e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 2            =  1.35741e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 3            =  1.43202e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 4            =  1.41108e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 5            =  1.78715e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 6            =  1.16949e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 7            =  1.51338e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 8            =  1.45418e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 9            =  1.44526e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 10           =  1.81796e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 11           =  1.33091e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 12           =  1.26111e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 13           =  2.04557e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 14           =  1.32646e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 15           =  2.02969e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 16           =  2.00153e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 17           =  1.19408e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 18           =  1.18532e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 19           =  1.37757e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 20           =  1.59419e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 21           =  1.99092e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 22           =  1.73933e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 23           =  1.56491e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 24           =  1.67252e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 25           =  2.07242e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 26           =  2.11998e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 27           =  1.57563e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 28           =  1.41207e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 29           =  1.35255e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 30           =  2.0122e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 31           =  1.54671e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 32           =  1.36977e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 33           =  2.01575e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 34           =  1.5173e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 35           =  1.59039e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 36           =  1.61703e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 37           =  1.48243e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 38           =  1.79394e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 39           =  1.668e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 40           =  1.662e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 41           =  1.6309e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 42           =  1.54193e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 43           =  1.58646e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 44           =  1.53461e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 45           =  1.53575e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 46           =  1.43769e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 47           =  1.40217e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 48           =  1.58057e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 49           =  1.60898e-11     
+tplh               temp       @ 50        
+                   montecarlo_iteration @ 50           =  1.41774e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 0            =  1.6164e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 1            =  1.45181e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 2            =  1.38384e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 3            =  1.4597e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 4            =  1.43801e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 5            =  1.81297e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 6            =  1.19351e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 7            =  1.5393e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 8            =  1.48207e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 9            =  1.47219e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 10           =  1.8438e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 11           =  1.35668e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 12           =  1.28617e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 13           =  2.06636e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 14           =  1.35277e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 15           =  2.05133e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 16           =  2.02744e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 17           =  1.21813e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 18           =  1.20994e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 19           =  1.40473e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 20           =  1.62159e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 21           =  2.01321e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 22           =  1.76576e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 23           =  1.59214e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 24           =  1.69929e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 25           =  2.09323e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 26           =  2.13997e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 27           =  1.60272e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 28           =  1.43867e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 29           =  1.37881e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 30           =  2.03397e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 31           =  1.57365e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 32           =  1.39631e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 33           =  2.03745e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 34           =  1.5431e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 35           =  1.61759e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 36           =  1.64412e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 37           =  1.50793e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 38           =  1.8254e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 39           =  1.69492e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 40           =  1.68882e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 41           =  1.6578e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 42           =  1.56954e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 43           =  1.61357e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 44           =  1.56178e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 45           =  1.56278e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 46           =  1.46542e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 47           =  1.42926e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 48           =  1.60767e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 49           =  1.63603e-11     
+tplh               temp       @ 75        
+                   montecarlo_iteration @ 50           =  1.44508e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 0            =  1.63876e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 1            =  1.47456e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 2            =  1.40594e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 3            =  1.48278e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 4            =  1.46041e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 5            =  1.83349e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 6            =  1.21367e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 7            =  1.56143e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 8            =  1.50524e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 9            =  1.4945e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 10           =  1.86429e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 11           =  1.3782e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 12           =  1.30742e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 13           =  2.08165e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 14           =  1.37489e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 15           =  2.0672e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 16           =  2.04326e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 17           =  1.23824e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 18           =  1.2307e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 19           =  1.42756e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 20           =  1.6442e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 21           =  2.02979e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 22           =  1.78702e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 23           =  1.61466e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 24           =  1.72105e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 25           =  2.10806e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 26           =  2.15396e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 27           =  1.62506e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 28           =  1.46162e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 29           =  1.40076e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 30           =  2.04996e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 31           =  1.59476e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 32           =  1.41848e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 33           =  2.05339e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 34           =  1.56527e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 35           =  1.63999e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 36           =  1.66634e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 37           =  1.53168e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 38           =  1.84064e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 39           =  1.71684e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 40           =  1.71066e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 41           =  1.67981e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 42           =  1.59065e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 43           =  1.63591e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 44           =  1.58313e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 45           =  1.58416e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 46           =  1.4885e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 47           =  1.45187e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 48           =  1.62999e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 49           =  1.65823e-11     
+tplh               temp       @ 100       
+                   montecarlo_iteration @ 50           =  1.46788e-11     
 
 
 
