@@ -5,21 +5,20 @@
 * Number of fins: 3                     *  
 *****************************************
 
-* Imports
-include '../lib/FET_TT.pm'
-include var.sp
-
-* Configurações iniciais
+* Simulation configuration
 simulator lang=spectre
 name options save=all
 global 0
 
-*define parameters 
+* Imports
+include "../lib/FET_TT.pm"
+include "var.sp"
+* Parameters 
 parameters nfet_phig = 4.372
 parameters pfet_phig = 4.8108
 parameters sigma=3 variation=0.03
 
-* Inserção da variabilidade de processo
+* Process variability
 statistics 
 {
 	process
@@ -29,55 +28,38 @@ statistics
 	}
 }
 
-VSS Gnd 0 'vss'
+* Transistors  
+*M<instance> source gate drain bulk(gnd or vdd)  tecnology  fins
+Mp1             X    Y     Z     X               pmos_rvt nfin=number_fin
+Mn1             Z    Y     0     0               nmos_rvt nfin=number_fin
 
-*add transistors  
-mp1 Z Y X Y pmos_rvt NFIN=number_fin
-mn1 Z Y 0 Y nmos_rvt NFIN=number_fin
+* Capacitance
+capz (Z 0) capacitor c=LoadCap
 
-*add cap
-Cz Z Gnd 'LoadCap'
+* Voltage source
+VX (X 0) vsource dc=vdd type=dc 
 
-*add voltage source
-VX X 0 'vdd'
+* Input voltage source
+VY (Y 0) vsource type=pwl wave=[0n 0 10n 0 10.01n 0.7 20n 0.7 20.01n 0]
 
-VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
+mc1 montecarlo variations=process seed=1234 numruns=50 donominal=yes
+{
+* COMO ESPECIFICAR COMO EM HSPICE ".tran 0.01n 10n sweep Monte=50"? ACHEI ISSO(?):
+*.step param=nfet_phig start=0 stop=10n step=0.01n
+*.step param=pfet_phig start=0 stop=10n step=0.01n
 
-*do transient analysis
-	*syntax: .TRAN tiner tstop START=stval 
-	*tiner - time step
-	*tstop - final time
-	*stval - initial time (default 0)
-.tran 0.01n 10n sweep Monte=50
-
-*print the V(Z) to waveform file *.tr0
-.print V(Z)
-.print V(X)
-.print V(Y)
-.print i(Cz)
-.print power(Cz)
-
-*simulation options (you can modify this. Post is needed for .tran analysis)
-*.OPTION Post Brief NoMod probe measout
-*.option post = 1
-.option post = 2
-.option measform = 3
+	tran1 tran start=0 stop=40n method=trap
+}
 
 simulator lang=spice
-*measurement
-.measure tran t_fall_delay TRIG V(Y) VAL = 0.35 TD = 1n
-+ RISE = 2 TARG V(Z) VAL = 0.35 FALL = 2
-
-.measure tran t_rise_delay TRIG V(Y) VAL = 0.35 TD = 1n
-+ FALL = 2 TARG V(Z) VAL = 0.35 RISE = 2
-
-.measure tran t_fall_time TRIG V(Z) VAL = 0.56 TD = 1n
-+ FALL = 2 TARG V(Z) VAL = 0.14 FALL = 2
-
-.measure tran t_rise_time TRIG V(Z) VAL = 0.14 TD = 1n
-+ RISE = 2 TARG V(Z) VAL = 0.56 RISE = 2
-
+*.wrdata process_info.csv process
+*.printstat process > process_info.txt
+* Propagation Time
+.measure tran tphl trig v(Y) val='0.5*vdd' rise=1 targ v(Z) val='0.5*vdd' fall=1
+.measure tran tplh trig v(Y) val='0.5*vdd' fall=1 targ v(Z) val='0.5*vdd' rise=1
+*Power
 .measure tran total_power avg P(VX) from=0n to=40n
+*Energy
 .measure tran Iint INTEG i(VX) from=0n to=40n
 
 .end

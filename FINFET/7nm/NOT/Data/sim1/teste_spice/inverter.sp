@@ -10,7 +10,7 @@
 .include var.sp
 
 * Configurações iniciais
-simulator lang=spectre
+simulator lang=hspice
 
 *define parameters 
 .param nfet_phig = gauss(4.372,0.03,3)
