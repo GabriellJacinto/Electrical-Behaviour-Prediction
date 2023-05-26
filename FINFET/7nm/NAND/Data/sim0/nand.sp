@@ -5,6 +5,8 @@
 * Number of fins: 3                     *  
 *****************************************
 
+simulator lang=hspice
+.include "config.cir"
 
 * Simulation configuration
 simulator lang=spectre
@@ -12,8 +14,7 @@ name options save=all
 global 0
 
 * Imports
-include "../lib/FET_TT.pm"
-include "var.sp"
+include "FET_TT.pm"
 
 * Parameters 
 parameters nfet_phig = 4.372
@@ -52,7 +53,7 @@ VcontroleB (inpB 0) vsource type=pwl wave=[0n Vin (3*t_pulse) Vin (3*t_pulse+dl)
 
 *.ic v(out)= 0
 
-mc1 montecarlo variations=process seed=1234 numruns=10 donominal=yes saveprocessparams=yes
+mc1 montecarlo variations=process seed=1234 numruns=100 donominal=yes saveprocessparams=yes
 {
 * COMO ESPECIFICAR COMO EM HSPICE ".tran 0.01n 10n sweep Monte=50"? ACHEI ISSO(?):
 *.step param=nfet_phig start=0 stop=10n step=0.01n
