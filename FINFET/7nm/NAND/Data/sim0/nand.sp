@@ -1,7 +1,7 @@
 *****************************************
 * Developed by Gabriel L. Jacinto       *
 * Cell: NAND2                           *
-* Extracted: no                         *
+* Extracted: yes                        *
 * Number of fins: 3                     *  
 *****************************************
 
@@ -59,7 +59,7 @@ mc1 montecarlo variations=process seed=1234 numruns=100 donominal=yes saveproces
 *.step param=nfet_phig start=0 stop=10n step=0.01n
 *.step param=pfet_phig start=0 stop=10n step=0.01n
 
-	tran1 tran start=0 stop=50n method=trap
+	tran1 tran start=0 stop=50n method=trap step=0.01n
 }
 
 simulator lang=spice
