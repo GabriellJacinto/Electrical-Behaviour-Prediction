@@ -1,0 +1,40 @@
+Exported variables from results directory:  ./fcout_5.raw/
+
+date               :  5:14:32 PM, Thur May 11, 2023
+design             :  *****************************************
+simulator          :  spectre
+version            :  15.1.0.679.isr14
+
+
+Measurement Name   :  transient1
+Analysis Type      :  tran
+iint_vvcc       = -2.25772e-15 
+iint_vvccbloco  = -9.63587e-15 
+iint_vvccin     = -2.22792e-15 
+iint_vvccout    = -1.73496e-15 
+potencia_max_vcc = 6.15137e-06 
+potencia_max_vccbloco = 1.8528e-05 
+potencia_max_vccin = 3.85072e-06 
+potencia_max_vccout = 1.68298e-05 
+potencia_media_vcc = -2.19501e-08 
+potencia_media_vccbloco = -9.36821e-08 
+potencia_media_vccin = -2.16604e-08 
+potencia_media_vccout = -1.68677e-08 
+potencia_min_vcc = -2.71318e-05 
+potencia_min_vccbloco = -2.88486e-05 
+potencia_min_vccin = -2.58288e-05 
+potencia_min_vccout = -2.29376e-05 
+tp_hl_0_1_b     = 1.67976e-11 
+tp_hl_0_a_1     = 1.72354e-11 
+tp_hl_1_0_b     = 1.80101e-11 
+tp_hl_1_a_0     = 1.72709e-11 
+tp_hl_cin_0_1   = 1.63505e-11 
+tp_hl_cin_1_0   = 1.59434e-11 
+tp_lh_0_1_b     = 1.69214e-11 
+tp_lh_0_a_1     = 1.59977e-11 
+tp_lh_1_0_b     = 1.55386e-11 
+tp_lh_1_a_0     = 1.58962e-11 
+tp_lh_cin_0_1   = 1.49776e-11 
+tp_lh_cin_1_0   = 1.53139e-11 
+
+

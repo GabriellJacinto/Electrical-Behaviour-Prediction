@@ -1,0 +1,186 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.679.isr14 32bit -- 13 Dec 2016
+Copyright (C) 1989-2016 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: cinthia.schneider   Host: pgmicro02   HostID: 368FA91F   PID: 39885
+Memory  available: 59.5931 GB  physical: 134.9838 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1200.0] ( 20 ),  1 [1200.0] ( 21 ),  2 [1200.0] ( 22 )
+                 3 [1200.0] ( 23 ),  4 [1200.0] ( 24 ),  5 [1700.0] ( 25 )
+                 6 [1200.0] ( 26 ),  7 [1200.0] ( 27 ),  8 [1200.0] ( 28 )
+                 9 [1200.0] ( 29 )
+        1:      10 [1200.0] ( 30 ), 11 [1200.0] ( 31 ), 12 [1200.0] ( 32 )
+                13 [1200.0] ( 33 ), 14 [1200.0] ( 34 ), 15 [1200.0] ( 35 )
+                16 [1200.0] ( 36 ), 17 [1200.0] ( 37 ), 18 [1200.0] ( 38 )
+                19 [1200.0] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 7.8 %, 6.7 %, 6.4 %
+Hyperthreading is enabled
+
+
+Simulating `sum_f3.sp' on pgmicro02 at 11:21:34 AM, Thur Apr 20, 2023 (process id: 39885).
+Current working directory: /home/ic/cinthia.schneider/Desktop/testes de variabilidade/fins soma
+Command line:
+    /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/bin/spectre sum_f3.sp
+
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/ic/cinthia.schneider/Desktop/testes de variabilidade/fins soma/sum_f3.sp
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /home/ic/cinthia.schneider/Desktop/testes de variabilidade/fins soma/7nm_FF.pm
+Reading file:  /home/ic/cinthia.schneider/Desktop/testes de variabilidade/fins soma/LIBRARY_FinFET_traditional.cir
+
+Warning from spectre during circuit read-in.
+    WARNING (SFE-676): "sum_f3.sp" 19: Dubious Spice comment encountered. Spice comments which have white space characters before the asterisk (*) may not be treated as comments in a future release.
+
+Time for NDB Parsing: CPU = 146.433 ms, elapsed = 276.956 ms.
+Time accumulated: CPU = 193.175 ms, elapsed = 276.974 ms.
+Peak resident memory used = 28.3 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (11.1 %)      1 (51.9 %)      2 (14.8 %)      4 (11.1 %)
+                 5 (61.5 %)      6 (7.4 %)       7 (10.7 %)      8 (7.7 %)
+                 9 (42.3 %)     10 (11.5 %)     11 (7.4 %)      12 (11.1 %)
+                13 (7.4 %)      14 (10.7 %)     15 (14.3 %)     16 (7.4 %)
+                17 (11.1 %)     18 (30.8 %)     19 (22.2 %)     21 (7.4 %)
+                22 (3.7 %)      23 (7.1 %)      24 (7.4 %)      25 (7.4 %)
+                26 (3.7 %)      27 (26.9 %)     28 (7.1 %)      29 (19.2 %)
+                30 (3.7 %)      31 (7.7 %)      32 (7.1 %)      33 (3.7 %)
+                34 (3.7 %)      35 (3.7 %)      38 (3.6 %)      
+        Other   
+Reading link:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 31.892 ms, elapsed = 35.3398 ms.
+Time accumulated: CPU = 225.479 ms, elapsed = 312.771 ms.
+Peak resident memory used = 32.2 Mbytes.
+
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/lib/mdl/libSpectreEH_sh.so ...
+Time for EDB Visiting: CPU = 92.384 ms, elapsed = 98.845 ms.
+Time accumulated: CPU = 318.242 ms, elapsed = 412.032 ms.
+Peak resident memory used = 38.8 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+        Further occurrences of this warning will be suppressed.
+
+
+Global user options:
+               save = all
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 34
+            bsimcmg 44    
+            vsource 13    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 40    
+               save 0     
+
+
+Notice from spectre.
+    17 warnings suppressed.
+
+Time for parsing: CPU = 5.292 ms, elapsed = 7.9689 ms.
+Time accumulated: CPU = 323.984 ms, elapsed = 420.497 ms.
+Peak resident memory used = 40 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*******************************************************
+Transient Analysis `transient1': time = (0 s -> 150 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient1', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X1.k) = -307.678 uV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 11.83 ms, elapsed = 12.2321 ms.
+
+Opening the PSF file sum_f3.raw/transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 150 ns
+    step = 150 ps
+    maxstep = 3 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   12      (current)
+                 save   34      (voltage)
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             3729
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (8.7 %)       1 (9.8 %)       2 (6.8 %)       3 (9.4 %)
+                 4 (11.6 %)      5 (8.3 %)       6 (73.2 %)      7 (12.5 %)
+                 8 (14.8 %)      9 (54.8 %)     10 (12.0 %)     11 (8.7 %)
+                12 (7.2 %)      13 (7.2 %)      14 (6.0 %)      15 (6.3 %)
+                16 (26.7 %)     17 (7.5 %)      18 (7.6 %)      19 (7.1 %)
+                22 (1.2 %)      27 (3.6 %)      29 (11.2 %)     31 (3.7 %)
+                32 (1.3 %)      35 (1.5 %)      36 (2.1 %)      39 (1.3 %)
+        Other   
+Initial condition solution time: CPU = 11.926 ms, elapsed = 12.351 ms.
+Intrinsic tran analysis time:    CPU = 6.22392 s, elapsed = 6.25426 s.
+Total time required for tran analysis `transient1': CPU = 6.24443 s, elapsed = 6.2794 s.
+Time accumulated: CPU = 6.57385 s, elapsed = 6.72167 s.
+Peak resident memory used = 43.3 Mbytes.
+
+
+Aggregate audit (11:21:41 AM, Thur Apr 20, 2023):
+Time used: CPU = 6.59 s, elapsed = 6.74 s, util. = 97.8%.
+Time spent in licensing: elapsed = 25.4 ms.
+Peak memory used = 43.7 Mbytes.
+Simulation started at: 11:21:34 AM, Thur Apr 20, 2023, ended at: 11:21:41 AM, Thur Apr 20, 2023, with elapsed time (wall clock): 6.74 s.
+spectre completes with 0 errors, 6 warnings, and 2 notices.

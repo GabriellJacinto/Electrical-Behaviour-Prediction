@@ -1,0 +1,40 @@
+Exported variables from results directory:  ./tcout_8.raw/
+
+date               :  4:51:03 PM, Thur May 11, 2023
+design             :  *****************************************
+simulator          :  spectre
+version            :  15.1.0.679.isr14
+
+
+Measurement Name   :  transient1
+Analysis Type      :  tran
+iint_vvcc       = -2.74291e-15 
+iint_vvccbloco  = -1.16883e-14 
+iint_vvccin     = -2.73218e-15 
+iint_vvccout    = -2.97506e-15 
+potencia_max_vcc = 8.30253e-06 
+potencia_max_vccbloco = 2.76268e-05 
+potencia_max_vccin = 5.34624e-06 
+potencia_max_vccout = 2.52801e-05 
+potencia_media_vcc = -3.04768e-08 
+potencia_media_vccbloco = -1.2987e-07 
+potencia_media_vccin = -3.03576e-08 
+potencia_media_vccout = -3.30562e-08 
+potencia_min_vcc = -4.08824e-05 
+potencia_min_vccbloco = -4.49987e-05 
+potencia_min_vccin = -3.88712e-05 
+potencia_min_vccout = -3.94084e-05 
+tp_hl_0_1_b     = 1.44803e-11 
+tp_hl_0_a_1     = 1.49381e-11 
+tp_hl_1_0_b     = 1.56886e-11 
+tp_hl_1_a_0     = 1.49432e-11 
+tp_hl_cin_0_1   = 1.42876e-11 
+tp_hl_cin_1_0   = 1.38296e-11 
+tp_lh_0_1_b     = 1.50461e-11 
+tp_lh_0_a_1     = 1.4021e-11 
+tp_lh_1_0_b     = 1.36197e-11 
+tp_lh_1_a_0     = 1.39582e-11 
+tp_lh_cin_0_1   = 1.3286e-11 
+tp_lh_cin_1_0   = 1.36699e-11 
+
+

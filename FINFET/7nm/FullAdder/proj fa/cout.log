@@ -1,0 +1,130 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.679.isr14 32bit -- 13 Dec 2016
+Copyright (C) 1989-2016 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: cinthia.schneider   Host: pgmicro02   HostID: 368FA91F   PID: 17059
+Memory  available: 62.5374 GB  physical: 134.9838 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1200.0] ( 20 ),  1 [1200.0] ( 21 ),  2 [1200.0] ( 22 )
+                 3 [1200.0] ( 23 ),  4 [1200.0] ( 24 ),  5 [1200.0] ( 25 )
+                 6 [1200.0] ( 26 ),  7 [1200.0] ( 27 ),  8 [1200.0] ( 28 )
+                 9 [1700.0] ( 29 )
+        1:      10 [1200.0] ( 30 ), 11 [1200.0] ( 31 ), 12 [1200.0] ( 32 )
+                13 [1200.0] ( 33 ), 14 [1200.0] ( 34 ), 15 [1200.0] ( 35 )
+                16 [1200.0] ( 36 ), 17 [1200.0] ( 37 ), 18 [1200.0] ( 38 )
+                19 [1200.0] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 6.2 %, 7.2 %, 7.3 %
+Hyperthreading is enabled
+
+
+Simulating `cout.sp' on pgmicro02 at 4:05:58 PM, Tue Apr 18, 2023 (process id: 17059).
+Current working directory: /home/ic/cinthia.schneider/Desktop/proj fa
+Command line:
+    /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/bin/spectre cout.sp
+
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/ic/cinthia.schneider/Desktop/proj fa/cout.sp
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /home/ic/cinthia.schneider/Desktop/proj fa/7nm_FF.pm
+Reading file:  /home/ic/cinthia.schneider/Desktop/proj fa/LIBRARY_FinFET_traditional.cir
+
+Warning from spectre during circuit read-in.
+    WARNING (SFE-676): "cout.sp" 18: Dubious Spice comment encountered. Spice comments which have white space characters before the asterisk (*) may not be treated as comments in a future release.
+
+Time for NDB Parsing: CPU = 151.924 ms, elapsed = 288.367 ms.
+Time accumulated: CPU = 199.427 ms, elapsed = 288.384 ms.
+Peak resident memory used = 28.3 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (7.7 %)       1 (7.1 %)       2 (3.7 %)       3 (37.0 %)
+                 4 (37.0 %)      5 (10.7 %)      6 (10.7 %)      7 (66.7 %)
+                 8 (17.9 %)      9 (42.3 %)     10 (7.4 %)      11 (10.7 %)
+                12 (10.3 %)     13 (18.5 %)     14 (14.3 %)     15 (10.7 %)
+                16 (10.7 %)     17 (10.7 %)     18 (11.1 %)     19 (7.4 %)
+                20 (7.1 %)      21 (7.1 %)      22 (7.4 %)      24 (3.6 %)
+                25 (15.4 %)     26 (21.4 %)     27 (3.6 %)      28 (7.1 %)
+                29 (3.4 %)      30 (3.6 %)      31 (7.1 %)      32 (6.9 %)
+                33 (3.6 %)      36 (3.6 %)      37 (3.4 %)      39 (3.4 %)
+        Other   
+Reading link:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 34.482 ms, elapsed = 45.4261 ms.
+Time accumulated: CPU = 234.334 ms, elapsed = 334.297 ms.
+Peak resident memory used = 32.2 Mbytes.
+
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/lib/mdl/libSpectreEH_sh.so ...
+Time for EDB Visiting: CPU = 89.098 ms, elapsed = 93.9858 ms.
+Time accumulated: CPU = 323.813 ms, elapsed = 428.699 ms.
+Peak resident memory used = 38.8 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+    WARNING: nmos_rvt: Model parameter EOTACC=1.00e-10 should not be less than 1.00e-10
+        Further occurrences of this warning will be suppressed.
+
+
+Global user options:
+               save = all
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 34
+            bsimcmg 44    
+            vsource 13    
+
+Analysis and control statement inventory:
+         montecarlo 1     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 28    
+               save 0     
+
+
+Notice from spectre.
+    17 warnings suppressed.
+
+Time for parsing: CPU = 5.156 ms, elapsed = 13.4618 ms.
+Time accumulated: CPU = 329.386 ms, elapsed = 442.636 ms.
+Peak resident memory used = 40 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+************************************************
+MDL montecarlo analysis: iteration = (1 -> 100).
+************************************************
+
+Warning from spectre.
+    WARNING (MDL-1530): No process data found for MDL montecarlo run.
+
+
+Aggregate audit (4:05:59 PM, Tue Apr 18, 2023):
+Time used: CPU = 335 ms, elapsed = 465 ms, util. = 72.1%.
+Time spent in licensing: elapsed = 29.8 ms, percentage of total = 6.41%.
+Peak memory used = 40.8 Mbytes.
+Simulation started at: 4:05:58 PM, Tue Apr 18, 2023, ended at: 4:05:59 PM, Tue Apr 18, 2023, with elapsed time (wall clock): 465 ms.
+spectre completes with 0 errors, 7 warnings, and 1 notice.

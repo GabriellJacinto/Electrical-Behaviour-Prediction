@@ -1,0 +1,97 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.679.isr14 32bit -- 13 Dec 2016
+Copyright (C) 1989-2016 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: cinthia.schneider   Host: pgmicro02   HostID: 368FA91F   PID: 41474
+Memory  available: 46.9150 GB  physical: 134.9838 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1285.0] ( 20 ),  1 [1200.0] ( 21 ),  2 [1200.0] ( 22 )
+                 3 [1200.0] ( 23 ),  4 [1200.0] ( 24 ),  5 [1200.0] ( 25 )
+                 6 [1200.0] ( 26 ),  7 [1200.0] ( 27 ),  8 [1200.0] ( 28 )
+                 9 [1200.0] ( 29 )
+        1:      10 [1200.0] ( 30 ), 11 [1200.0] ( 31 ), 12 [1200.0] ( 32 )
+                13 [1200.0] ( 33 ), 14 [1530.0] ( 34 ), 15 [1625.0] ( 35 )
+                16 [1200.0] ( 36 ), 17 [1200.0] ( 37 ), 18 [1200.0] ( 38 )
+                19 [1200.0] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 11.4 %, 15.7 %, 16.2 %
+Hyperthreading is enabled
+
+
+Simulating `soma_temp.sp' on pgmicro02 at 3:33:27 PM, Tue Apr 25, 2023 (process id: 41474).
+Current working directory: /home/ic/cinthia.schneider/Desktop/testes de variabilidade/temperatura
+Command line:
+    /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/bin/spectre  \
+        soma_temp.sp
+
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/ic/cinthia.schneider/Desktop/testes de variabilidade/temperatura/soma_temp.sp
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /home/ic/cinthia.schneider/Desktop/testes de variabilidade/temperatura/7nm_FF.pm
+Reading file:  /home/ic/cinthia.schneider/Desktop/testes de variabilidade/temperatura/LIBRARY_FinFET_traditional.cir
+
+Warning from spectre during circuit read-in.
+    WARNING (SFE-676): "soma_temp.sp" 18: Dubious Spice comment encountered. Spice comments which have white space characters before the asterisk (*) may not be treated as comments in a future release.
+
+Time for NDB Parsing: CPU = 136.211 ms, elapsed = 396.824 ms.
+Time accumulated: CPU = 177.99 ms, elapsed = 396.843 ms.
+Peak resident memory used = 28.3 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (24.3 %)      1 (5.0 %)       2 (5.1 %)       3 (10.5 %)
+                 4 (2.6 %)       5 (5.1 %)       6 (5.1 %)       7 (56.1 %)
+                 8 (7.7 %)       9 (5.1 %)      10 (77.5 %)     11 (7.9 %)
+                12 (12.8 %)     13 (12.5 %)     14 (10.0 %)     15 (31.6 %)
+                16 (15.4 %)     17 (5.3 %)      18 (10.3 %)     19 (7.9 %)
+                20 (10.5 %)     21 (53.8 %)     22 (7.5 %)      23 (5.1 %)
+                25 (5.0 %)      26 (2.6 %)      29 (25.8 %)     30 (5.1 %)
+                31 (5.1 %)      32 (5.3 %)      34 (2.6 %)      37 (7.5 %)
+        Other   
+Reading link:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/rhel5/MMSIM_15.10/tools.lnx86/spectre/etc/ahdl/constants.vams
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-30): "soma_temp.sp" 76: swp: `param' is not a valid parameter for an instance of `nport'.  Ignored.
+    WARNING (SFE-30): "soma_temp.sp" 76: swp: `values' is not a valid parameter for an instance of `nport'.  Ignored.
+    WARNING (SFE-30): "soma_temp.sp" 78: tran1: `method' is not a valid parameter for an instance of `mtline'.  Ignored.
+
+Time for Elaboration: CPU = 33.299 ms, elapsed = 64.3821 ms.
+Time accumulated: CPU = 211.692 ms, elapsed = 461.682 ms.
+Peak resident memory used = 32.1 Mbytes.
+
+
+Error found by spectre during hierarchy flattening.
+    ERROR (CMI-2116): swp: Too few terminals given (1 < 2).
+Warning from spectre during circuit read-in.
+    WARNING:     Analysis tran for .measure TP_LH_Cin_0_0 not found, ignoring
+    WARNING:     Analysis tran for .measure TP_HL_Cin_0_0 not found, ignoring
+    WARNING:     Analysis tran for .measure TP_HL_Cin_0_1 not found, ignoring
+    WARNING:     Analysis tran for .measure TP_LH_Cin_0_1 not found, ignoring
+    WARNING:     Analysis tran for .measure TP_HL_Cin_1_0 not found, ignoring
+        Further occurrences of this warning will be suppressed.
+
+Time for EDB Visiting: CPU = 4.303 ms, elapsed = 4.40097 ms.
+Time accumulated: CPU = 216.369 ms, elapsed = 466.5 ms.
+Peak resident memory used = 32.9 Mbytes.
+
+
+Aggregate audit (3:33:27 PM, Tue Apr 25, 2023):
+Time used: CPU = 217 ms, elapsed = 467 ms, util. = 46.5%.
+Time spent in licensing: elapsed = 31.4 ms, percentage of total = 6.73%.
+Peak memory used = 33.1 Mbytes.
+Simulation started at: 3:33:27 PM, Tue Apr 25, 2023, ended at: 3:33:27 PM, Tue Apr 25, 2023, with elapsed time (wall clock): 467 ms.
+spectre completes with 1 error, 44 warnings, and 0 notices.
+spectre terminated prematurely due to fatal error.
