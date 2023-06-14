@@ -6,7 +6,7 @@
 *****************************************
 
 simulator lang=hspice
-.include "var.sp"
+.include "config.cir"
 
 * Simulation configuration
 simulator lang=spectre
@@ -14,7 +14,7 @@ name options save=all
 global 0
 
 * Imports
-include "../lib/FET_TT.pm"
+include "FET_TT.pm"
 
 * Parameters 
 parameters nfet_phig = 4.372
@@ -45,7 +45,7 @@ VX (X 0) vsource dc=vdd type=dc
 * Input voltage source
 VY (Y 0) vsource type=pwl wave=[0n 0 10n 0 10.01n 0.7 20n 0.7 20.01n 0]
 
-mc1 montecarlo variations=process seed=1234 numruns=100 donominal=no saveprocessparams=yes
+mc1 montecarlo variations=process seed=1234 numruns=100 donominal=no saveprocessparams=yes savemismatchparams=yes
 {
 	tran1 tran start=0 stop=40n method=trap step=0.01n
 }
