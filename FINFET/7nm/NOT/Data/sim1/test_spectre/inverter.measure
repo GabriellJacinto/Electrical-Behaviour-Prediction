@@ -1,6 +1,6 @@
-Exported variables from results directory:  ./teste_spectre/inverter.raw/
+Exported variables from results directory:  ./test_spectre/inverter.raw/
 
-date               :  3:44:43 PM, Sat May 27, 2023
+date               :  6:13:23 PM, Wed Jun 14, 2023
 design             :  *****************************************
 simulator          :  spectre
 version            :  19.1.0.578.isr15
@@ -9,8 +9,6 @@ version            :  19.1.0.578.isr15
 Swept Measurements :
 Measurement Name   :  transient1-meas_mc1
 Analysis Type      :  tran
-iint               temp       @ -25       
-                   montecarlo_iteration @ 0            =  -7.46425e-16     
 iint               temp       @ -25       
                    montecarlo_iteration @ 1            =  -7.43586e-16     
 iint               temp       @ -25       
@@ -212,8 +210,6 @@ iint               temp       @ -25
 iint               temp       @ -25       
                    montecarlo_iteration @ 100          =  -7.36264e-16     
 iint               temp       @ 0         
-                   montecarlo_iteration @ 0            =  -7.43713e-16     
-iint               temp       @ 0         
                    montecarlo_iteration @ 1            =  -7.50384e-16     
 iint               temp       @ 0         
                    montecarlo_iteration @ 2            =  -7.45662e-16     
@@ -413,8 +409,6 @@ iint               temp       @ 0
                    montecarlo_iteration @ 99           =  -7.42199e-16     
 iint               temp       @ 0         
                    montecarlo_iteration @ 100          =  -7.41057e-16     
-iint               temp       @ 25        
-                   montecarlo_iteration @ 0            =  -7.42842e-16     
 iint               temp       @ 25        
                    montecarlo_iteration @ 1            =  -7.45553e-16     
 iint               temp       @ 25        
@@ -616,8 +610,6 @@ iint               temp       @ 25
 iint               temp       @ 25        
                    montecarlo_iteration @ 100          =  -7.41196e-16     
 iint               temp       @ 50        
-                   montecarlo_iteration @ 0            =  -7.43857e-16     
-iint               temp       @ 50        
                    montecarlo_iteration @ 1            =  -7.48368e-16     
 iint               temp       @ 50        
                    montecarlo_iteration @ 2            =  -7.47363e-16     
@@ -817,8 +809,6 @@ iint               temp       @ 50
                    montecarlo_iteration @ 99           =  -7.55315e-16     
 iint               temp       @ 50        
                    montecarlo_iteration @ 100          =  -7.41432e-16     
-iint               temp       @ 75        
-                   montecarlo_iteration @ 0            =  -7.47228e-16     
 iint               temp       @ 75        
                    montecarlo_iteration @ 1            =  -7.54876e-16     
 iint               temp       @ 75        
@@ -1020,8 +1010,6 @@ iint               temp       @ 75
 iint               temp       @ 75        
                    montecarlo_iteration @ 100          =  -7.55684e-16     
 iint               temp       @ 100       
-                   montecarlo_iteration @ 0            =  -7.57914e-16     
-iint               temp       @ 100       
                    montecarlo_iteration @ 1            =  -7.79024e-16     
 iint               temp       @ 100       
                    montecarlo_iteration @ 2            =  -7.97651e-16     
@@ -1221,8 +1209,6 @@ iint               temp       @ 100
                    montecarlo_iteration @ 99           =  -7.90487e-16     
 iint               temp       @ 100       
                    montecarlo_iteration @ 100          =  -7.62012e-16     
-total_power        temp       @ -25       
-                   montecarlo_iteration @ 0            =  -1.30624e-08     
 total_power        temp       @ -25       
                    montecarlo_iteration @ 1            =  -1.30128e-08     
 total_power        temp       @ -25       
@@ -1424,8 +1410,6 @@ total_power        temp       @ -25
 total_power        temp       @ -25       
                    montecarlo_iteration @ 100          =  -1.28846e-08     
 total_power        temp       @ 0         
-                   montecarlo_iteration @ 0            =  -1.3015e-08     
-total_power        temp       @ 0         
                    montecarlo_iteration @ 1            =  -1.31317e-08     
 total_power        temp       @ 0         
                    montecarlo_iteration @ 2            =  -1.30491e-08     
@@ -1625,8 +1609,6 @@ total_power        temp       @ 0
                    montecarlo_iteration @ 99           =  -1.29885e-08     
 total_power        temp       @ 0         
                    montecarlo_iteration @ 100          =  -1.29685e-08     
-total_power        temp       @ 25        
-                   montecarlo_iteration @ 0            =  -1.29997e-08     
 total_power        temp       @ 25        
                    montecarlo_iteration @ 1            =  -1.30472e-08     
 total_power        temp       @ 25        
@@ -1828,8 +1810,6 @@ total_power        temp       @ 25
 total_power        temp       @ 25        
                    montecarlo_iteration @ 100          =  -1.29709e-08     
 total_power        temp       @ 50        
-                   montecarlo_iteration @ 0            =  -1.30175e-08     
-total_power        temp       @ 50        
                    montecarlo_iteration @ 1            =  -1.30964e-08     
 total_power        temp       @ 50        
                    montecarlo_iteration @ 2            =  -1.30788e-08     
@@ -2029,8 +2009,6 @@ total_power        temp       @ 50
                    montecarlo_iteration @ 99           =  -1.3218e-08     
 total_power        temp       @ 50        
                    montecarlo_iteration @ 100          =  -1.29751e-08     
-total_power        temp       @ 75        
-                   montecarlo_iteration @ 0            =  -1.30765e-08     
 total_power        temp       @ 75        
                    montecarlo_iteration @ 1            =  -1.32103e-08     
 total_power        temp       @ 75        
@@ -2232,8 +2210,6 @@ total_power        temp       @ 75
 total_power        temp       @ 75        
                    montecarlo_iteration @ 100          =  -1.32245e-08     
 total_power        temp       @ 100       
-                   montecarlo_iteration @ 0            =  -1.32635e-08     
-total_power        temp       @ 100       
                    montecarlo_iteration @ 1            =  -1.36329e-08     
 total_power        temp       @ 100       
                    montecarlo_iteration @ 2            =  -1.39589e-08     
@@ -2433,8 +2409,6 @@ total_power        temp       @ 100
                    montecarlo_iteration @ 99           =  -1.38335e-08     
 total_power        temp       @ 100       
                    montecarlo_iteration @ 100          =  -1.33352e-08     
-tphl               temp       @ -25       
-                   montecarlo_iteration @ 0            =  1.27381e-11     
 tphl               temp       @ -25       
                    montecarlo_iteration @ 1            =  1.26812e-11     
 tphl               temp       @ -25       
@@ -2636,8 +2610,6 @@ tphl               temp       @ -25
 tphl               temp       @ -25       
                    montecarlo_iteration @ 100          =  1.23051e-11     
 tphl               temp       @ 0         
-                   montecarlo_iteration @ 0            =  1.2923e-11     
-tphl               temp       @ 0         
                    montecarlo_iteration @ 1            =  1.28672e-11     
 tphl               temp       @ 0         
                    montecarlo_iteration @ 2            =  1.28986e-11     
@@ -2837,8 +2809,6 @@ tphl               temp       @ 0
                    montecarlo_iteration @ 99           =  1.1439e-11     
 tphl               temp       @ 0         
                    montecarlo_iteration @ 100          =  1.25061e-11     
-tphl               temp       @ 25        
-                   montecarlo_iteration @ 0            =  1.30854e-11     
 tphl               temp       @ 25        
                    montecarlo_iteration @ 1            =  1.3031e-11     
 tphl               temp       @ 25        
@@ -3040,8 +3010,6 @@ tphl               temp       @ 25
 tphl               temp       @ 25        
                    montecarlo_iteration @ 100          =  1.26565e-11     
 tphl               temp       @ 50        
-                   montecarlo_iteration @ 0            =  1.32415e-11     
-tphl               temp       @ 50        
                    montecarlo_iteration @ 1            =  1.31883e-11     
 tphl               temp       @ 50        
                    montecarlo_iteration @ 2            =  1.32221e-11     
@@ -3241,8 +3209,6 @@ tphl               temp       @ 50
                    montecarlo_iteration @ 99           =  1.17249e-11     
 tphl               temp       @ 50        
                    montecarlo_iteration @ 100          =  1.2778e-11     
-tphl               temp       @ 75        
-                   montecarlo_iteration @ 0            =  1.33722e-11     
 tphl               temp       @ 75        
                    montecarlo_iteration @ 1            =  1.32809e-11     
 tphl               temp       @ 75        
@@ -3444,8 +3410,6 @@ tphl               temp       @ 75
 tphl               temp       @ 75        
                    montecarlo_iteration @ 100          =  1.29063e-11     
 tphl               temp       @ 100       
-                   montecarlo_iteration @ 0            =  1.34496e-11     
-tphl               temp       @ 100       
                    montecarlo_iteration @ 1            =  1.34014e-11     
 tphl               temp       @ 100       
                    montecarlo_iteration @ 2            =  1.3436e-11     
@@ -3645,8 +3609,6 @@ tphl               temp       @ 100
                    montecarlo_iteration @ 99           =  1.19541e-11     
 tphl               temp       @ 100       
                    montecarlo_iteration @ 100          =  1.30205e-11     
-tplh               temp       @ -25       
-                   montecarlo_iteration @ 0            =  1.47833e-11     
 tplh               temp       @ -25       
                    montecarlo_iteration @ 1            =  1.31941e-11     
 tplh               temp       @ -25       
@@ -3848,8 +3810,6 @@ tplh               temp       @ -25
 tplh               temp       @ -25       
                    montecarlo_iteration @ 100          =  1.56674e-11     
 tplh               temp       @ 0         
-                   montecarlo_iteration @ 0            =  1.5203e-11     
-tplh               temp       @ 0         
                    montecarlo_iteration @ 1            =  1.35901e-11     
 tplh               temp       @ 0         
                    montecarlo_iteration @ 2            =  1.29175e-11     
@@ -4049,8 +4009,6 @@ tplh               temp       @ 0
                    montecarlo_iteration @ 99           =  1.66196e-11     
 tplh               temp       @ 0         
                    montecarlo_iteration @ 100          =  1.60969e-11     
-tplh               temp       @ 25        
-                   montecarlo_iteration @ 0            =  1.55724e-11     
 tplh               temp       @ 25        
                    montecarlo_iteration @ 1            =  1.39701e-11     
 tplh               temp       @ 25        
@@ -4252,8 +4210,6 @@ tplh               temp       @ 25
 tplh               temp       @ 25        
                    montecarlo_iteration @ 100          =  1.64712e-11     
 tplh               temp       @ 50        
-                   montecarlo_iteration @ 0            =  1.58924e-11     
-tplh               temp       @ 50        
                    montecarlo_iteration @ 1            =  1.42448e-11     
 tplh               temp       @ 50        
                    montecarlo_iteration @ 2            =  1.35741e-11     
@@ -4454,8 +4410,6 @@ tplh               temp       @ 50
 tplh               temp       @ 50        
                    montecarlo_iteration @ 100          =  1.67918e-11     
 tplh               temp       @ 75        
-                   montecarlo_iteration @ 0            =  1.6164e-11     
-tplh               temp       @ 75        
                    montecarlo_iteration @ 1            =  1.45181e-11     
 tplh               temp       @ 75        
                    montecarlo_iteration @ 2            =  1.38384e-11     
@@ -4655,8 +4609,6 @@ tplh               temp       @ 75
                    montecarlo_iteration @ 99           =  1.75845e-11     
 tplh               temp       @ 75        
                    montecarlo_iteration @ 100          =  1.70607e-11     
-tplh               temp       @ 100       
-                   montecarlo_iteration @ 0            =  1.63876e-11     
 tplh               temp       @ 100       
                    montecarlo_iteration @ 1            =  1.47456e-11     
 tplh               temp       @ 100       
