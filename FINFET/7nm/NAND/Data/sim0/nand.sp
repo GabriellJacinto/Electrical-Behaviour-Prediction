@@ -53,7 +53,7 @@ VcontroleB (inpB 0) vsource type=pwl wave=[0n Vin (3*t_pulse) Vin (3*t_pulse+dl)
 
 *.ic v(out)= 0
 
-mc1 montecarlo variations=process seed=1234 numruns=100 donominal=yes saveprocessparams=yes
+mc1 montecarlo variations=process seed=1234 numruns=100 donominal=no saveprocessparams=yes
 {
 * COMO ESPECIFICAR COMO EM HSPICE ".tran 0.01n 10n sweep Monte=50"? ACHEI ISSO(?):
 *.step param=nfet_phig start=0 stop=10n step=0.01n
