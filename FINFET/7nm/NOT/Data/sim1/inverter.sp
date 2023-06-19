@@ -45,7 +45,7 @@ VX (X 0) vsource dc=vdd type=dc
 * Input voltage source
 VY (Y 0) vsource type=pwl wave=[0n 0 10n 0 10.01n 0.7 20n 0.7 20.01n 0]
 
-mc1 montecarlo variations=process seed=1234 numruns=100 donominal=no saveprocessparams=yes savemismatchparams=yes
+mc1 montecarlo variations=process seed=1234 numruns=100 donominal=no saveprocessparams=yes
 {
 	tran1 tran start=0 stop=40n method=trap step=0.01n
 }
