@@ -1,0 +1,96 @@
+X.shape: (45744, 8)
+
+y.shape: (45744, 3)
+
+Test set X (11436, 8)
+
+Test set y (11436, 3)
+
+Train set X (22986, 8)
+
+Train set y (22986, 3)
+
+Validation set X (11322, 8)
+
+Validation set y (11322, 3)
+
+
+label: tphL
+clf: RandomForestRegressor, mse: 2.504774607238568e-06, r2: 0.9998921941164255
+clf: LinearRegression, mse: 0.0062930721041835145, r2: 0.7291452106592293
+clf: SVR, mse: 0.001946093399418092, r2: 0.9162398413667563
+clf: DecisionTreeRegressor, mse: 5.638705827820276e-06, r2: 0.9997573092356381
+
+label: tplH
+clf: RandomForestRegressor, mse: 2.0850447501270328e-06, r2: 0.9998382667584894
+clf: LinearRegression, mse: 0.00378541595801009, r2: 0.7063719647659905
+clf: SVR, mse: 0.0016972211746024714, r2: 0.8683495487988447
+clf: DecisionTreeRegressor, mse: 4.262656440709157e-06, r2: 0.999669353262773
+
+label: tphL
+clf: RandomForestRegressor, mse: 2.507169973708718e-06, r2: 0.999892091019485
+clf: LinearRegression, mse: 0.0062930721041835145, r2: 0.7291452106592293
+clf: SVR, mse: 0.001946093399418092, r2: 0.9162398413667563
+clf: DecisionTreeRegressor, mse: 5.81309584283733e-06, r2: 0.9997498034626232
+
+label: tplH
+clf: RandomForestRegressor, mse: 2.1320608572623825e-06, r2: 0.9998346198020346
+clf: LinearRegression, mse: 0.00378541595801009, r2: 0.7063719647659905
+clf: SVR, mse: 0.0016972211746024714, r2: 0.8683495487988447
+clf: DecisionTreeRegressor, mse: 4.109342554710204e-06, r2: 0.9996812455503364
+
+label: Energy
+clf: RandomForestRegressor, mse: 1.8029694309414747e-05, r2: 0.9960765098528207
+clf: LinearRegression, mse: 0.0018602515190401716, r2: 0.5951856764194716
+clf: SVR, mse: 0.002426227117814842, r2: 0.4720222080196347
+clf: DecisionTreeRegressor, mse: 4.7018648817597186e-05, r2: 0.9897681456932304
+
+ ==== time ====
+
+ TPLH
+RandomForestRegressor(): 0.00752 secs
+LinearRegression(): 0.00009 secs
+SVR(): 0.00013 secs
+DecisionTreeRegressor(): 0.00007 secs
+
+ TPHL
+RandomForestRegressor: 0.00506 secs
+LinearRegression: 0.00010 secs
+SVR: 0.00015 secs
+DecisionTreeRegressor: 0.00007 secs
+
+ IINT
+RandomForestRegressor: 0.00841 secs
+LinearRegression: 0.00010 secs
+SVR: 0.00016 secs
+DecisionTreeRegressor: 0.00007 secs
+
+ ==== hyperparameters ====
+
+ Best hyperparameters (TPHL):
+{'max_depth': 5, 'n_estimators': 50}
+Average Score on train set: 0.339 +/- 0.002
+Average Score on validation set: 0.326 +/- 0.009
+
+ Best hyperparameters (TPLH):
+{'max_depth': 5, 'n_estimators': 100}
+Average Score on train set: 0.356 +/- 0.002
+Average Score on validation set: 0.338 +/- 0.007
+Average Score on train set: 0.650 +/- 0.004
+Average Score on validation set: 0.589 +/- 0.017
+
+ Best hyperparameters (IINT):
+{'max_depth': 10, 'n_estimators': 150}
+Average Score on train set: 0.650 +/- 0.004
+Average Score on validation set: 0.589 +/- 0.017
+
+ ==== metrics_after_cv ====
+
+label: TPHL
+clf: RandomForestRegressor, mse: 0.00031636110510105576, r2: 0.9863837694755164
+
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0003488164011914293, r2: 0.9729429273624454
+
+label: IINT
+clf: RandomForestRegressor, mse: 3.543273367051e-05, r2: -55.71285254540559
