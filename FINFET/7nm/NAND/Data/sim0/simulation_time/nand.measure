@@ -1,0 +1,25 @@
+Exported variables from results directory:  ./nand.raw/
+
+date               :  1:40:35 PM, Thur Jul 13, 2023
+design             :  *****************************************
+simulator          :  spectre
+version            :  19.1.0.578.isr15
+
+
+Swept Measurements :
+Measurement Name   :  tran1-meas_mc1
+Analysis Type      :  tran
+iint               montecarlo_iteration @ 1            =  -1.55102e-15     
+total_power        montecarlo_iteration @ 1            =  -2.17143e-08     
+tphla              montecarlo_iteration @ 1            =  1.92093e-11     
+tphlb              montecarlo_iteration @ 1            =  1.94446e-11     
+tplha              montecarlo_iteration @ 1            =  1.20368e-11     
+tplhb              montecarlo_iteration @ 1            =  1.26221e-11     
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+$ Simulator: spectre (ver. 19.1.0.578.isr15)
+.title '*****************************************'
+index montecarlo_iteration tplha tphla tplhb tphlb total_power iint temper 
+alter# 
+1 1 1.20368e-11 1.92093e-11 1.26221e-11 1.94446e-11 -2.17143e-08 -1.55102e-15 
+25 1 

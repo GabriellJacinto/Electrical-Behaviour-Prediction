@@ -1,0 +1,182 @@
+
+Spectre (R) Circuit Simulator
+Version 19.1.0.578.isr15 64bit -- 27 Jan 2021
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: gabriel.jacinto   Host: virmic01   HostID: A296C20A   PID: 1068185
+Memory  available: 135.2089 MB  physical: 3.9992 GB
+Linux   : Rocky Linux release 8.5 (Green Obsidian)
+CPU Type: Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3399.9] (  2 ),  1 [3399.9] (  3 )
+        
+System load averages (1min, 5min, 15min) : 4.2 %, 5.5 %, 4.5 %
+Hyperthreading is enabled
+
+
+Simulating `inverter.sp' on virmic01 at 12:55:49 PM, Thur Jul 13, 2023 (process id: 1068185).
+Current working directory: /home/100000000981355/Desktop/PIC2020/FINFET/7nm/NOT/Data/sim1/simulation_time
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /usr/eda/cadence/spectre1910_578/tools.lnx86/bin/spectre -64  \
+        inverter.sp
+
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/100000000981355/Desktop/PIC2020/FINFET/7nm/NOT/Data/sim1/simulation_time/inverter.sp
+Reading file:  /usr/eda/cadence/spectre1910_578/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/100000000981355/Desktop/PIC2020/FINFET/7nm/NOT/Data/sim1/simulation_time/config.cir
+Reading file:  /home/100000000981355/Desktop/PIC2020/FINFET/7nm/NOT/Data/lib/FET_TT.pm
+Time for NDB Parsing: CPU = 95.629 ms, elapsed = 193.795 ms.
+Time accumulated: CPU = 143.962 ms, elapsed = 193.799 ms.
+Peak resident memory used = 104 Mbytes.
+
+Time for Elaboration: CPU = 33.211 ms, elapsed = 35.3971 ms.
+Time accumulated: CPU = 177.389 ms, elapsed = 229.41 ms.
+Peak resident memory used = 114 Mbytes.
+
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Time for EDB Visiting: CPU = 28.909 ms, elapsed = 3.30411 s.
+Time accumulated: CPU = 206.53 ms, elapsed = 3.53375 s.
+Peak resident memory used = 129 Mbytes.
+
+
+Global user options:
+               temp = 25
+               save = all
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+            bsimcmg 2     
+          capacitor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+         montecarlo 1     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 4     
+               save 0     
+
+Time for parsing: CPU = 3.035 ms, elapsed = 47.9732 ms.
+Time accumulated: CPU = 209.744 ms, elapsed = 3.58191 s.
+Peak resident memory used = 132 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+************************************************
+Monte Carlo Analysis `mc1': iteration = (1 -> 1)
+************************************************
+Important parameter values:
+    seed = 1234
+    sampling = standard
+    variations = process
+    firstrun = 1
+    numruns = 1
+    nullmfactorcorrelation = no
+    donominal = no
+    method = standard
+
+Opening the PSF file inverter.raw/mc1_tran1.montecarlo ...
+
+Statistical parameters:
+    Defined process parameters: 2
+    Number of random variables: 2
+    Gaussian truncation for process parameters: 4.00 sigma
+    Gaussian truncation for mismatch parameters: 4.00 sigma
+
+**** Performing monte carlo loop for `mc1'
+
+
+*****************************************************
+Transient Analysis `mc1_tran1': time = (0 s -> 40 ns)
+*****************************************************
+
+Opening the PSFXL file inverter.raw/mc1_tran1.tran.tran ...
+DC simulation time: CPU = 487 us, elapsed = 500.917 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 40 ns
+    step = 10 ps
+    maxstep = 800 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  12      
+                 save   2       (current)
+                 save   3       (voltage)
+
+................9................8................7................6................5................4................3................2................1................0
+Number of accepted tran steps =             127
+
+Maximum value achieved for any signal of each quantity: 
+V: V(Z) = 709.4 mV
+I: I(VX:p) = 36.85 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (14.1 %)      1 (16.5 %)      2 (13.0 %)      3 (26.7 %)
+        Total: 70.4%
+Initial condition solution time: CPU = 628 us, elapsed = 643.015 us.
+Intrinsic tran analysis time:    CPU = 19.248 ms, elapsed = 48.79 ms.
+Total time required for tran analysis `mc1_tran1': CPU = 23.966 ms, elapsed = 94.25 ms.
+Time accumulated: CPU = 246.897 ms, elapsed = 3.74128 s.
+Peak resident memory used = 137 Mbytes.
+
+
+name            max             min             mean            stddev          skewness        
+iint            -7.45553e-16    -7.45553e-16    -7.45553e-16    0               NaN             
+total_power     -1.30472e-08    -1.30472e-08    -1.30472e-08    0               NaN             
+tphl            1.3031e-11      1.3031e-11      1.3031e-11      0               NaN             
+tplh            1.39701e-11     1.39701e-11     1.39701e-11     0               NaN             
+
+Total time required for montecarlo analysis `mc1': CPU = 44.163 ms, elapsed = 167.492 ms.
+Time accumulated: CPU = 254.497 ms, elapsed = 3.75 s.
+Peak resident memory used = 139 Mbytes.
+
+
+Aggregate audit (12:55:53 PM, Thur Jul 13, 2023):
+Time used: CPU = 258 ms, elapsed = 3.79 s, util. = 6.81%.
+Time spent in licensing: elapsed = 13.5 ms.
+Peak memory used = 139 Mbytes.
+Simulation started at: 12:55:49 PM, Thur Jul 13, 2023, ended at: 12:55:53 PM, Thur Jul 13, 2023, with elapsed time (wall clock): 3.79 s.
+spectre completes with 0 errors, 0 warnings, and 1 notice.

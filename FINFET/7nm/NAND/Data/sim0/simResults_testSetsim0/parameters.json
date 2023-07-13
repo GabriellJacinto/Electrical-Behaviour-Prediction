@@ -1,0 +1,1 @@
+{"var": {"load": ["1f", "4f", "8f", "16f", "18f", "20f"], "Vin": [0.6, 0.7, 0.8, 0.9], "number_fin": [1, 2, 3, 4, 5, 6, 8, 10]}, "config": {"vss": 0, "number_fins": 1, "temp": [-15.0, 5.0, 15.0, 25, 50.0, 75.0, 90.0, 100.0], "passo": "0.01n", "t_pulse": "10n", "dl": "0.1p", "inp_file": "nand.sp", "copy": ["../lib/FET_TT.pm"], "cmd": "spectre"}}
