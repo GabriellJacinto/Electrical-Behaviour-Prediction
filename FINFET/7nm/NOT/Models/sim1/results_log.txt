@@ -94,3 +94,146 @@ clf: RandomForestRegressor, mse: 0.0003488164011914293, r2: 0.9729429273624454
 
 label: IINT
 clf: RandomForestRegressor, mse: 3.543273367051e-05, r2: -55.71285254540559
+X.shape: (45744, 8)
+
+y.shape: (45744, 3)
+
+Test set X (11436, 8)
+
+Test set y (11436, 3)
+
+Train set X (22986, 8)
+
+Train set y (22986, 3)
+
+Validation set X (11322, 8)
+
+Validation set y (11322, 3)
+
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 50}
+Average Score on train set: 0.334 +/- 0.002
+Average Score on validation set: 0.327 +/- 0.015
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 75}
+Average Score on train set: 0.346 +/- 0.001
+Average Score on validation set: 0.338 +/- 0.013
+Average Score on train set: 0.635 +/- 0.004
+Average Score on validation set: 0.611 +/- 0.030
+
+ ==== metrics_after_cv ====
+
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0006458525017823485, r2: 0.9722024091859401
+
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0007175048846120055, r2: 0.9443444123772919
+
+label: IINT
+clf: RandomForestRegressor, mse: 9.280690626098351e-05, r2: -55.70450097808681
+
+ ==== metrics_after_cv ====
+
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0006458525017823485, r2: 0.9722024091859401
+
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0007175048846120055, r2: 0.9443444123772919
+
+label: IINT
+clf: RandomForestRegressor, mse: 9.280690626098351e-05, r2: -55.70450097808681
+
+label: tphL
+clf: RandomForestRegressor, mse: 3.576435207276548e-05, r2: 0.9984606967970161
+
+label: tphL
+clf: RandomForestRegressor, mse: 2.5652592121841667e-06, r2: 0.9998895908497443
+clf: LinearRegression, mse: 0.0062930721041835145, r2: 0.7291452106592293
+clf: SVR, mse: 0.001946093399418092, r2: 0.9162398413667563
+clf: DecisionTreeRegressor, mse: 5.650313197357294e-06, r2: 0.9997568096526716
+
+label: tplH
+clf: RandomForestRegressor, mse: 2.156561970593959e-06, r2: 0.9998327192939138
+clf: LinearRegression, mse: 0.00378541595801009, r2: 0.7063719647659905
+clf: SVR, mse: 0.0016972211746024714, r2: 0.8683495487988447
+clf: DecisionTreeRegressor, mse: 4.566328798292208e-06, r2: 0.9996457979339264
+
+label: Energy
+clf: RandomForestRegressor, mse: 1.780267262952794e-05, r2: 0.996125912649615
+clf: LinearRegression, mse: 0.0018602515190401716, r2: 0.5951856764194716
+clf: SVR, mse: 0.002426227117814842, r2: 0.4720222080196347
+clf: DecisionTreeRegressor, mse: 4.498239526882776e-05, r2: 0.9902112602906633
+
+ ==== metrics_after_cv ====
+
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0006458525017823485, r2: 0.9722024091859401
+
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0007175048846120055, r2: 0.9443444123772919
+
+label: IINT
+clf: RandomForestRegressor, mse: 0.00030387190490988644, r2: -55.68595849809438
+
+ ==== metrics_after_cv ====
+
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0006458525017823485, r2: 0.9722024091859401
+
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0007175048846120055, r2: 0.9443444123772919
+
+label: IINT
+clf: RandomForestRegressor, mse: 0.0009461470468371335, r2: -55.64276934134508
+X.shape: (45744, 8)
+
+y.shape: (45744, 3)
+
+Test set X (11436, 8)
+
+Test set y (11436, 3)
+
+Train set X (22986, 8)
+
+Train set y (22986, 3)
+
+Validation set X (11322, 8)
+
+Validation set y (11322, 3)
+
+
+label: tphL
+clf: RandomForestRegressor, mse: 2.5421085766962157e-06, r2: 0.9998905872566493
+clf: LinearRegression, mse: 0.0062930721041835145, r2: 0.7291452106592293
+clf: SVR, mse: 0.001946093399418092, r2: 0.9162398413667563
+clf: DecisionTreeRegressor, mse: 5.7391737881528075e-06, r2: 0.9997529850792037
+
+label: tplH
+clf: RandomForestRegressor, mse: 2.1286980156849584e-06, r2: 0.9998348806517209
+clf: LinearRegression, mse: 0.00378541595801009, r2: 0.7063719647659905
+clf: SVR, mse: 0.0016972211746024714, r2: 0.8683495487988447
+clf: DecisionTreeRegressor, mse: 4.42092929351433e-06, r2: 0.9996570763169061
+
+ ==== metrics_after_cv ====
+
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0006458525017823485, r2: 0.9722024091859401
+
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0007175048846120055, r2: 0.9443444123772919
+
+label: IINT
+clf: RandomForestRegressor, mse: 0.0009461470468371335, r2: 0.7941064028961464
+
+ ==== metrics_after_cv ====
+
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0006458525017823485, r2: 0.9722024091859401
+
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0007175048846120055, r2: 0.9443444123772919
+
+label: IINT
+clf: RandomForestRegressor, mse: 9.280690626098351e-05, r2: 0.9798040401541904

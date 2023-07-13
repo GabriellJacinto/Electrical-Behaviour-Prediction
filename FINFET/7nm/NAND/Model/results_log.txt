@@ -270,3 +270,111 @@ clf: SVR, mse: 0.0015613131486524076, r2: 0.9769871490254213
 clf: SVR, mse: 0.0015613131486524076, r2: 0.9769871490254213
 clf: DecisionTreeRegressor, mse: 9.279799601938534e-06, r2: 0.9998632211318417
 clf: DecisionTreeRegressor, mse: 9.279799601938534e-06, r2: 0.9998632211318417
+X.shape: (45390, 8)
+
+y.shape: (45390, 5)
+
+Test set X (11348, 8)
+
+Test set y (11348, 5)
+
+Train set X (22808, 8)
+
+Train set y (22808, 5)
+
+Validation set X (11234, 8)
+
+Validation set y (11234, 5)
+
+label: TPHL A
+clf: RandomForestRegressor, mse: 1.5957952121872606e-06, r2: 0.9998851584377331
+clf: LinearRegression, mse: 0.003955395584341001, r2: 0.715349560632542
+clf: SVR, mse: 0.0017435291240427077, r2: 0.8745267519705232
+clf: DecisionTreeRegressor, mse: 3.4473616848797692e-06, r2: 0.9997519102710878
+label: TPLH A
+clf: RandomForestRegressor, mse: 2.256600037658324e-06, r2: 0.999826528343384
+clf: LinearRegression, mse: 0.003731318228468735, r2: 0.7131623045059738
+clf: SVR, mse: 0.0016974202847808103, r2: 0.8695141789149543
+clf: DecisionTreeRegressor, mse: 4.1944147947001e-06, r2: 0.9996775626735671
+label: TPHL B
+clf: RandomForestRegressor, mse: 1.5626819412182763e-06, r2: 0.9998877315210293
+clf: LinearRegression, mse: 0.003963072451233825, r2: 0.7152791592356195
+clf: SVR, mse: 0.0017427134534643814, r2: 0.8747974341152159
+clf: DecisionTreeRegressor, mse: 3.929773561248655e-06, r2: 0.9997176714667368
+label: TPLH B
+clf: RandomForestRegressor, mse: 2.2403801348538925e-06, r2: 0.9998274704217305
+clf: LinearRegression, mse: 0.0037220728638998105, r2: 0.7133666508166843
+clf: SVR, mse: 0.0016943246956542671, r2: 0.8695216402586639
+clf: DecisionTreeRegressor, mse: 4.333069688885013e-06, r2: 0.999666314356923
+
+ ==== hyperparameters ====
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 100}
+Average Score on train set: 0.349 +/- 0.001
+Average Score on validation set: 0.342 +/- 0.004
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 95}
+Average Score on train set: 0.348 +/- 0.001
+Average Score on validation set: 0.340 +/- 0.003
+
+ Best hyperparameters:
+{'max_depth': 2, 'n_estimators': 1}
+Average Score on train set: 0.037 +/- 0.001
+Average Score on validation set: 0.037 +/- 0.005
+
+ ==== hyperparameters (cv = 3)====
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 100}
+Average Score on train set: 0.349 +/- 0.001
+Average Score on validation set: 0.342 +/- 0.004
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 95}
+Average Score on train set: 0.348 +/- 0.001
+Average Score on validation set: 0.340 +/- 0.003
+
+ Best hyperparameters:
+{'max_depth': 2, 'n_estimators': 1}
+Average Score on train set: 0.037 +/- 0.001
+Average Score on validation set: 0.037 +/- 0.005
+
+ ==== hyperparameters (cv = 10)====
+
+ Best hyperparameters:
+{'max_depth': 2, 'n_estimators': 50}
+Average Score on train set: 0.038 +/- 0.001
+Average Score on validation set: 0.037 +/- 0.006
+
+
+==== results_cv ====
+label: IINT
+clf: RandomForestRegressor, mse: 0.0005257104163754107, r2: 0.9922513331305298 (max_depth = 3)
+==== results_cv ====
+label: IINT
+clf: RandomForestRegressor, mse: 0.00016496673614423653, r2: 0.9975684859133309 (max_depth = 4)
+==== results_cv ====
+label: IINT
+clf: RandomForestRegressor, mse: 0.004013527822440863, r2: 0.9408429258794903 (max_depth = 2)
+==== results_cv ====
+label: IINT
+clf: RandomForestRegressor, mse: 7.3604647517447595e-06, r2: 0.9998915110152107 (max_depth = 4)
+==== results_cv ====
+label: IINT
+clf: RandomForestRegressor, mse: 0.004013527822440863, r2: 0.9408429258794903 (max_depth = 4)
+==== results_cv ====
+label: TPHL B
+clf: RandomForestRegressor, mse: 0.0006589017313285994, r2: 0.952662219216664
+label: TPLH A
+clf: RandomForestRegressor, mse: 0.0003390983780129121, r2: 0.9739324840875601
+label: IINT
+clf: RandomForestRegressor, mse: 0.004013527822440863, r2: 0.9408429258794903 (max_depth = 4)
+==== results_cv ====
+label: TPHL B
+clf: RandomForestRegressor, mse: 0.0006589017313285994, r2: 0.952662219216664
+label: TPLH A
+clf: RandomForestRegressor, mse: 0.0003390983780129121, r2: 0.9739324840875601
+label: IINT
+clf: RandomForestRegressor, mse: 0.00016496673614423653, r2: 0.9975684859133309 (max_depth = 4)
