@@ -1,0 +1,183 @@
+
+Spectre (R) Circuit Simulator
+Version 19.1.0.578.isr15 64bit -- 27 Jan 2021
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: gabriel.jacinto   Host: virmic01   HostID: A296C20A   PID: 1161551
+Memory  available: 136.0773 MB  physical: 3.9992 GB
+Linux   : Rocky Linux release 8.5 (Green Obsidian)
+CPU Type: Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+All processors running at 3399.9 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 (  2 ),  1 (  3 )
+        
+System load averages (1min, 5min, 15min) : 4.0 %, 11.2 %, 11.2 %
+Hyperthreading is enabled
+
+
+Simulating `Inversor.txt' on virmic01 at 4:36:51 PM, Fri Jul 14, 2023 (process id: 1161551).
+Current working directory: /home/100000000981355/Desktop/PIC2020/CMOS/32nm/NOT/Data
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /usr/eda/cadence/spectre1910_578/tools.lnx86/bin/spectre -64  \
+        Inversor.txt
+
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/100000000981355/Desktop/PIC2020/CMOS/32nm/NOT/Data/Inversor.txt
+Reading file:  /usr/eda/cadence/spectre1910_578/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/100000000981355/Desktop/PIC2020/CMOS/32nm/NOT/Data/32nm_HP.pm.txt
+Time for NDB Parsing: CPU = 69.026 ms, elapsed = 365.512 ms.
+Time accumulated: CPU = 111.754 ms, elapsed = 365.515 ms.
+Peak resident memory used = 97.8 Mbytes.
+
+Time for Elaboration: CPU = 31.927 ms, elapsed = 37.288 ms.
+Time accumulated: CPU = 143.888 ms, elapsed = 403.008 ms.
+Peak resident memory used = 107 Mbytes.
+
+Loading /usr/eda/cadence/spectre1910_578/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Time for EDB Visiting: CPU = 34.471 ms, elapsed = 35.3959 ms.
+Time accumulated: CPU = 178.7 ms, elapsed = 438.741 ms.
+Peak resident memory used = 118 Mbytes.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+              bsim4 2     
+          capacitor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 3     
+               save 0     
+
+Time for parsing: CPU = 2.77 ms, elapsed = 65.0249 ms.
+Time accumulated: CPU = 181.68 ms, elapsed = 503.975 ms.
+Peak resident memory used = 121 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************************************************
+Transient Analysis `timeSweep': time = (0 s -> 4 ns)
+****************************************************
+DC simulation time: CPU = 528 us, elapsed = 535.965 us.
+
+Notice from spectre during transient analysis `timeSweep'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file Inversor.raw/timeSweep.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 4 ns
+    step = 10 ps
+    maxstep = 80 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  10      
+                 save   2       (current)
+                 save   3       (voltage)
+
+...............9...............8...............7...............6...............5....
+
+Notice from spectre at time = 2.15324 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node Va:p.
+
+...............9...............8...............7...............6...............5......
+
+Notice from spectre at time = 2.23324 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node Va:p.
+
+...............9...............8...............7...............6...............5.........
+
+Notice from spectre at time = 2.31324 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node Va:p.
+
+...............9...............8...............7...............6...............5.............
+
+Notice from spectre at time = 2.39324 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node Va:p.
+
+...............9...............8...............7...............6...............5...............4
+
+Notice from spectre at time = 2.47324 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `timeSweep'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(inv) = 915.6 mV
+I: I(Va:p) = 21.03 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (91.1 %)      1 (81.0 %)      2 (76.7 %)      3 (77.3 %)
+        Total: 326.1%
+Initial condition solution time: CPU = 655 us, elapsed = 664.949 us.
+Intrinsic tran analysis time:    CPU = 18.521 ms, elapsed = 64.4219 ms.
+Total time required for tran analysis `timeSweep': CPU = 23.238 ms, elapsed = 99.8518 ms.
+Time accumulated: CPU = 213.581 ms, elapsed = 612.638 ms.
+Peak resident memory used = 125 Mbytes.
+
+
+Notice from spectre.
+    20 notices suppressed.
+
+
+Aggregate audit (4:36:52 PM, Fri Jul 14, 2023):
+Time used: CPU = 217 ms, elapsed = 704 ms, util. = 30.9%.
+Time spent in licensing: elapsed = 171 ms, percentage of total = 24.3%.
+Peak memory used = 127 Mbytes.
+Simulation started at: 4:36:51 PM, Fri Jul 14, 2023, ended at: 4:36:52 PM, Fri Jul 14, 2023, with elapsed time (wall clock): 704 ms.
+spectre completes with 0 errors, 0 warnings, and 9 notices.

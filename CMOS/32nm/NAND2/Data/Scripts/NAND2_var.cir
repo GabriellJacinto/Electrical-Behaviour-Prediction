@@ -3,10 +3,10 @@
 .include var.cir
 
 *.define gauss(nom, rvar, sig) (nom + (nom*rvar)/sig * sgauss(0))
-    .param var = gauss(0.5088, 0.1, 3)
-    .param varp = gauss(-0.450, 0.1, 3)
-    *.param var = 0.5088
-    *.param varp = -0.450
+    *.param var = gauss(0.5088, 0.1, 3)
+    *.param varp = gauss(-0.450, 0.1, 3)
+    .param var = 0.5088
+    .param varp = -0.450
     
 .option post = 2
 .option measform = 3
@@ -33,12 +33,13 @@
     .ic v(out)= 0
 
 * Analise    
-    .tran passo 5*t_pulse sweep Monte=1000
+    .tran passo 5*t_pulse
 
     .measure tran tplhA trig v(inpA) val='0.5*Vin' fall=1 targ v(out) val='0.5*Vin' rise=1
     .measure tran tphlA trig v(inpA) val='0.5*Vin' rise=1 targ v(out) val='0.5*Vin' fall=1
     .measure tran tplhB trig v(inpB) val='0.5*Vin' fall=1 targ v(out) val='0.5*Vin' rise=2
     .measure tran tphlB trig v(inpB) val='0.5*Vin' rise=1 targ v(out) val='0.5*Vin' fall=2
     
-    .measure tran Iint INTEG i(Vvdd) from=0n to=5*t_pulse
+    .measure tran Iint INTEG i(Vvdd) from=0n to='5*t_pulse'
+    .measure tran Iint2 INTEG i(vvdd) from=0n to=50n
     

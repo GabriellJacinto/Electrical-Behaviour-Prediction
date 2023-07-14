@@ -1,0 +1,16 @@
+Exported variables from results directory:  ./NAND2_var.raw/
+
+date               :  4:54:01 PM, Fri Jul 14, 2023
+design             :  * Coleta de dados NAND2
+simulator          :  spectre
+version            :  19.1.0.578.isr15
+
+
+Measurement Name   :  timeSweep
+Analysis Type      :  tran
+iint                  =  -2.45771e-15 
+iint2                 =  -2.45771e-15 
+tphla                 =  1.33106e-11 
+tphlb                 =  1.41789e-11 
+tplha                 =  1.54953e-11 
+tplhb                 =  1.71002e-11 

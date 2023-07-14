@@ -6,7 +6,7 @@
 Vvdd vdd gnd tensao
 
 * Declaração das fontes
-Va a gnd PWL (0n 0 10n 0 10.01n tensao 20n tensao 20.01n 0)
+Va a gnd PWL (0n 0 2n 0 2.01n tensao 4n tensao 4.01n 0)
 
 * Declarando o circuito
 Mp1 vdd a inv vdd PMOS w=140n l=32n
@@ -18,7 +18,7 @@ Cload inv gnd 1f
 
 
 * Simulação Transiente de 20ns com passo de 0.1ns
-.tran 0.01ns 40ns
+.tran 0.01ns 4ns
 
 *T de propagação
 .measure tran tphl trig v(a) val='0.5*tensao' rise=1 targ v(inv) val='0.5*tensao' fall=1
@@ -28,7 +28,7 @@ Cload inv gnd 1f
 
 
 *Corrente
-.measure tran Iint INTEG i(vvdd) from=0n to=40n
+.measure tran Iint INTEG i(vvdd) from=0n to=4n
 
 *plot v(a) v(inv)
 

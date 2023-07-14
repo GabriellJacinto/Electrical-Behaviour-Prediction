@@ -1,0 +1,15 @@
+Exported variables from results directory:  ./Inversor.raw/
+
+date               :  4:36:52 PM, Fri Jul 14, 2023
+design             :  *INVERSOR
+simulator          :  spectre
+version            :  19.1.0.578.isr15
+
+
+Measurement Name   :  timeSweep
+Analysis Type      :  tran
+iint                  =  -9.06235e-17 
+tphl                  =  1.02781e-11 
+tplh                  =  NaN 
+
+
