@@ -378,3 +378,139 @@ label: TPLH A
 clf: RandomForestRegressor, mse: 0.0003390983780129121, r2: 0.9739324840875601
 label: IINT
 clf: RandomForestRegressor, mse: 0.00016496673614423653, r2: 0.9975684859133309 (max_depth = 4)
+
+ ==== hyperparameters (cv = 10)====
+
+ Best hyperparameters:
+{'max_depth': 4}
+Average Score on train set: 0.345 +/- 0.002
+Average Score on validation set: 0.335 +/- 0.017
+
+ Best hyperparameters:
+{'max_depth': 4}
+Average Score on train set: 0.343 +/- 0.002
+Average Score on validation set: 0.332 +/- 0.018
+
+ Best hyperparameters:
+{'max_depth': 2}
+Average Score on train set: 0.038 +/- 0.001
+Average Score on validation set: 0.037 +/- 0.006
+
+ ==== hyperparameters (cv = 10)====
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 50}
+Average Score on train set: 0.348 +/- 0.002
+Average Score on validation set: 0.341 +/- 0.016
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 50}
+Average Score on train set: 0.347 +/- 0.002
+Average Score on validation set: 0.338 +/- 0.018
+
+ Best hyperparameters:
+{'max_depth': 2, 'n_estimators': 50}
+Average Score on train set: 0.038 +/- 0.001
+Average Score on validation set: 0.037 +/- 0.006
+==== results_cv ====
+label: TPHL B
+clf: DecisionTreeRegressor, mse: 0.0006917952370082734, r2: 0.950299035926919
+label: TPLH A
+clf: DecisionTreeRegressor, mse: 0.0003630199015954673, r2: 0.9720935643608066
+label: IINT
+clf: DecisionTreeRegressor, mse: 0.004013457390496761, r2: 0.9408439640055285 (max_depth = 4)
+==== results_cv ====
+label: TPHL B
+clf: DecisionTreeRegressor, mse: 0.0006917952370082734, r2: 0.950299035926919
+label: TPLH A
+clf: DecisionTreeRegressor, mse: 0.0003630199015954673, r2: 0.9720935643608066
+label: IINT
+clf: DecisionTreeRegressor, mse: 0.00016607728514461364, r2: 0.9975521170646681 (max_depth = 4)
+==== results_cv ====
+label: TPHL B
+clf: LinearRegression, mse: 0.003963072451233825, r2: 0.7152791592356195
+label: TPLH A
+clf: LinearRegression, mse: 0.003731318228468735, r2: 0.7131623045059738
+label: IINT
+clf: LinearRegression, mse: 0.0014705920939441508, r2: 0.9783243247957398 (max_depth = 4)
+==== results_cv ====
+label: TPHL B
+==== results_cv ====
+label: TPHL B
+clf: SVR, mse: 0.0017427134534643814, r2: 0.8747974341152159
+label: TPLH A
+clf: SVR, mse: 0.0016974202847808103, r2: 0.8695141789149543
+label: IINT
+clf: SVR, mse: 0.0015613131486524076, r2: 0.9769871490254213 (max_depth = 4)
+==== results_cv ====
+label: TPHL B
+clf: DecisionTreeRegressor, mse: 0.0006917952370082734, r2: 0.950299035926919
+label: TPLH A
+clf: DecisionTreeRegressor, mse: 0.0003630199015954673, r2: 0.9720935643608066
+label: IINT
+clf: DecisionTreeRegressor, mse: 0.00016607728514461364, r2: 0.9975521170646681 (max_depth = 4)
+label: TPHL A
+clf: DecisionTreeRegressor, mse: 0.0006929612644095197, r2: 0.9501309732053861
+label: TPHL A
+clf: RandomForestRegressor, mse: 1.6112107810158674e-06, r2: 0.9998840490547783
+clf: LinearRegression, mse: 0.003955395584341001, r2: 0.715349560632542
+clf: SVR, mse: 0.0017435291240427077, r2: 0.8745267519705232
+clf: DecisionTreeRegressor, mse: 3.820718985484942e-06, r2: 0.9997250415755573
+label: TPLH A
+clf: RandomForestRegressor, mse: 2.252390788198024e-06, r2: 0.999826851921096
+clf: LinearRegression, mse: 0.003731318228468735, r2: 0.7131623045059738
+clf: SVR, mse: 0.0016974202847808103, r2: 0.8695141789149543
+clf: DecisionTreeRegressor, mse: 4.3503729740388935e-06, r2: 0.9996655736975495
+label: TPHL B
+clf: RandomForestRegressor, mse: 1.5417812533516104e-06, r2: 0.9998892330987811
+clf: LinearRegression, mse: 0.003963072451233825, r2: 0.7152791592356195
+clf: SVR, mse: 0.0017427134534643814, r2: 0.8747974341152159
+clf: DecisionTreeRegressor, mse: 3.927758640801847e-06, r2: 0.9997178162255952
+label: TPLH B
+clf: RandomForestRegressor, mse: 2.2955342562476793e-06, r2: 0.9998232230544396
+clf: LinearRegression, mse: 0.0037220728638998105, r2: 0.7133666508166843
+clf: SVR, mse: 0.0016943246956542671, r2: 0.8695216402586639
+clf: DecisionTreeRegressor, mse: 4.282532369694099e-06, r2: 0.9996702061885954
+label: IINT
+clf: RandomForestRegressor, mse: 4.5697538744856404e-06, r2: 0.9999326444762251
+clf: LinearRegression, mse: 0.0014705920939441508, r2: 0.9783243247957398
+clf: SVR, mse: 0.0015613131486524076, r2: 0.9769871490254213
+clf: DecisionTreeRegressor, mse: 8.921881253528789e-06, r2: 0.9998684966408709
+
+ TPLH
+RandomForestRegressor(): 0.00627899169921875 secs
+LinearRegression(): 0.00012350082397460938 secs
+SVR(): 0.00012040138244628906 secs
+DecisionTreeRegressor(): 8.440017700195312e-05 secs
+
+ TPHL
+RandomForestRegressor: 0.00670933723449707 secs
+LinearRegression: 0.00014400482177734375 secs
+SVR: 0.00013017654418945312 secs
+DecisionTreeRegressor: 0.00013756752014160156 secs
+
+ IINT
+RandomForestRegressor: 0.00518488883972168 secs
+LinearRegression: 0.00012254714965820312 secs
+SVR: 0.00013256072998046875 secs
+DecisionTreeRegressor: 8.678436279296875e-05 secs
+label: TPHL A
+clf: RandomForestRegressor, mse: 1.5427603555783896e-06, r2: 0.9998889750965004
+clf: LinearRegression, mse: 0.003955395584341001, r2: 0.715349560632542
+clf: SVR, mse: 0.0017435291240427077, r2: 0.8745267519705232
+clf: DecisionTreeRegressor, mse: 3.8117296053395264e-06, r2: 0.9997256884971998
+label: TPLH A
+clf: RandomForestRegressor, mse: 2.231888116355662e-06, r2: 0.9998284280233695
+clf: LinearRegression, mse: 0.003731318228468735, r2: 0.7131623045059738
+clf: SVR, mse: 0.0016974202847808103, r2: 0.8695141789149543
+clf: DecisionTreeRegressor, mse: 4.407794611438131e-06, r2: 0.999661159522951
+label: TPHL B
+clf: RandomForestRegressor, mse: 1.5740600118357054e-06, r2: 0.9998869140810575
+clf: LinearRegression, mse: 0.003963072451233825, r2: 0.7152791592356195
+clf: SVR, mse: 0.0017427134534643814, r2: 0.8747974341152159
+clf: DecisionTreeRegressor, mse: 4.184882379772207e-06, r2: 0.9996993435663035
+label: TPLH B
+clf: RandomForestRegressor, mse: 2.253708619444771e-06, r2: 0.9998264440076012
+clf: LinearRegression, mse: 0.0037220728638998105, r2: 0.7133666508166843
+clf: SVR, mse: 0.0016943246956542671, r2: 0.8695216402586639
+clf: DecisionTreeRegressor, mse: 4.59302640528025e-06, r2: 0.9996462953333876
