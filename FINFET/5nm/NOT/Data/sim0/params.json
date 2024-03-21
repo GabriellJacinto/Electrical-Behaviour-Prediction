@@ -1,0 +1,16 @@
+{
+    "var": 
+    {
+        "LoadCap": ["1f", "4f", "8f", "16f"], 
+        "vdd": [0.6, 0.7, 0.8, 0.9], 
+        "number_fin": [1, 2, 3, 4, 5]
+    }, 
+    "config": {
+        "vss": 0,  
+        "number_fins": 1,	
+        "temp": [-25.0, 0.0, 25.0, 50.0, 75.0, 100.0], 
+        "inp_file": "inverter.sp", 
+        "copy": ["../lib/asap5_tt.pm.pm"],
+        "cmd": "spectre"
+    }
+}
