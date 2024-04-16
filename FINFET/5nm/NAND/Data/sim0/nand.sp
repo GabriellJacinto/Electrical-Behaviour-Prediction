@@ -7,6 +7,7 @@
 
 simulator lang=hspice
 .include "config.cir"
+
 * Imports
 .include "asap5_tt.pm"
 
