@@ -1,62 +1,69 @@
 *****************************************
 * Developed by Gabriel L. Jacinto       *
 * Cell: Inverter                        *
-* Extracted: yes                        *
+* Extracted: no                         *
 * Number of fins: 3                     *  
 *****************************************
 
-simulator lang=hspice
-.include "config.cir"
-
 * Imports
 .include "asap5_tt.pm"
+.include "config.cir"
 
-* Simulation configuration
-* simulator lang=spectre
-name options save=all
-global 0
+* Configurações iniciais
+* simulator lang=hspice
 
-* Parameters 
-parameters nfet_phig = 4.860
-parameters pfet_phig = 4.375
-parameters sigma=3 variation=0.03
+*define parameters 
+.param nfet_phig = gauss(4.860,0.03,3)
+.param pfet_phig = gauss(4.324,0.03,3)
 
-* Process variability
-statistics 
-{
-	process
-	{
-	    vary nfet_phig dist=gauss std="(nfet_phig*variation)/sigma" percent=no
-	    vary pfet_phig dist=gauss std="(pfet_phig*variation)/sigma" percent=no
-	}
-}
+.global nfet_phig pfet_phig
 
-* Transistors  
-*M<instance> source gate drain bulk(gnd or vdd)  tecnology  fins
-Mp1             X    Y     Z     X               pmos_rvt nfin=number_fin
-Mn1             Z    Y     0     0               nmos_rvt nfin=number_fin
+VSS Gnd 0 'vss'
 
-* Capacitance
-capz (Z 0) capacitor c=LoadCap
+*add transistors  
+mp1 Z Y X Y pmos_rvt NFIN=number_fin
+mn1 Z Y 0 Y nmos_rvt NFIN=number_fin
 
-* Voltage source
-VX (X 0) vsource dc=vdd type=dc 
+*add cap
+Cz Z Gnd 'LoadCap'
 
-* Input voltage source
-VY (Y 0) vsource type=pwl wave=[0n 0 10n 0 10.01n 0.7 20n 0.7 20.01n 0]
+*add voltage source
+VX X 0 'vdd'
 
-mc1 montecarlo variations=process seed=1234 numruns=100 donominal=no saveprocessparams=yes
-{
-	tran1 tran start=0 stop=40n method=trap step=0.01n
-}
+VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 
-simulator lang=spice
-* Propagation Time
-.measure tran tphl trig v(Y) val='0.5*vdd' rise=1 targ v(Z) val='0.5*vdd' fall=1
-.measure tran tplh trig v(Y) val='0.5*vdd' fall=1 targ v(Z) val='0.5*vdd' rise=1
-*Power
-.measure tran total_power avg P(VX) from=0n to=40n
-*Energy
-.measure tran Iint INTEG i(VX) from=0n to=40n
+*do transient analysis
+	*syntax: .TRAN tiner tstop START=stval 
+	*tiner - time step
+	*tstop - final time
+	*stval - initial time (default 0)
+.tran 0.01n 10n sweep Monte=10
+
+*print the V(Z) to waveform file *.tr0
+.print V(Z)
+.print V(X)
+.print V(Y)
+.print i(Cz)
+.print power(Cz)
+
+*simulation options (you can modify this. Post is needed for .tran analysis)
+*.OPTION Post Brief NoMod probe measout
+*.option post = 1
+.option post = 2
+.option measform = 3
+
+
+*measurement
+.measure tran t_fall_delay TRIG V(Y) VAL = 0.35 TD = 1n
++ RISE = 2 TARG V(Z) VAL = 0.35 FALL = 2
+
+.measure tran t_rise_delay TRIG V(Y) VAL = 0.35 TD = 1n
++ FALL = 2 TARG V(Z) VAL = 0.35 RISE = 2
+
+.measure tran t_fall_time TRIG V(Z) VAL = 0.56 TD = 1n
++ FALL = 2 TARG V(Z) VAL = 0.14 FALL = 2
+
+.measure tran t_rise_time TRIG V(Z) VAL = 0.14 TD = 1n
++ RISE = 2 TARG V(Z) VAL = 0.56 RISE = 2
 
 .end
