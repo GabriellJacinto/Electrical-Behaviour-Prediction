@@ -14,6 +14,6 @@
         "dl": "0.1p",
         "inp_file": "nand.sp", 
         "copy": ["../lib/asap5_tt.pm"],
-        "cmd": "spectre"
+        "cmd": "hspice"
     }
 }
