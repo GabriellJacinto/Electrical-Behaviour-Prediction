@@ -13,7 +13,7 @@
         "t_pulse": "10n",
         "dl": "0.1p",
         "inp_file": "nand.sp", 
-        "copy": ["../lib/asap5_tt.pm.pm"],
+        "copy": ["../lib/asap5_tt.pm"],
         "cmd": "spectre"
     }
 }
