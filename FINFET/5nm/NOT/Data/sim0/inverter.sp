@@ -37,7 +37,7 @@ VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 	*tiner - time step
 	*tstop - final time
 	*stval - initial time (default 0)
-.tran 0.01n 10n sweep Monte=10
+.tran 0.01n 10n sweep Monte=50
 
 *print the V(Z) to waveform file *.tr0
 .print V(Z)
