@@ -479,7 +479,7 @@
 +rgatemod= 0               rgeomod = 0               shmod   = 0               nqsmod  = 0             
 +coremod = 0               cgeomod = 0               capmod  = 0               tnom    = 25            
 +eot     = 1e-009          eotbox  = 1.4e-007        eotacc  = 3e-010          d    = 8.0e-009      
-+toxp    = 2.1e-009        nbody   = 1e+022          phig    = pfet_phig       epsrox  = 3.9           
++toxp    = 2.1e-009        nbody   = 1e+022          phig    = 4.375       epsrox  = 3.9           
 +epsrsub = 11.9            easub   = 4.05            ni0sub  = 1.1e+016        bg0sub  = 1.17          
 +nc0sub  = 2.86e+025       nsd     = 2e+026          ngate   = 0               nseg    = 5             
 +l       = 1.4e-08	   xl      = 0.0	     lint    = -2e-009         dlc     = 0             
