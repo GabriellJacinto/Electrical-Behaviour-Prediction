@@ -1,0 +1,137 @@
+ ****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+##================================================================
+*** This file format is subject to change **
+
+Measure File: out.mt0.csv
+
+##Variation_Options
+#------------------
+option ignore_global_variation = no
+option ignore_local_variation = no
+option ignore_aging_variation = yes
+option ignore_interconnect_variation = no
+option ignore_spatial_variation = no
+option ignore_variation = no
+option normal_limit     = 20
+option replicates       = 1
+option seed             = 1
+option stream           = 1
+option sensitivity_analysis  = yes
+option output_sigma_value = 1
+option use_agauss_format = yes
+option screening_method = pearson
+option set_missing_value = yes
+option large_scale_mc = no
+option qqnorm_file = yes
+option histogram_file = yes
+option sampling_method = SRS 
+option random_generator =  MCG
+##end_of_Variation_Options
+
+##Summary_Statistics
+#-------------------
+Total number of independent random variables = 2
+Number of independent global random variables = 2
+Number of independent local random variables = 0
+Number of independent aging random variables = 0
+Number of Samples:  50
+Number of Meas Failure: 0
+Number of Job Abortion: 0
+##sampling_method = SRS|LHS, the first MC sample is nominal value and is excluded in Monte Carlo data mining.
+##end_of_Sumary_Statistics
+
+##Sample_Moments
+#---------------
+#CI: 95% Bootstrap confidence intervals based on 500 re-samples
+                 CI          mean       median     stdDev     mad        skewness   kurtosis   
+                2.5%        1.995e-11  1.936e-11  2.019e-12  1.091e-12 -1.418e-01   1.899e+00
+t_fall_delay                2.053e-11  1.990e-11  2.485e-12  2.357e-12  3.391e-01   2.605e+00
+                97.5%       2.127e-11  2.097e-11  2.911e-12  3.214e-12  8.342e-01   3.602e+00
+
+                2.5%        1.751e-11  1.705e-11  1.545e-12  5.599e-13 -4.118e-01   2.154e+00
+t_rise_delay                1.798e-11  1.738e-11  1.967e-12  1.798e-12  3.445e-01   3.320e+00
+                97.5%       1.855e-11  1.839e-11  2.371e-12  2.389e-12  1.015e+00   4.502e+00
+
+##end_of_Sample_Moments
+
+##Quantiles
+#----------
+#(Percentile table adds appropriate percentile points as the number of samples increases.)
+#Percentile_Value                                 Equivalent_Sigma_Value 
+#(Q15.86552539,    Q84.134473607)                 (-1, 1)
+#(Q2.275013195,    Q97.724986805)                 (-2, 2)
+#(Q0.134989803,    Q99.865010197)                 (-3, 3)
+#(Q3.167124183e-3, Q99.996832876)                 (-4, 4)
+#(Q2.866515719e-5, Q99.999971335)                 (-5, 5)
+#(Q9.865876450e-8, Q99.999999901)                 (-6, 6)
+                CI              Q5              Q25             Q75             Q95             
+                2.5%            1.261547e-11    1.783392e-11    2.074785e-11    2.399868e-11    
+t_fall_delay                    1.706562e-11    1.895953e-11    2.215558e-11    2.500280e-11    
+                97.5%           1.785870e-11    1.970917e-11    2.415004e-11    2.668855e-11    
+
+                2.5%            1.101988e-11    1.589148e-11    1.838583e-11    2.030838e-11    
+t_rise_delay                    1.524385e-11    1.697304e-11    1.939524e-11    2.073467e-11    
+                97.5%           1.591751e-11    1.711581e-11    2.030908e-11    2.436156e-11    
+
+##end_of_Quantiles
+
+##Extremes_and_Corners
+#---------------------
+                 min             max             minIndex          maxIndex        
+t_fall_delay     1.493e-11  2.595e-11       6             23
+t_rise_delay     1.311e-11  2.333e-11      20              4
+##end_of_Extremes_and_Corners
+
+##Response_Correlation_Matrix (%)
+#--------------------------------
+                t_fall_delay t_rise_delay 
+t_fall_delay     100.0         -2.1       
+t_rise_delay      -2.1        100.0       
+##end_of_Response_Correlation_Matrix
+
+##Selective_Simulation:
+#----------------------
+#To simulate corners only:
+Use: ... Monte = list(4, 6, 20, 23)
+##end_of_Selective_Simulation
+
+##Variables_Screened_by_Importance
+#---------------------------------
+Method: Pearson Correlation
+#Print threshold: 95%
+#(elements with EquivVar smaller than 0.05% will not be printed.) 
+#(parameters with ParVar smaller than 0.01% will not be printed.) 
+
+Response: t_fall_delay
+Global Variation = 2.485e-12,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               pmos_rvt        100.0%    100.0%    .          
+.               .               .          .          .     pfet_phig  IGNC -0.99 100.0%
+
+Response: t_rise_delay
+Global Variation = 1.967e-12,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               nmos_rvt        99.7%    99.7%    .          
+.               .               .          .          .     nfet_phig  IGNC  0.98 99.7%
+##end_of_Variables_Screened_by_Importance
+
+##Important_Elements_or_Models
+#------------------------------
+nmos_rvt, pmos_rvt
+##end_of_Important_Elements_or_Models
+##end_of_Instance_Parameters
+
+##Subcircuit_Encoding
+#--------------------
+Key Subckt
+
+##end_of_Subcircuit_Encoding

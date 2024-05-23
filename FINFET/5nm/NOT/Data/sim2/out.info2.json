@@ -1,0 +1,35 @@
+{
+"Copyright":" ****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.  This software and the associated documentation are proprietary  to Synopsys, Inc. This software may only be used in accordance  with the terms and conditions of a written license agreement with  Synopsys, Inc. All other use, reproduction, or distribution of  this software is strictly prohibited.",
+"Comment" : "File format and content subject to change.",
+"Measure_File":"/home/glima/Electrical-Behaviour-Prediction/FINFET/5nm/NOT/Data/sim2/out.mt2.csv",
+"Netlist":"/home/glima/Electrical-Behaviour-Prediction/FINFET/5nm/NOT/Data/sim2/inverter.sp",
+"Netlist_Datestamp":"(Nov 22 2022 7905465)",
+"Simulator_Binary":"/home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/linux64/hspice",
+"Histogram_File":"/home/glima/Electrical-Behaviour-Prediction/FINFET/5nm/NOT/Data/sim2/out.hmt2.csv",
+"QQ_plot_File":"/home/glima/Electrical-Behaviour-Prediction/FINFET/5nm/NOT/Data/sim2/out.qqt2.csv",
+"MPP_File":"/home/glima/Electrical-Behaviour-Prediction/FINFET/5nm/NOT/Data/sim2/out.mpp2",
+"Alter_Index":2,
+"Summary_Statistics":{
+"Total_Random_Variable":2,
+"Normal_Distribution_Variable":2,
+"Non_Normal_Distribution_Variable":0,
+"MC_Samples":50,
+"Meas_Failure_Number":0,
+"Job_Abortion_Number":0,
+"Sigma_Amplification_Factor":1,
+"Confidence_Level":0.95,
+"Measure_Names":["t_fall_delay","t_rise_delay"]
+  },
+"VB_options":{
+"Sampling_Method":"SRS",
+"Random_Generator":"MCG",
+"Normal_Limit":20
+  },
+"Percentiles":{
+"Auto_Percentiles":[0.05,0.25,0.5,0.75,0.95]
+  },
+"Measure_Statistics":{
+"t_fall_delay":{"Nominal":2.15663e-11,"Mean":2.13762e-11,"Stddev":2.81063e-12,"Skewness":0.188876,"Kurtosis":2.21251,"IQR":8.5005e-12},
+"t_rise_delay":{"Nominal":1.88816e-11,"Mean":1.88833e-11,"Stddev":2.19673e-12,"Skewness":0.564115,"Kurtosis":2.93625,"IQR":6.05728e-12}
+  }
+}

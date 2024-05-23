@@ -1,0 +1,33 @@
+ ****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Tail samples and indices
+#Number of Measures
+2
+#Number of samples in each tail
+3
+#Measure names
+t_fall_delay,t_rise_delay
+#Measure values in left tail
+1.5409470e-11,1.4527400e-11
+1.7383910e-11,1.5545970e-11
+1.7426720e-11,1.5725340e-11
+#Measure values in right tail
+2.6073980e-11,2.2144130e-11
+2.6586430e-11,2.3999420e-11
+2.7227570e-11,2.4899360e-11
+#Index values in left tail
+6,20
+37,17
+24,6
+#Index values in right tail
+39,31
+33,24
+23,4

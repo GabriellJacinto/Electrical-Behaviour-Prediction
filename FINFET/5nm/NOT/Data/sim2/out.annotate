@@ -1,0 +1,52 @@
+ ****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Annotation for local variation contributors
+#=============
+<<t_fall_delay>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+<<t_rise_delay>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+#=============
+#Selective simulation for extreme corners: Monte= list( 4, 6, 20, 23)
+
+.alter 1
+ ****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Annotation for local variation contributors
+#=============
+<<t_fall_delay>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+<<t_rise_delay>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+#=============
+#Selective simulation for extreme corners: Monte= list( 4, 6, 20, 23)
+
+.alter 2
+ ****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+================================================================
+*** This file format is subject to change **
+#Annotation for local variation contributors
+#=============
+<<t_fall_delay>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+<<t_rise_delay>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+#=============
+#Selective simulation for extreme corners: Monte= list( 4, 6, 20, 23)
