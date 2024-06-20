@@ -1,0 +1,1 @@
+{"var": {"load": ["1f", "2f", "3f", "4f"], "Vin": [0.6, 0.7, 0.8], "number_fin": [1, 2, 3, 4, 5]}, "config": {"vss": 0, "number_fins": 1, "temp": [-25.0, 0.0, 25.0, 50.0, 75.0, 100.0, 125.0], "passo": "0.01n", "t_pulse": "10n", "dl": "0.1p", "inp_file": "nand.sp", "copy": ["../lib/asap5_tt.pm"], "cmd": "hspice"}}
