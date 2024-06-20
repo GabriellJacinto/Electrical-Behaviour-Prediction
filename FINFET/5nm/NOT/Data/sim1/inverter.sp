@@ -58,4 +58,5 @@ VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 
 .measure tran t_rise_delay TRIG V(Y) VAL = 0.35 RISE = 1  TARG V(Z) VAL = 0.35 FALL = 1
 
+.measure tran Iint INTEG i(VX) from=0n to=10n
 .end
