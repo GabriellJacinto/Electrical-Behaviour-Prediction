@@ -1,0 +1,799 @@
+****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******
+Input File: inverter.sp
+lic:
+lic: FLEXlm: SDK_12.11.3
+lic: USER:   glima                HOSTNAME: aorus
+lic: HOSTID: d76153d              PID:      2059641
+lic: Using FLEXlm license file:
+lic: 27020@localhost
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-jun-2024/2023.03
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@localhost
+lic:
+
+ init: begin read circuit files, cpu clock= 1.87E-02
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/ad
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/behave
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/bjt
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/burr_brn
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/comlinear
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/dio
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/fet
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/lin_tech
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/pci
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/signet
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/ti
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/tline
+       option search = /home/synopsys_tools/hspice/hspice_vT-2022.06-SP2/hspice/parts/xilinx
+       option post =     2.00
+       option measform =     3.00
+ init: end read circuit files, cpu clock= 1.95E-02 peak memory=     448 mb
+ init: begin check errors, cpu clock= 1.95E-02
+ init: end check errors, cpu clock= 2.31E-02 peak memory=     449 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 2.31E-02
+       establish matrix -- done, cpu clock= 2.32E-02 peak memory=     449 mb
+       re-order matrix -- done, cpu clock= 2.32E-02 peak memory=     449 mb
+ init: end setup matrix, cpu clock= 2.32E-02 peak memory=     449 mb
+ sweep: temp temp1 begin, start=  0.00E+00 stop=  5.00E+01 #sweeps =   3
+ temperature: temperature=  0.00E+00
+ sweep: monte_carlo     monte_carlo1     begin, #sweeps =  50
+ dcop: begin dcop, cpu clock= 2.35E-02
+ dcop: end dcop, cpu clock= 2.38E-02 peak memory=     449 mb tot_iter=       5
+ output: out.mt0
+ sweep: tran tran1    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 2.39E-02
+ sweep: tran tran1    end, cpu clock= 3.39E-02 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.19E-02
+ dcop: end dcop, cpu clock= 4.21E-02 peak memory=     449 mb tot_iter=      10
+ output: out.tr0
+ sweep: tran tran2    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.21E-02
+ sweep: tran tran2    end, cpu clock= 5.37E-02 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 6.17E-02
+ dcop: end dcop, cpu clock= 6.19E-02 peak memory=     449 mb tot_iter=      15
+ output: out.tr0
+ sweep: tran tran3    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 6.19E-02
+ sweep: tran tran3    end, cpu clock= 7.11E-02 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.91E-02
+ dcop: end dcop, cpu clock= 7.92E-02 peak memory=     449 mb tot_iter=      20
+ output: out.tr0
+ sweep: tran tran4    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.93E-02
+ sweep: tran tran4    end, cpu clock= 8.90E-02 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 9.70E-02
+ dcop: end dcop, cpu clock= 9.72E-02 peak memory=     449 mb tot_iter=      25
+ output: out.tr0
+ sweep: tran tran5    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 9.72E-02
+ sweep: tran tran5    end, cpu clock= 1.07E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 1.15E-01
+ dcop: end dcop, cpu clock= 1.15E-01 peak memory=     449 mb tot_iter=      30
+ output: out.tr0
+ sweep: tran tran6    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 1.15E-01
+ sweep: tran tran6    end, cpu clock= 1.25E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 1.33E-01
+ dcop: end dcop, cpu clock= 1.33E-01 peak memory=     449 mb tot_iter=      35
+ output: out.tr0
+ sweep: tran tran7    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 1.33E-01
+ sweep: tran tran7    end, cpu clock= 1.43E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 1.51E-01
+ dcop: end dcop, cpu clock= 1.51E-01 peak memory=     449 mb tot_iter=      40
+ output: out.tr0
+ sweep: tran tran8    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 1.51E-01
+ sweep: tran tran8    end, cpu clock= 1.60E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 1.68E-01
+ dcop: end dcop, cpu clock= 1.68E-01 peak memory=     449 mb tot_iter=      45
+ output: out.tr0
+ sweep: tran tran9    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 1.68E-01
+ sweep: tran tran9    end, cpu clock= 1.77E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 1.85E-01
+ dcop: end dcop, cpu clock= 1.85E-01 peak memory=     449 mb tot_iter=      50
+ output: out.tr0
+ sweep: tran tran10   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 1.85E-01
+ sweep: tran tran10   end, cpu clock= 1.94E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 2.02E-01
+ dcop: end dcop, cpu clock= 2.02E-01 peak memory=     449 mb tot_iter=      55
+ output: out.tr0
+ sweep: tran tran11   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 2.02E-01
+ sweep: tran tran11   end, cpu clock= 2.12E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 2.20E-01
+ dcop: end dcop, cpu clock= 2.20E-01 peak memory=     449 mb tot_iter=      60
+ output: out.tr0
+ sweep: tran tran12   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 2.20E-01
+ sweep: tran tran12   end, cpu clock= 2.30E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 2.38E-01
+ dcop: end dcop, cpu clock= 2.38E-01 peak memory=     449 mb tot_iter=      65
+ output: out.tr0
+ sweep: tran tran13   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 2.38E-01
+ sweep: tran tran13   end, cpu clock= 2.48E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 2.56E-01
+ dcop: end dcop, cpu clock= 2.57E-01 peak memory=     449 mb tot_iter=      70
+ output: out.tr0
+ sweep: tran tran14   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 2.57E-01
+ sweep: tran tran14   end, cpu clock= 2.66E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 2.74E-01
+ dcop: end dcop, cpu clock= 2.74E-01 peak memory=     449 mb tot_iter=      75
+ output: out.tr0
+ sweep: tran tran15   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 2.74E-01
+ sweep: tran tran15   end, cpu clock= 2.83E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 2.92E-01
+ dcop: end dcop, cpu clock= 2.92E-01 peak memory=     449 mb tot_iter=      80
+ output: out.tr0
+ sweep: tran tran16   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 2.92E-01
+ sweep: tran tran16   end, cpu clock= 3.01E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.09E-01
+ dcop: end dcop, cpu clock= 3.10E-01 peak memory=     449 mb tot_iter=      85
+ output: out.tr0
+ sweep: tran tran17   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.10E-01
+ sweep: tran tran17   end, cpu clock= 3.19E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.27E-01
+ dcop: end dcop, cpu clock= 3.27E-01 peak memory=     449 mb tot_iter=      90
+ output: out.tr0
+ sweep: tran tran18   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.27E-01
+ sweep: tran tran18   end, cpu clock= 3.37E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.45E-01
+ dcop: end dcop, cpu clock= 3.45E-01 peak memory=     449 mb tot_iter=      95
+ output: out.tr0
+ sweep: tran tran19   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.45E-01
+ sweep: tran tran19   end, cpu clock= 3.55E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.63E-01
+ dcop: end dcop, cpu clock= 3.63E-01 peak memory=     449 mb tot_iter=     100
+ output: out.tr0
+ sweep: tran tran20   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.63E-01
+ sweep: tran tran20   end, cpu clock= 3.74E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.82E-01
+ dcop: end dcop, cpu clock= 3.82E-01 peak memory=     449 mb tot_iter=     105
+ output: out.tr0
+ sweep: tran tran21   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.82E-01
+ sweep: tran tran21   end, cpu clock= 3.91E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.00E-01
+ dcop: end dcop, cpu clock= 4.00E-01 peak memory=     449 mb tot_iter=     110
+ output: out.tr0
+ sweep: tran tran22   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.00E-01
+ sweep: tran tran22   end, cpu clock= 4.09E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.17E-01
+ dcop: end dcop, cpu clock= 4.17E-01 peak memory=     449 mb tot_iter=     115
+ output: out.tr0
+ sweep: tran tran23   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.17E-01
+ sweep: tran tran23   end, cpu clock= 4.27E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.35E-01
+ dcop: end dcop, cpu clock= 4.35E-01 peak memory=     449 mb tot_iter=     120
+ output: out.tr0
+ sweep: tran tran24   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.35E-01
+ sweep: tran tran24   end, cpu clock= 4.45E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.53E-01
+ dcop: end dcop, cpu clock= 4.53E-01 peak memory=     449 mb tot_iter=     125
+ output: out.tr0
+ sweep: tran tran25   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.53E-01
+ sweep: tran tran25   end, cpu clock= 4.62E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.70E-01
+ dcop: end dcop, cpu clock= 4.71E-01 peak memory=     449 mb tot_iter=     130
+ output: out.tr0
+ sweep: tran tran26   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.71E-01
+ sweep: tran tran26   end, cpu clock= 4.80E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.88E-01
+ dcop: end dcop, cpu clock= 4.88E-01 peak memory=     449 mb tot_iter=     135
+ output: out.tr0
+ sweep: tran tran27   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.88E-01
+ sweep: tran tran27   end, cpu clock= 4.97E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 5.05E-01
+ dcop: end dcop, cpu clock= 5.06E-01 peak memory=     449 mb tot_iter=     140
+ output: out.tr0
+ sweep: tran tran28   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 5.06E-01
+ sweep: tran tran28   end, cpu clock= 5.14E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 5.22E-01
+ dcop: end dcop, cpu clock= 5.22E-01 peak memory=     449 mb tot_iter=     145
+ output: out.tr0
+ sweep: tran tran29   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 5.23E-01
+ sweep: tran tran29   end, cpu clock= 5.32E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 5.40E-01
+ dcop: end dcop, cpu clock= 5.40E-01 peak memory=     449 mb tot_iter=     150
+ output: out.tr0
+ sweep: tran tran30   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 5.40E-01
+ sweep: tran tran30   end, cpu clock= 5.49E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 5.57E-01
+ dcop: end dcop, cpu clock= 5.57E-01 peak memory=     449 mb tot_iter=     155
+ output: out.tr0
+ sweep: tran tran31   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 5.57E-01
+ sweep: tran tran31   end, cpu clock= 5.67E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 5.75E-01
+ dcop: end dcop, cpu clock= 5.75E-01 peak memory=     449 mb tot_iter=     160
+ output: out.tr0
+ sweep: tran tran32   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 5.75E-01
+ sweep: tran tran32   end, cpu clock= 5.84E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 5.92E-01
+ dcop: end dcop, cpu clock= 5.92E-01 peak memory=     449 mb tot_iter=     165
+ output: out.tr0
+ sweep: tran tran33   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 5.92E-01
+ sweep: tran tran33   end, cpu clock= 6.02E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 6.11E-01
+ dcop: end dcop, cpu clock= 6.11E-01 peak memory=     449 mb tot_iter=     170
+ output: out.tr0
+ sweep: tran tran34   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 6.11E-01
+ sweep: tran tran34   end, cpu clock= 6.20E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 6.28E-01
+ dcop: end dcop, cpu clock= 6.29E-01 peak memory=     449 mb tot_iter=     175
+ output: out.tr0
+ sweep: tran tran35   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 6.29E-01
+ sweep: tran tran35   end, cpu clock= 6.38E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 6.46E-01
+ dcop: end dcop, cpu clock= 6.46E-01 peak memory=     449 mb tot_iter=     180
+ output: out.tr0
+ sweep: tran tran36   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 6.46E-01
+ sweep: tran tran36   end, cpu clock= 6.55E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 6.63E-01
+ dcop: end dcop, cpu clock= 6.63E-01 peak memory=     449 mb tot_iter=     185
+ output: out.tr0
+ sweep: tran tran37   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 6.63E-01
+ sweep: tran tran37   end, cpu clock= 6.73E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 6.81E-01
+ dcop: end dcop, cpu clock= 6.81E-01 peak memory=     449 mb tot_iter=     190
+ output: out.tr0
+ sweep: tran tran38   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 6.81E-01
+ sweep: tran tran38   end, cpu clock= 6.91E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 6.99E-01
+ dcop: end dcop, cpu clock= 6.99E-01 peak memory=     449 mb tot_iter=     195
+ output: out.tr0
+ sweep: tran tran39   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 6.99E-01
+ sweep: tran tran39   end, cpu clock= 7.09E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.17E-01
+ dcop: end dcop, cpu clock= 7.17E-01 peak memory=     449 mb tot_iter=     200
+ output: out.tr0
+ sweep: tran tran40   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.17E-01
+ sweep: tran tran40   end, cpu clock= 7.26E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.34E-01
+ dcop: end dcop, cpu clock= 7.34E-01 peak memory=     449 mb tot_iter=     205
+ output: out.tr0
+ sweep: tran tran41   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.34E-01
+ sweep: tran tran41   end, cpu clock= 7.44E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.52E-01
+ dcop: end dcop, cpu clock= 7.52E-01 peak memory=     449 mb tot_iter=     210
+ output: out.tr0
+ sweep: tran tran42   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.52E-01
+ sweep: tran tran42   end, cpu clock= 7.62E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.70E-01
+ dcop: end dcop, cpu clock= 7.70E-01 peak memory=     449 mb tot_iter=     215
+ output: out.tr0
+ sweep: tran tran43   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.70E-01
+ sweep: tran tran43   end, cpu clock= 7.80E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.88E-01
+ dcop: end dcop, cpu clock= 7.88E-01 peak memory=     449 mb tot_iter=     220
+ output: out.tr0
+ sweep: tran tran44   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.88E-01
+ sweep: tran tran44   end, cpu clock= 7.97E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 8.05E-01
+ dcop: end dcop, cpu clock= 8.05E-01 peak memory=     449 mb tot_iter=     225
+ output: out.tr0
+ sweep: tran tran45   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 8.05E-01
+ sweep: tran tran45   end, cpu clock= 8.15E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 8.23E-01
+ dcop: end dcop, cpu clock= 8.23E-01 peak memory=     449 mb tot_iter=     230
+ output: out.tr0
+ sweep: tran tran46   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 8.23E-01
+ sweep: tran tran46   end, cpu clock= 8.33E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 8.41E-01
+ dcop: end dcop, cpu clock= 8.41E-01 peak memory=     449 mb tot_iter=     235
+ output: out.tr0
+ sweep: tran tran47   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 8.41E-01
+ sweep: tran tran47   end, cpu clock= 8.50E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 8.58E-01
+ dcop: end dcop, cpu clock= 8.58E-01 peak memory=     449 mb tot_iter=     240
+ output: out.tr0
+ sweep: tran tran48   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 8.58E-01
+ sweep: tran tran48   end, cpu clock= 8.68E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 8.76E-01
+ dcop: end dcop, cpu clock= 8.76E-01 peak memory=     449 mb tot_iter=     245
+ output: out.tr0
+ sweep: tran tran49   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 8.76E-01
+ sweep: tran tran49   end, cpu clock= 8.86E-01 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 8.94E-01
+ dcop: end dcop, cpu clock= 8.94E-01 peak memory=     449 mb tot_iter=     250
+ output: out.tr0
+ sweep: tran tran50   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 8.94E-01
+ sweep: tran tran50   end, cpu clock= 9.05E-01 peak memory=     449 mb
+ sweep: monte_carlo     monte_carlo     1 end
+ temperature: temperature=  2.50E+01
+ sweep: monte_carlo     monte_carlo1     begin, #sweeps =  50
+ dcop: begin dcop, cpu clock= 3.55E+00
+ dcop: end dcop, cpu clock= 3.55E+00 peak memory=     449 mb tot_iter=     255
+ output: out.mt1
+ sweep: tran tran1    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.55E+00
+ sweep: tran tran1    end, cpu clock= 3.57E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.58E+00
+ dcop: end dcop, cpu clock= 3.58E+00 peak memory=     449 mb tot_iter=     262
+ output: out.tr1
+ sweep: tran tran2    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.58E+00
+ sweep: tran tran2    end, cpu clock= 3.59E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.59E+00
+ dcop: end dcop, cpu clock= 3.59E+00 peak memory=     449 mb tot_iter=     269
+ output: out.tr1
+ sweep: tran tran3    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.59E+00
+ sweep: tran tran3    end, cpu clock= 3.60E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.61E+00
+ dcop: end dcop, cpu clock= 3.61E+00 peak memory=     449 mb tot_iter=     276
+ output: out.tr1
+ sweep: tran tran4    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.61E+00
+ sweep: tran tran4    end, cpu clock= 3.62E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.63E+00
+ dcop: end dcop, cpu clock= 3.63E+00 peak memory=     449 mb tot_iter=     283
+ output: out.tr1
+ sweep: tran tran5    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.63E+00
+ sweep: tran tran5    end, cpu clock= 3.64E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.65E+00
+ dcop: end dcop, cpu clock= 3.65E+00 peak memory=     449 mb tot_iter=     290
+ output: out.tr1
+ sweep: tran tran6    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.65E+00
+ sweep: tran tran6    end, cpu clock= 3.66E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.66E+00
+ dcop: end dcop, cpu clock= 3.66E+00 peak memory=     449 mb tot_iter=     297
+ output: out.tr1
+ sweep: tran tran7    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.66E+00
+ sweep: tran tran7    end, cpu clock= 3.67E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.68E+00
+ dcop: end dcop, cpu clock= 3.68E+00 peak memory=     449 mb tot_iter=     304
+ output: out.tr1
+ sweep: tran tran8    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.68E+00
+ sweep: tran tran8    end, cpu clock= 3.69E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.70E+00
+ dcop: end dcop, cpu clock= 3.70E+00 peak memory=     449 mb tot_iter=     311
+ output: out.tr1
+ sweep: tran tran9    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.70E+00
+ sweep: tran tran9    end, cpu clock= 3.71E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.72E+00
+ dcop: end dcop, cpu clock= 3.72E+00 peak memory=     449 mb tot_iter=     318
+ output: out.tr1
+ sweep: tran tran10   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.72E+00
+ sweep: tran tran10   end, cpu clock= 3.73E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.73E+00
+ dcop: end dcop, cpu clock= 3.73E+00 peak memory=     449 mb tot_iter=     325
+ output: out.tr1
+ sweep: tran tran11   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.73E+00
+ sweep: tran tran11   end, cpu clock= 3.74E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.75E+00
+ dcop: end dcop, cpu clock= 3.75E+00 peak memory=     449 mb tot_iter=     332
+ output: out.tr1
+ sweep: tran tran12   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.75E+00
+ sweep: tran tran12   end, cpu clock= 3.76E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.77E+00
+ dcop: end dcop, cpu clock= 3.77E+00 peak memory=     449 mb tot_iter=     339
+ output: out.tr1
+ sweep: tran tran13   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.77E+00
+ sweep: tran tran13   end, cpu clock= 3.78E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.79E+00
+ dcop: end dcop, cpu clock= 3.79E+00 peak memory=     449 mb tot_iter=     346
+ output: out.tr1
+ sweep: tran tran14   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.79E+00
+ sweep: tran tran14   end, cpu clock= 3.80E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.81E+00
+ dcop: end dcop, cpu clock= 3.81E+00 peak memory=     449 mb tot_iter=     353
+ output: out.tr1
+ sweep: tran tran15   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.81E+00
+ sweep: tran tran15   end, cpu clock= 3.81E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.82E+00
+ dcop: end dcop, cpu clock= 3.82E+00 peak memory=     449 mb tot_iter=     360
+ output: out.tr1
+ sweep: tran tran16   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.82E+00
+ sweep: tran tran16   end, cpu clock= 3.83E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.84E+00
+ dcop: end dcop, cpu clock= 3.84E+00 peak memory=     449 mb tot_iter=     367
+ output: out.tr1
+ sweep: tran tran17   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.84E+00
+ sweep: tran tran17   end, cpu clock= 3.85E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.86E+00
+ dcop: end dcop, cpu clock= 3.86E+00 peak memory=     449 mb tot_iter=     374
+ output: out.tr1
+ sweep: tran tran18   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.86E+00
+ sweep: tran tran18   end, cpu clock= 3.87E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.88E+00
+ dcop: end dcop, cpu clock= 3.88E+00 peak memory=     449 mb tot_iter=     381
+ output: out.tr1
+ sweep: tran tran19   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.88E+00
+ sweep: tran tran19   end, cpu clock= 3.89E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.89E+00
+ dcop: end dcop, cpu clock= 3.90E+00 peak memory=     449 mb tot_iter=     388
+ output: out.tr1
+ sweep: tran tran20   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.90E+00
+ sweep: tran tran20   end, cpu clock= 3.91E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.91E+00
+ dcop: end dcop, cpu clock= 3.91E+00 peak memory=     449 mb tot_iter=     395
+ output: out.tr1
+ sweep: tran tran21   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.91E+00
+ sweep: tran tran21   end, cpu clock= 3.92E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.93E+00
+ dcop: end dcop, cpu clock= 3.93E+00 peak memory=     449 mb tot_iter=     402
+ output: out.tr1
+ sweep: tran tran22   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.93E+00
+ sweep: tran tran22   end, cpu clock= 3.94E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.95E+00
+ dcop: end dcop, cpu clock= 3.95E+00 peak memory=     449 mb tot_iter=     409
+ output: out.tr1
+ sweep: tran tran23   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.95E+00
+ sweep: tran tran23   end, cpu clock= 3.96E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.97E+00
+ dcop: end dcop, cpu clock= 3.97E+00 peak memory=     449 mb tot_iter=     416
+ output: out.tr1
+ sweep: tran tran24   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.97E+00
+ sweep: tran tran24   end, cpu clock= 3.98E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 3.98E+00
+ dcop: end dcop, cpu clock= 3.98E+00 peak memory=     449 mb tot_iter=     423
+ output: out.tr1
+ sweep: tran tran25   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 3.98E+00
+ sweep: tran tran25   end, cpu clock= 3.99E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.00E+00
+ dcop: end dcop, cpu clock= 4.00E+00 peak memory=     449 mb tot_iter=     430
+ output: out.tr1
+ sweep: tran tran26   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.00E+00
+ sweep: tran tran26   end, cpu clock= 4.01E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.02E+00
+ dcop: end dcop, cpu clock= 4.02E+00 peak memory=     449 mb tot_iter=     437
+ output: out.tr1
+ sweep: tran tran27   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.02E+00
+ sweep: tran tran27   end, cpu clock= 4.03E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.04E+00
+ dcop: end dcop, cpu clock= 4.04E+00 peak memory=     449 mb tot_iter=     444
+ output: out.tr1
+ sweep: tran tran28   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.04E+00
+ sweep: tran tran28   end, cpu clock= 4.05E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.05E+00
+ dcop: end dcop, cpu clock= 4.05E+00 peak memory=     449 mb tot_iter=     451
+ output: out.tr1
+ sweep: tran tran29   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.05E+00
+ sweep: tran tran29   end, cpu clock= 4.06E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.07E+00
+ dcop: end dcop, cpu clock= 4.07E+00 peak memory=     449 mb tot_iter=     458
+ output: out.tr1
+ sweep: tran tran30   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.07E+00
+ sweep: tran tran30   end, cpu clock= 4.08E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.09E+00
+ dcop: end dcop, cpu clock= 4.09E+00 peak memory=     449 mb tot_iter=     465
+ output: out.tr1
+ sweep: tran tran31   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.09E+00
+ sweep: tran tran31   end, cpu clock= 4.10E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.11E+00
+ dcop: end dcop, cpu clock= 4.11E+00 peak memory=     449 mb tot_iter=     472
+ output: out.tr1
+ sweep: tran tran32   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.11E+00
+ sweep: tran tran32   end, cpu clock= 4.12E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.12E+00
+ dcop: end dcop, cpu clock= 4.12E+00 peak memory=     449 mb tot_iter=     479
+ output: out.tr1
+ sweep: tran tran33   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.12E+00
+ sweep: tran tran33   end, cpu clock= 4.13E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.14E+00
+ dcop: end dcop, cpu clock= 4.14E+00 peak memory=     449 mb tot_iter=     486
+ output: out.tr1
+ sweep: tran tran34   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.14E+00
+ sweep: tran tran34   end, cpu clock= 4.15E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.16E+00
+ dcop: end dcop, cpu clock= 4.16E+00 peak memory=     449 mb tot_iter=     493
+ output: out.tr1
+ sweep: tran tran35   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.16E+00
+ sweep: tran tran35   end, cpu clock= 4.17E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.18E+00
+ dcop: end dcop, cpu clock= 4.18E+00 peak memory=     449 mb tot_iter=     500
+ output: out.tr1
+ sweep: tran tran36   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.18E+00
+ sweep: tran tran36   end, cpu clock= 4.19E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.19E+00
+ dcop: end dcop, cpu clock= 4.19E+00 peak memory=     449 mb tot_iter=     507
+ output: out.tr1
+ sweep: tran tran37   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.19E+00
+ sweep: tran tran37   end, cpu clock= 4.20E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.21E+00
+ dcop: end dcop, cpu clock= 4.21E+00 peak memory=     449 mb tot_iter=     514
+ output: out.tr1
+ sweep: tran tran38   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.21E+00
+ sweep: tran tran38   end, cpu clock= 4.22E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.23E+00
+ dcop: end dcop, cpu clock= 4.23E+00 peak memory=     449 mb tot_iter=     521
+ output: out.tr1
+ sweep: tran tran39   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.23E+00
+ sweep: tran tran39   end, cpu clock= 4.24E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.25E+00
+ dcop: end dcop, cpu clock= 4.25E+00 peak memory=     449 mb tot_iter=     528
+ output: out.tr1
+ sweep: tran tran40   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.25E+00
+ sweep: tran tran40   end, cpu clock= 4.26E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.27E+00
+ dcop: end dcop, cpu clock= 4.27E+00 peak memory=     449 mb tot_iter=     535
+ output: out.tr1
+ sweep: tran tran41   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.27E+00
+ sweep: tran tran41   end, cpu clock= 4.28E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.28E+00
+ dcop: end dcop, cpu clock= 4.28E+00 peak memory=     449 mb tot_iter=     542
+ output: out.tr1
+ sweep: tran tran42   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.28E+00
+ sweep: tran tran42   end, cpu clock= 4.29E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.30E+00
+ dcop: end dcop, cpu clock= 4.30E+00 peak memory=     449 mb tot_iter=     549
+ output: out.tr1
+ sweep: tran tran43   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.30E+00
+ sweep: tran tran43   end, cpu clock= 4.31E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.32E+00
+ dcop: end dcop, cpu clock= 4.32E+00 peak memory=     449 mb tot_iter=     556
+ output: out.tr1
+ sweep: tran tran44   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.32E+00
+ sweep: tran tran44   end, cpu clock= 4.33E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.34E+00
+ dcop: end dcop, cpu clock= 4.34E+00 peak memory=     449 mb tot_iter=     563
+ output: out.tr1
+ sweep: tran tran45   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.34E+00
+ sweep: tran tran45   end, cpu clock= 4.35E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.35E+00
+ dcop: end dcop, cpu clock= 4.35E+00 peak memory=     449 mb tot_iter=     570
+ output: out.tr1
+ sweep: tran tran46   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.35E+00
+ sweep: tran tran46   end, cpu clock= 4.36E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.37E+00
+ dcop: end dcop, cpu clock= 4.37E+00 peak memory=     449 mb tot_iter=     577
+ output: out.tr1
+ sweep: tran tran47   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.37E+00
+ sweep: tran tran47   end, cpu clock= 4.38E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.39E+00
+ dcop: end dcop, cpu clock= 4.39E+00 peak memory=     449 mb tot_iter=     584
+ output: out.tr1
+ sweep: tran tran48   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.39E+00
+ sweep: tran tran48   end, cpu clock= 4.40E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.41E+00
+ dcop: end dcop, cpu clock= 4.41E+00 peak memory=     449 mb tot_iter=     591
+ output: out.tr1
+ sweep: tran tran49   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.41E+00
+ sweep: tran tran49   end, cpu clock= 4.42E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 4.43E+00
+ dcop: end dcop, cpu clock= 4.43E+00 peak memory=     449 mb tot_iter=     598
+ output: out.tr1
+ sweep: tran tran50   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 4.43E+00
+ sweep: tran tran50   end, cpu clock= 4.44E+00 peak memory=     449 mb
+ sweep: monte_carlo     monte_carlo     1 end
+ temperature: temperature=  5.00E+01
+ sweep: monte_carlo     monte_carlo1     begin, #sweeps =  50
+ dcop: begin dcop, cpu clock= 7.08E+00
+ dcop: end dcop, cpu clock= 7.08E+00 peak memory=     449 mb tot_iter=     603
+ output: out.mt2
+ sweep: tran tran1    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.08E+00
+ sweep: tran tran1    end, cpu clock= 7.09E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.10E+00
+ dcop: end dcop, cpu clock= 7.10E+00 peak memory=     449 mb tot_iter=     610
+ output: out.tr2
+ sweep: tran tran2    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.10E+00
+ sweep: tran tran2    end, cpu clock= 7.11E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.12E+00
+ dcop: end dcop, cpu clock= 7.12E+00 peak memory=     449 mb tot_iter=     617
+ output: out.tr2
+ sweep: tran tran3    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.12E+00
+ sweep: tran tran3    end, cpu clock= 7.13E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.13E+00
+ dcop: end dcop, cpu clock= 7.13E+00 peak memory=     449 mb tot_iter=     624
+ output: out.tr2
+ sweep: tran tran4    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.13E+00
+ sweep: tran tran4    end, cpu clock= 7.14E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.15E+00
+ dcop: end dcop, cpu clock= 7.15E+00 peak memory=     449 mb tot_iter=     631
+ output: out.tr2
+ sweep: tran tran5    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.15E+00
+ sweep: tran tran5    end, cpu clock= 7.16E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.17E+00
+ dcop: end dcop, cpu clock= 7.17E+00 peak memory=     449 mb tot_iter=     638
+ output: out.tr2
+ sweep: tran tran6    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.17E+00
+ sweep: tran tran6    end, cpu clock= 7.18E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.19E+00
+ dcop: end dcop, cpu clock= 7.19E+00 peak memory=     449 mb tot_iter=     645
+ output: out.tr2
+ sweep: tran tran7    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.19E+00
+ sweep: tran tran7    end, cpu clock= 7.20E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.21E+00
+ dcop: end dcop, cpu clock= 7.21E+00 peak memory=     449 mb tot_iter=     652
+ output: out.tr2
+ sweep: tran tran8    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.21E+00
+ sweep: tran tran8    end, cpu clock= 7.21E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.22E+00
+ dcop: end dcop, cpu clock= 7.22E+00 peak memory=     449 mb tot_iter=     659
+ output: out.tr2
+ sweep: tran tran9    begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.22E+00
+ sweep: tran tran9    end, cpu clock= 7.23E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.24E+00
+ dcop: end dcop, cpu clock= 7.24E+00 peak memory=     449 mb tot_iter=     666
+ output: out.tr2
+ sweep: tran tran10   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.24E+00
+ sweep: tran tran10   end, cpu clock= 7.25E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.26E+00
+ dcop: end dcop, cpu clock= 7.26E+00 peak memory=     449 mb tot_iter=     673
+ output: out.tr2
+ sweep: tran tran11   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.26E+00
+ sweep: tran tran11   end, cpu clock= 7.27E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.28E+00
+ dcop: end dcop, cpu clock= 7.28E+00 peak memory=     449 mb tot_iter=     680
+ output: out.tr2
+ sweep: tran tran12   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.28E+00
+ sweep: tran tran12   end, cpu clock= 7.29E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.29E+00
+ dcop: end dcop, cpu clock= 7.29E+00 peak memory=     449 mb tot_iter=     687
+ output: out.tr2
+ sweep: tran tran13   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.29E+00
+ sweep: tran tran13   end, cpu clock= 7.30E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.31E+00
+ dcop: end dcop, cpu clock= 7.31E+00 peak memory=     449 mb tot_iter=     694
+ output: out.tr2
+ sweep: tran tran14   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.31E+00
+ sweep: tran tran14   end, cpu clock= 7.32E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.33E+00
+ dcop: end dcop, cpu clock= 7.33E+00 peak memory=     449 mb tot_iter=     701
+ output: out.tr2
+ sweep: tran tran15   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.33E+00
+ sweep: tran tran15   end, cpu clock= 7.34E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.35E+00
+ dcop: end dcop, cpu clock= 7.35E+00 peak memory=     449 mb tot_iter=     708
+ output: out.tr2
+ sweep: tran tran16   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.35E+00
+ sweep: tran tran16   end, cpu clock= 7.36E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.37E+00
+ dcop: end dcop, cpu clock= 7.37E+00 peak memory=     449 mb tot_iter=     715
+ output: out.tr2
+ sweep: tran tran17   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.37E+00
+ sweep: tran tran17   end, cpu clock= 7.38E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.38E+00
+ dcop: end dcop, cpu clock= 7.38E+00 peak memory=     449 mb tot_iter=     722
+ output: out.tr2
+ sweep: tran tran18   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.38E+00
+ sweep: tran tran18   end, cpu clock= 7.39E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.40E+00
+ dcop: end dcop, cpu clock= 7.40E+00 peak memory=     449 mb tot_iter=     729
+ output: out.tr2
+ sweep: tran tran19   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.40E+00
+ sweep: tran tran19   end, cpu clock= 7.41E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.42E+00
+ dcop: end dcop, cpu clock= 7.42E+00 peak memory=     449 mb tot_iter=     736
+ output: out.tr2
+ sweep: tran tran20   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.42E+00
+ sweep: tran tran20   end, cpu clock= 7.43E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.44E+00
+ dcop: end dcop, cpu clock= 7.44E+00 peak memory=     449 mb tot_iter=     743
+ output: out.tr2
+ sweep: tran tran21   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.44E+00
+ sweep: tran tran21   end, cpu clock= 7.45E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.46E+00
+ dcop: end dcop, cpu clock= 7.46E+00 peak memory=     449 mb tot_iter=     750
+ output: out.tr2
+ sweep: tran tran22   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.46E+00
+ sweep: tran tran22   end, cpu clock= 7.47E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.47E+00
+ dcop: end dcop, cpu clock= 7.47E+00 peak memory=     449 mb tot_iter=     757
+ output: out.tr2
+ sweep: tran tran23   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.47E+00
+ sweep: tran tran23   end, cpu clock= 7.48E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.49E+00
+ dcop: end dcop, cpu clock= 7.49E+00 peak memory=     449 mb tot_iter=     764
+ output: out.tr2
+ sweep: tran tran24   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.49E+00
+ sweep: tran tran24   end, cpu clock= 7.50E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.51E+00
+ dcop: end dcop, cpu clock= 7.51E+00 peak memory=     449 mb tot_iter=     771
+ output: out.tr2
+ sweep: tran tran25   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.51E+00
+ sweep: tran tran25   end, cpu clock= 7.52E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.53E+00
+ dcop: end dcop, cpu clock= 7.53E+00 peak memory=     449 mb tot_iter=     778
+ output: out.tr2
+ sweep: tran tran26   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.53E+00
+ sweep: tran tran26   end, cpu clock= 7.54E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.54E+00
+ dcop: end dcop, cpu clock= 7.54E+00 peak memory=     449 mb tot_iter=     785
+ output: out.tr2
+ sweep: tran tran27   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.54E+00
+ sweep: tran tran27   end, cpu clock= 7.55E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.56E+00
+ dcop: end dcop, cpu clock= 7.56E+00 peak memory=     449 mb tot_iter=     792
+ output: out.tr2
+ sweep: tran tran28   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.56E+00
+ sweep: tran tran28   end, cpu clock= 7.57E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.58E+00
+ dcop: end dcop, cpu clock= 7.58E+00 peak memory=     449 mb tot_iter=     799
+ output: out.tr2
+ sweep: tran tran29   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.58E+00
+ sweep: tran tran29   end, cpu clock= 7.59E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.60E+00
+ dcop: end dcop, cpu clock= 7.60E+00 peak memory=     449 mb tot_iter=     806
+ output: out.tr2
+ sweep: tran tran30   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.60E+00
+ sweep: tran tran30   end, cpu clock= 7.61E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.61E+00
+ dcop: end dcop, cpu clock= 7.61E+00 peak memory=     449 mb tot_iter=     813
+ output: out.tr2
+ sweep: tran tran31   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.61E+00
+ sweep: tran tran31   end, cpu clock= 7.62E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.63E+00
+ dcop: end dcop, cpu clock= 7.63E+00 peak memory=     449 mb tot_iter=     820
+ output: out.tr2
+ sweep: tran tran32   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.63E+00
+ sweep: tran tran32   end, cpu clock= 7.64E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.65E+00
+ dcop: end dcop, cpu clock= 7.65E+00 peak memory=     449 mb tot_iter=     827
+ output: out.tr2
+ sweep: tran tran33   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.65E+00
+ sweep: tran tran33   end, cpu clock= 7.66E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.67E+00
+ dcop: end dcop, cpu clock= 7.67E+00 peak memory=     449 mb tot_iter=     834
+ output: out.tr2
+ sweep: tran tran34   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.67E+00
+ sweep: tran tran34   end, cpu clock= 7.68E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.68E+00
+ dcop: end dcop, cpu clock= 7.68E+00 peak memory=     449 mb tot_iter=     841
+ output: out.tr2
+ sweep: tran tran35   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.68E+00
+ sweep: tran tran35   end, cpu clock= 7.69E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.70E+00
+ dcop: end dcop, cpu clock= 7.70E+00 peak memory=     449 mb tot_iter=     848
+ output: out.tr2
+ sweep: tran tran36   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.70E+00
+ sweep: tran tran36   end, cpu clock= 7.71E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.72E+00
+ dcop: end dcop, cpu clock= 7.72E+00 peak memory=     449 mb tot_iter=     855
+ output: out.tr2
+ sweep: tran tran37   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.72E+00
+ sweep: tran tran37   end, cpu clock= 7.73E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.74E+00
+ dcop: end dcop, cpu clock= 7.74E+00 peak memory=     449 mb tot_iter=     862
+ output: out.tr2
+ sweep: tran tran38   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.74E+00
+ sweep: tran tran38   end, cpu clock= 7.75E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.75E+00
+ dcop: end dcop, cpu clock= 7.75E+00 peak memory=     449 mb tot_iter=     869
+ output: out.tr2
+ sweep: tran tran39   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.75E+00
+ sweep: tran tran39   end, cpu clock= 7.76E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.77E+00
+ dcop: end dcop, cpu clock= 7.77E+00 peak memory=     449 mb tot_iter=     876
+ output: out.tr2
+ sweep: tran tran40   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.77E+00
+ sweep: tran tran40   end, cpu clock= 7.78E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.79E+00
+ dcop: end dcop, cpu clock= 7.79E+00 peak memory=     449 mb tot_iter=     883
+ output: out.tr2
+ sweep: tran tran41   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.79E+00
+ sweep: tran tran41   end, cpu clock= 7.80E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.81E+00
+ dcop: end dcop, cpu clock= 7.81E+00 peak memory=     449 mb tot_iter=     890
+ output: out.tr2
+ sweep: tran tran42   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.81E+00
+ sweep: tran tran42   end, cpu clock= 7.82E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.82E+00
+ dcop: end dcop, cpu clock= 7.83E+00 peak memory=     449 mb tot_iter=     897
+ output: out.tr2
+ sweep: tran tran43   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.83E+00
+ sweep: tran tran43   end, cpu clock= 7.83E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.84E+00
+ dcop: end dcop, cpu clock= 7.84E+00 peak memory=     449 mb tot_iter=     904
+ output: out.tr2
+ sweep: tran tran44   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.84E+00
+ sweep: tran tran44   end, cpu clock= 7.85E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.86E+00
+ dcop: end dcop, cpu clock= 7.86E+00 peak memory=     449 mb tot_iter=     911
+ output: out.tr2
+ sweep: tran tran45   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.86E+00
+ sweep: tran tran45   end, cpu clock= 7.87E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.88E+00
+ dcop: end dcop, cpu clock= 7.88E+00 peak memory=     449 mb tot_iter=     918
+ output: out.tr2
+ sweep: tran tran46   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.88E+00
+ sweep: tran tran46   end, cpu clock= 7.89E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.89E+00
+ dcop: end dcop, cpu clock= 7.89E+00 peak memory=     449 mb tot_iter=     925
+ output: out.tr2
+ sweep: tran tran47   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.89E+00
+ sweep: tran tran47   end, cpu clock= 7.90E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.91E+00
+ dcop: end dcop, cpu clock= 7.91E+00 peak memory=     449 mb tot_iter=     932
+ output: out.tr2
+ sweep: tran tran48   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.91E+00
+ sweep: tran tran48   end, cpu clock= 7.92E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.93E+00
+ dcop: end dcop, cpu clock= 7.93E+00 peak memory=     449 mb tot_iter=     939
+ output: out.tr2
+ sweep: tran tran49   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.93E+00
+ sweep: tran tran49   end, cpu clock= 7.94E+00 peak memory=     449 mb
+ dcop: begin dcop, cpu clock= 7.95E+00
+ dcop: end dcop, cpu clock= 7.95E+00 peak memory=     449 mb tot_iter=     946
+ output: out.tr2
+ sweep: tran tran50   begin, stop_t=  1.00E-08 #sweeps=1001 cpu clock= 7.95E+00
+ sweep: tran tran50   end, cpu clock= 7.96E+00 peak memory=     449 mb
+ sweep: monte_carlo     monte_carlo     1 end
+ sweep: temp temp1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
