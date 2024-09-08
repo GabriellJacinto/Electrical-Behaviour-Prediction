@@ -6,3 +6,4 @@ a.txt
 extra/
 results/
 *.raw/
+.venv

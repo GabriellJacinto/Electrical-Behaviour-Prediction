@@ -1,0 +1,268 @@
+X.shape: (8296, 8)
+
+y.shape: (8296, 3)
+
+Test set X (2074, 8)
+
+Test set y (2074, 3)
+
+Train set X (4168, 8)
+
+Train set y (4168, 3)
+
+Validation set X (2054, 8)
+
+Validation set y (2054, 3)
+
+label: TPHL
+clf: RandomForestRegressor, mse: 3.896154356098315e-05, r2: 0.9978554427196613
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+label: TPHL
+clf: RandomForestRegressor, mse: 3.822492205614336e-05, r2: 0.9978959885211536
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+clf: DecisionTreeRegressor, mse: 7.332638232011336e-05, r2: 0.9959639015122858
+label: TPLH
+clf: RandomForestRegressor, mse: 3.699700570504131e-05, r2: 0.9976772017749953
+clf: LinearRegression, mse: 0.004366479608437856, r2: 0.725857514933517
+clf: SVR, mse: 0.0030155081060025696, r2: 0.8106761143873934
+clf: DecisionTreeRegressor, mse: 6.431073519232687e-05, r2: 0.9959623526632283
+label: TPHL
+clf: RandomForestRegressor, mse: 3.742663089830647e-05, r2: 0.9979399288006677
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+label: TPHL
+clf: RandomForestRegressor, mse: 3.969620638608076e-05, r2: 0.9978150047296291
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+clf: DecisionTreeRegressor, mse: 7.082499733714149e-05, r2: 0.9961015850557461
+label: TPLH
+clf: RandomForestRegressor, mse: 3.584564947316531e-05, r2: 0.9977494878468215
+clf: LinearRegression, mse: 0.004366479608437856, r2: 0.725857514933517
+clf: SVR, mse: 0.0030155081060025696, r2: 0.8106761143873934
+clf: DecisionTreeRegressor, mse: 6.731615179563303e-05, r2: 0.9957736623565798
+label: TPHL
+clf: RandomForestRegressor, mse: 3.731132377036116e-05, r2: 0.9979462756421454
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+clf: DecisionTreeRegressor, mse: 7.22004041636878e-05, r2: 0.996025878642352
+label: TPLH
+clf: RandomForestRegressor, mse: 3.523158018623089e-05, r2: 0.9977880412114125
+clf: LinearRegression, mse: 0.004366479608437856, r2: 0.725857514933517
+clf: SVR, mse: 0.0030155081060025696, r2: 0.8106761143873934
+clf: DecisionTreeRegressor, mse: 6.694744923958125e-05, r2: 0.9957968107607934
+label: IINT
+clf: RandomForestRegressor, mse: 3.5786381657163256e-05, r2: 0.9995930972046758
+clf: LinearRegression, mse: 0.0011290552906738948, r2: 0.9871622742345968
+clf: SVR, mse: 0.0021983950637110474, r2: 0.9750035333211241
+clf: DecisionTreeRegressor, mse: 5.9752162322286377e-05, r2: 0.9993205984860799
+label: IINT
+clf: RandomForestRegressor, mse: 3.621713526099589e-05, r2: 0.9995881993961415
+clf: LinearRegression, mse: 0.0011290552906738948, r2: 0.9871622742345968
+clf: SVR, mse: 0.0021983950637110474, r2: 0.9750035333211241
+clf: DecisionTreeRegressor, mse: 6.087735701426876e-05, r2: 0.9993078046565769
+
+ TPLH
+RandomForestRegressor(): 0.09190201759338379 secs
+LinearRegression(): 0.002340078353881836 secs
+SVR(): 0.0042459964752197266 secs
+DecisionTreeRegressor(): 0.0006420612335205078 secs
+
+ IINT
+RandomForestRegressor: 0.0013990402221679688 secs
+LinearRegression: 4.315376281738281e-05 secs
+SVR: 8.487701416015625e-05 secs
+DecisionTreeRegressor: 5.1021575927734375e-05 secs
+==== results_cv ====
+label: TPHL
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+label: TPLH
+clf: LinearRegression, mse: 0.004366479608437856, r2: 0.725857514933517
+label: IINT
+clf: LinearRegression, mse: 0.0011290552906738948, r2: 0.9871622742345968 (max_depth = 4)
+
+ ==== hyperparameters (cv = 10)====
+
+ Best hyperparameters:
+{'max_depth': 4}
+Average Score on train set: 0.624 +/- 0.003
+Average Score on validation set: 0.606 +/- 0.030
+
+ Best hyperparameters:
+{'max_depth': 4}
+Average Score on train set: 0.605 +/- 0.004
+Average Score on validation set: 0.575 +/- 0.039
+
+ Best hyperparameters:
+{'max_depth': 2}
+Average Score on train set: 0.062 +/- 0.002
+Average Score on validation set: 0.060 +/- 0.015
+==== results_cv ====
+label: TPHL
+clf: DecisionTreeRegressor, mse: 0.0020712967140961076, r2: 0.8859897724276825
+label: TPLH
+clf: DecisionTreeRegressor, mse: 0.0013754971704994527, r2: 0.9136415954413354
+label: IINT
+clf: DecisionTreeRegressor, mse: 5.5966508164964886e-05, r2: 0.9993636426047477 (max_depth = 4)
+
+ ==== hyperparameters (cv = 10)====
+
+ ==== hyperparameters (cv = 10)====
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 75}
+Average Score on train set: 0.631 +/- 0.003
+Average Score on validation set: 0.614 +/- 0.031
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 100}
+Average Score on train set: 0.617 +/- 0.003
+Average Score on validation set: 0.598 +/- 0.035
+
+ Best hyperparameters:
+{'max_depth': 2, 'n_estimators': 85}
+Average Score on train set: 0.062 +/- 0.002
+Average Score on validation set: 0.058 +/- 0.016
+==== results_cv ====
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0017787240182748534, r2: 0.9020938290821555
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0010517339666670997, r2: 0.9339685538222177
+label: IINT
+clf: RandomForestRegressor, mse: 5.512323146026393e-05, r2: 0.9993732309350702 (max_depth = 4)
+==== results_test_set ====
+label: IINT
+clf: RandomForestRegressor, mse: 3.770493527967202e-05, r2: 0.9995712826261735 (max_depth = 4)
+==== results_cv ====
+label: TPHL B
+==== results_cv ====
+label: TPHL
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+label: TPLH
+clf: SVR, mse: 0.0030155081060025696, r2: 0.8106761143873934
+label: IINT
+clf: SVR, mse: 0.0021983950637110474, r2: 0.9750035333211241 (max_depth = 4)
+X.shape: (8296, 8)
+
+y.shape: (8296, 3)
+
+Test set X (2074, 8)
+
+Test set y (2074, 3)
+
+Train set X (4168, 8)
+
+Train set y (4168, 3)
+
+Validation set X (2054, 8)
+
+Validation set y (2054, 3)
+
+label: TPHL
+clf: RandomForestRegressor, mse: 3.7784458931535836e-05, r2: 0.997920232899437
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+clf: DecisionTreeRegressor, mse: 7.30979514050492e-05, r2: 0.9959764750177781
+label: TPLH
+clf: RandomForestRegressor, mse: 3.5526315308540337e-05, r2: 0.9977695367350122
+clf: LinearRegression, mse: 0.004366479608437856, r2: 0.725857514933517
+clf: SVR, mse: 0.0030155081060025696, r2: 0.8106761143873934
+clf: DecisionTreeRegressor, mse: 6.968763896330316e-05, r2: 0.9956247723024062
+label: TPHL
+clf: RandomForestRegressor, mse: 3.826048577750738e-05, r2: 0.9978940309899421
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+clf: DecisionTreeRegressor, mse: 7.47787720514098e-05, r2: 0.9958839577347178
+label: TPLH
+clf: RandomForestRegressor, mse: 3.46009071282034e-05, r2: 0.9978276370173926
+clf: LinearRegression, mse: 0.004366479608437856, r2: 0.725857514933517
+clf: SVR, mse: 0.0030155081060025696, r2: 0.8106761143873934
+clf: DecisionTreeRegressor, mse: 6.734474228796219e-05, r2: 0.9957718673479414
+label: IINT
+clf: RandomForestRegressor, mse: 3.570508439143572e-05, r2: 0.9995940215810208
+clf: LinearRegression, mse: 0.0011290552906738948, r2: 0.9871622742345968
+clf: SVR, mse: 0.0021983950637110474, r2: 0.9750035333211241
+clf: DecisionTreeRegressor, mse: 5.9707959861233197e-05, r2: 0.9993211010824344
+label: IINT
+clf: RandomForestRegressor, mse: 3.592448443362193e-05, r2: 0.9995915269312037
+clf: LinearRegression, mse: 0.0011290552906738948, r2: 0.9871622742345968
+clf: SVR, mse: 0.0021983950637110474, r2: 0.9750035333211241
+clf: DecisionTreeRegressor, mse: 5.983440227250739e-05, r2: 0.9993196633911057
+
+ TPLH
+RandomForestRegressor(): 0.002821207046508789 secs
+LinearRegression(): 8.7738037109375e-05 secs
+SVR(): 9.441375732421875e-05 secs
+DecisionTreeRegressor(): 5.888938903808594e-05 secs
+
+ IINT
+RandomForestRegressor: 0.0022783279418945312 secs
+LinearRegression: 9.012222290039062e-05 secs
+SVR: 9.393692016601562e-05 secs
+DecisionTreeRegressor: 5.507469177246094e-05 secs
+==== results_cv ====
+label: TPHL
+clf: LinearRegression, mse: 0.004946431239947841, r2: 0.7277339612913096
+label: TPLH
+clf: LinearRegression, mse: 0.004366479608437856, r2: 0.725857514933517
+label: IINT
+clf: LinearRegression, mse: 0.0011290552906738948, r2: 0.9871622742345968 (max_depth = 4)
+
+ ==== hyperparameters (cv = 10)====
+
+ Best hyperparameters:
+{'max_depth': 4}
+Average Score on train set: 0.624 +/- 0.003
+Average Score on validation set: 0.606 +/- 0.030
+
+ Best hyperparameters:
+{'max_depth': 4}
+Average Score on train set: 0.605 +/- 0.004
+Average Score on validation set: 0.575 +/- 0.039
+
+ Best hyperparameters:
+{'max_depth': 2}
+Average Score on train set: 0.062 +/- 0.002
+Average Score on validation set: 0.060 +/- 0.015
+==== results_cv ====
+label: TPHL
+clf: DecisionTreeRegressor, mse: 0.0020712967140961076, r2: 0.8859897724276825
+label: TPLH
+clf: DecisionTreeRegressor, mse: 0.0013754971704994527, r2: 0.9136415954413354
+label: IINT
+clf: DecisionTreeRegressor, mse: 5.5966508164964886e-05, r2: 0.9993636426047477 (max_depth = 4)
+
+ ==== hyperparameters (cv = 10)====
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 75}
+Average Score on train set: 0.631 +/- 0.003
+Average Score on validation set: 0.614 +/- 0.031
+
+ Best hyperparameters:
+{'max_depth': 4, 'n_estimators': 100}
+Average Score on train set: 0.617 +/- 0.003
+Average Score on validation set: 0.598 +/- 0.035
+
+ Best hyperparameters:
+{'max_depth': 2, 'n_estimators': 85}
+Average Score on train set: 0.062 +/- 0.002
+Average Score on validation set: 0.058 +/- 0.016
+==== results_cv ====
+label: TPHL
+clf: RandomForestRegressor, mse: 0.0017787240182748534, r2: 0.9020938290821555
+label: TPLH
+clf: RandomForestRegressor, mse: 0.0010517339666670997, r2: 0.9339685538222177
+label: IINT
+clf: RandomForestRegressor, mse: 5.512323146026393e-05, r2: 0.9993732309350702 (max_depth = 4)
+==== results_test_set ====
+label: IINT
+clf: RandomForestRegressor, mse: 3.770493527967202e-05, r2: 0.9995712826261735 (max_depth = 4)
+==== results_cv ====
+label: TPHL
+clf: SVR, mse: 0.002359701592081698, r2: 0.8701151246534969
+label: TPLH
+clf: SVR, mse: 0.0030155081060025696, r2: 0.8106761143873934
+label: IINT
+clf: SVR, mse: 0.0021983950637110474, r2: 0.9750035333211241 (max_depth = 4)
