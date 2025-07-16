@@ -65,5 +65,3 @@ VY Y 0 PULSE(0 0.7 0.5n 10p 10p 0.5n 1n)
 
 *.measure tran t_rise_time TRIG V(Z) VAL = 0.14 TD = 1n
 *+ RISE = 2 TARG V(Z) VAL = 0.56 RISE = 2
-
-.end

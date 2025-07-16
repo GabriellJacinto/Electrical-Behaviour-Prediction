@@ -1,22 +1,3 @@
- ****** PrimeSim HSPICE -- T-2022.06-SP2 linux64 (Nov 22 2022 7905465) ******
-  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.
-  This software and the associated documentation are proprietary
-  to Synopsys, Inc. This software may only be used in accordance
-  with the terms and conditions of a written license agreement with
-  Synopsys, Inc. All other use, reproduction, or distribution of
-  this software is strictly prohibited.
-
-================================================================
-*** This file format is subject to change **
-#Histogram plots from data
-#Number of histogram bins
-4
-#Number of Measures
-2
-#Column names, bin centers and bin counts
-t_fall_delay,t_fall_delay_count,t_rise_delay,t_rise_delay_count
-1.675109e-11,9,1.474123e-11,5
-1.98575e-11,23,1.739278e-11,24
-2.296391e-11,11,2.004433e-11,18
-2.607032e-11,7,2.269588e-11,3
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:55db97b732df4429894ae0bfba0d253bf2f50599cdce76b549c5be6ddb774a82
+size 866
